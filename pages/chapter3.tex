@@ -1,0 +1,541 @@
+\chapter{面向独立恢复的DSC辅助编码计算结果传输方法研究} \label{chapter-location-information}
+
+\section{引言}
+
+ 分布式边缘计算通过将计算能力下沉到网络边缘，利用多个边缘节点并行处理计算任务，显著降低了端到端的计算时延，成为突破算力瓶颈的关键技术。
+然而，分布式系统的性能往往受限于迟滞效应，即系统的整体完成时间取决于计算速度最慢的节点。由于边缘节点的硬件配置、负载状态以及网络环境存在高度异构性，部分节点可能会因资源竞争或突发故障等随机因素导致计算停滞，从而严重拖累整个任务的完成进度。为了缓解这一问题，编码计算应运而生。受经典纠错码理论的启发，编码边缘计算通过在任务分发阶段引入计算冗余，将原始任务编码为多个具有冗余特性的子任务。这种机制使得移动设备无需等待所有节点完成，仅需收集部分计算最快节点的计算结果即可恢复原始任务，从而有效缓解了迟滞节点的影响。
+
+尽管编码边缘计算在提升计算效率方面上取得了显著进展，但现有的研究大多聚焦于设计高效的计算编码方案（如MDS码、梯度编码等）以降低计算延迟，而往往忽视了无线通信环节的挑战。具体而言，各边缘节点的计算结果回传过程同样面临着信道衰落、带宽受限等问题。如果参与回传的节点处于深衰落或拥塞信道中，通信延迟可能远超计算延迟，进而成为系统新的性能瓶颈。针对这一问题，部分近期工作开始探索计算与通信的联合优化策略，例如通过调整任务分块大小、优化节点选择或设计协作传输机制。然而，这些工作通常将边缘节点的下行传输视为传统的多用户独立通信问题，即假设各节点发送的消息是相互独立的。
+事实上，编码边缘计算与传统多用户通信存在本质区别：由于在任务分发阶段采用了纠删码技术，不同边缘节点计算出的中间结果之间存在着内生的强相关性。这种相关性蕴含了巨大的通信优化潜力，却在现有研究中被长期忽视。从信息论的角度来看，这一场景与经典的分布式信源编码问题具有天然的同构性：多个相关信源在不进行相互通信的情况下，分别向同一接收端发送信息。SW定理指出，利用信源间的相关性，即使进行独立编码，也可以通过联合解码达到与集中式编码相同的压缩极限。
+
+基于上述观察，本章提出了一种基于DSC辅助的编码计算结果下行传输机制。旨在利用编码任务间的相关性，打破传统独立传输的性能界限。具体而言，本章的主要贡献如下：
+深入分析了MDS编码计算任务在边缘节点间引入的代数相关性，并将其建模为分布式相关信源。结合非正交多址接入技术，构建了DSC辅助的下行传输系统模型。
+针对SW定理缺乏实用编码方案的问题，设计了一种基于LDPC码的伴随式穿刺传输方法。该方法允许边缘节点根据自身信道状态自适应地调整压缩率，即调整传输的伴随式长度，从而实现传输负载在节点间的灵活重分配，有效缓解了信道条件差的节点对系统性能的制约。
+建立了基于DSC的下行传输时延最小化问题。针对该问题的非凸特性，利用差分凸规划理论，提出了一种基于连续凸逼近的迭代优化算法，联合优化各节点的信源压缩率与发射功率。
+
+本章后续内容安排如下：3.2节详细描述系统模型与问题建模；3.3节介绍所提的伴随式穿刺传输方案及DSC解码流程；3.4节阐述基于CCCP的时延优化算法；3.5节通过仿真实验验证所提方案的有效性；3.6节对本章进行总结。表\ref{<chapter-three-table-symbols>}列出了本章的常用符号。
+\begin{table}[htbp]
+	%\small
+	\centering
+	\caption{本章常用符号}
+	\begin{tabular}{c p{28em}}
+		\toprule
+		符号 & 含义\\
+		\midrule
+		$k$ & 边缘节点数目 \\
+		$r$ & 划分的子任务数目 \\
+		$\mathcal{J}$&参与下行传输的边缘节点集合\\
+		$X_i$ & 未编码子任务$i$的计算结果 \\
+		$Y_i$ & 编码子任务$i$的计算结果 \\
+		$S_{Y_i}$& 编码子任务$i$的计算结果对应生成的伴随式\\
+		$S_{X_i}$& 未编码子任务$i$的计算结果对应生成的伴随式\\
+		$\tilde{\eta}$ & 直接信源编码的压缩率 \\
+		$\bar{\eta}$ & 理想信源编码的压缩率\\
+		$\eta$ & 基于伴随式穿刺的实际信源编码的压缩率\\
+		$s$ & 每个节点需要传输的符号数 \\
+		$T_d$ & 下行传输所需时延 \\
+		$P_{\text{max}}$ & 边缘节点的最大传输功率 \\
+		$\symbfit{g}_i$ & 移动设备与边缘节点$i$间的信道增益 \\
+		$B$ & 下行信道带宽 \\
+		$n_0$ & 信道噪声功率谱密度 \\        
+		\bottomrule
+	\end{tabular}
+	\label{<chapter-three-table-symbols>}
+\end{table}
+
+
+\section{系统模型与问题建模}
+
+	考虑如图\ref{fig:system_model_chapter3}所示的分布式边缘计算场景，其中包含一个移动设备与$k$个边缘节点。由于这$k$个节点可能会存在迟滞现象，采用$(k,r)$线性分组码对计算任务进行编码分发。具体来说，假设每个原始计算任务被划分为$r$个相互独立的子任务。随后，采用$(k,r)$线性分组码对原始任务进行编码，生成$k$个编码子任务并分发给边缘节点并行处理。
+	
+\subsection{计算模型}
+	假设这些未编码子任务和编码子任务的计算结果为取自有限域$GF(q)$上的随机变量\upcite{9229375}，分别记为$\{X_i\}_{i=1}^r$和$\{Y_i\}_{i=1}^k$。当采用线性编码时，第$i$个边缘节点的计算结果$Y_i$建模为原始子任务的线性组合，即
+\begin{equation}
+	Y_i=\sum\nolimits_{j=1}^{r}\varphi_{i,j}X_j, ~\forall i\in[k]\label{yx},
+\end{equation}其中$\varphi_{i,j}$是编码系数。假设$r$个未编码子任务的计算结果$X_i$'s 服从独立同分布，且熵由$H(X)$表示。由于编码后的子任务$Y_i$'s 是$X_i$'s 的线性组合，可以证明$k$个编码子任务的信息熵满足$H(Y_i)\geq H(X),~\forall i\in[k]$。
+
+考虑在计算阶段完成时，只有$\mathcal{J}\subseteq[k]$个非迟滞节点完成了计算任务。在下行传输阶段，由这些已经完成计算任务的节点将计算结果传输给移动设备。根据编码计算的特性，移动设备在收到任意$r$个或更多节点的计算结果后就能够重新构建出每个未编码子任务的计算结果$X_i$，即
+\begin{equation}
+	X_i=\sum\nolimits_{\upsilon=1 }^r \beta_{i,j_\upsilon} Y_{j_\upsilon},~\forall i\in[r],\label{linear_re}
+\end{equation}
+其中$\{j_1,\cdots,j_r\}\subset\mathcal{J}$且$\beta_{i,j_\upsilon}$'s 是相应的解码系数且可以通过(\ref{yx})唯一的确定。在构建出$r$个未编码子任务的计算结果后，移动设可以恢复原始计算任务的计算结果。
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figures/chapter3/System_model_withouRecordLocal_new.pdf}
+	\caption{系统模型}
+	\label{fig:system_model_chapter3}
+\end{figure}
+
+为了提升计算结果$Y_i$'s 的传输效率，许多无线通信系统中将采取信源编码无损压缩这些计算结果，再将压缩后的计算结果回传给移动过设备。现有一些编码计算的工作中，各个边缘节点被视为独立信源，采用独立的信源编码方式\upcite{doi:https://doi.org/10.1002/047174882X.ch15} 。假设对每个节点，最直接的信源编码方式是按照自身无损恢复所需的最小信息量独立地对计算结果进行压缩和传输。因此，根据经典信源编码定理，对于节点$i$的计算结果，用$n$长的序列表示，记为$\left\{Y_i^{(j)}\right\}_{j=1}^n$，其中$n$足够大。该序列可以被压缩为更短的序列$\left\{\tilde{S}_{Y_i}^{(j)}\right\}_{j=1}^{\tilde{m}_i}$，长度为$\tilde{m}_i=\frac{n H(Y_i)}{\log_2 q}$, 其中 $Y_i^{(j)}$和$\tilde{S}_{Y_i}^{(j)}$分别表示序列里相应的第$j$个符号，便于理解，序列$\left\{Y_i^{(j)}\right\}_{j=1}^n$和$\left\{\tilde{S}_{Y_i}^{(j)}\right\}_{j=1}^{\tilde{m}_i}$的向量形式记为$\mathbf{Y}_i^{1:n}$和$\mathbf{\tilde{S}}_{Y_i}^{1:\tilde{m}_i}$， 对应的信源压缩率可以表示为
+\begin{equation}
+	\setlength\belowdisplayskip{3pt}
+	\tilde{\eta_i}=\frac{H(Y_i)}{\log_2q},~\forall i\in\mathcal{J}.\vspace{0.03cm}\label{straight}
+\end{equation}
+
+\subsection{通信模型}\label{communication model}
+在下行传输过程中，为了提升传输效率，在现有的一些编码计算工作中，通常会选取信道条件最好的$r$个节点满足$\tilde{\mathcal{J}}\subseteq\mathcal{J}$将它们压缩后的计算结果$\left\{\tilde{S}_{Y_i}^{(j)}\right\}_{j=1}^{\tilde{m}_i}$回传给移动设备。
+为了提升频谱效率并支持并行传输，这些$r$个节点将采用非正交多址的方案进行传输。本研究中将采用功率域NOMA作为示例，移动设备接收叠加信号后，按照信道增益由强到弱的顺序执行串行干扰消除，对于第$i$个解码的节点，来自信道更差节点的信号被视为干扰，而信道更好的节点信号假设已被消除，采用其他的多址传输方案例如RSMA也适用于本研究 \upcite{8357810} 。为了不失一般性，假设这$|\mathcal{J}|$个成功完成计算任务的节点其信道增益$g_i$'s 按照降序排列$g_1\geq g_2\geq \cdots \geq g_{|\mathcal{J}|}$，其中为了便于理解，这些节点也按照$1$到$|\mathcal{J}|$表示。因此，节点1到节点$r$将被选取参与下行传输，相应的，第$i$个边缘节点的下行可达速率$R_i$可以表示为
+\begin{equation}
+	R_i=B\log_2\left(1+\frac{g_ip_i}{Bn_0+\sum_{j=i+1}^{r}g_jp_j}\right)\label{sic},~\forall i\in\tilde{\mathcal{J}},
+\end{equation}
+其中$p_i$表示节点$i$的发射功率，$B$表示下行传输的带宽，$n_0$表示噪声功率。
+
+为了保证下行传输成功，这些$r$个节点的信源压缩率$\eta_i$'s 和传输速率$R_i$'s 需要满足
+\begin{equation}
+	R_{i}T_d\geq  \tilde{\eta_i} s\log_2q, ~ \forall i\in \tilde{\mathcal{J}},\label{rt>r'}
+\end{equation}
+其中$T_d$表示下行传输延迟，$s$表示每个节点未压缩前需要传输的计算结果包含的符号数。
+
+本研究的主要目标是降低下行传输延迟$T_d$。然而，基于直接信源编码方法及公式（\ref{rt>r'}），如果在这$r$个被选中的边缘节点中，仍有一个节点的信道条件较差，从而导致传输速率 较低，那么该节点将成为瓶颈，并可能严重延长下行传输延迟$T_d$。为了缓解这种情况可能造成的下行传输延迟，本研究将提出基于DSC辅助的编码计算结果下行传输方案。
+
+\subsection{面向独立恢复的DSC辅助的编码计算结果下行传输机制}
+为了激发所提出的方案，首先注意到在第 \ref{communication model}节描述的基于独立压缩的传输方案中，如果某个节点的信道非常差，整体传输延迟 $T_d$ 将受到此瓶颈的限制（见\ref{rt>r'}）。这是因为在直接方法中，节点的传输信息是独立压缩的.尽管其他节点可能拥有良好的信道，但它们没有信道较差节点的信息，因此无法提供帮助。理想情况下，如果信道较差的节点的传输负载能够被重新分配给信道良好的节点（且不产生额外的通信开销），这个问题就可以得到解决。幸运的是，当 $|\mathcal{J}| > r$ 时，这实际上是可能的，因为由于任务编码的存在，节点的计算结果是相关的（因为任意 $r$ 个 $Y_i$ 足以根据公式 (\ref{linear_re}) 唯一确定所有的 $X_i$。由于多个节点之间的信息存在冗余，而传统的信源编码方案并没有将这部分冗余信息去除，而是进行独立信源编码并传输计算结果。此外，传统的传输方式，只选取了计算较快的$r$个节点进行传输，如果其中一个节点的信道条件很差，这将会导致传输延迟的增大，从而造成整体端到端延迟的增加。如果采取$|\mathcal{J}|~(\geq r)$个完成计算的节点同时参与下行传输，且传输负载可以灵活分配，可以达到信道条件好的节点多传数据，信道条件差的节点少传部分数据的效果，从而实现整体传输效率的提高。而在分布式信源编码中，多个相关信源之间互相不通信进行信源，在接收端执行联合译码可以无损恢复所有信源。在信源压缩和解码的过程可以看成是负载重分配的一个过程。
+因此，所需的负载重分配实际上可以通过 DSC来实现，具体阐述如下。
+
+\subsubsection{DSC模型}
+在提出的方案中，所有完成计算的 $|\mathcal{J}|$ 个 节点都将参与下行传输，并利用 DSC 压缩其计算结果。具体而言，每个节点 $i \in \mathcal{J}$ 将其长度为 $n$ 的计算结果序列 $\{Y_i^{(j)}\}_{j=1}^n$ 以目标压缩率 $\bar{\eta}_i$压缩为长度为 $\bar{m}_i = n\bar{\eta}_i$ 的更短序列 $\{\bar{S}_{Y_i}^{(j)}\}_{j=1}^{\bar{m}_i}$，其中目标压缩率 $\bar{\eta}_i$将通过优化确定。理论上，通过理想的信源编码方案（经由随机分箱），任何满足公式 (\ref{sw}) 的压缩率集合 $\{\bar{\eta}_i\}_{i=1}^{|\mathcal{J}|}$ 都是可达的 [15, 17]，经典的SW定理给出了压缩率的可达区域，即
+\begin{align}
+	\sum\nolimits_{i\in \mathcal{L}}\bar{\eta}_{i}\geq \frac{H(Y_{\mathcal{L}}|Y_{\mathcal{L}^C})}{\log_2q}, ~\forall \mathcal{L}\subseteq \mathcal{J},\label{sw}
+\end{align}。
+其中$\mathcal{L}^C$ 表示 $\mathcal{L}$ 相对于 $\mathcal{J}$的补集,  $\bar{\eta}_{i}$表示$Y_i$的压缩率。
+在 DSC 的辅助下，节点现在可以通过使用不同的压缩率 $\bar{\eta}_i$ 来灵活调整其传输负载。例如，信道较差的节点可以选择较小的压缩率（传输较少的信息），而信道较好的节点 可以采用较大的压缩率（传输更多的信息），只要满足公式 (\ref{sw}) 即可。从某种意义上说，这相当于在不产生额外通信的情况下，将部分传输负载从信道较差的 节点重新分配给了信道较好的节点。凭借这种传输负载重分配的灵活性，上述瓶颈问题得以缓解，从而实现更短的下行传输延迟 $T_d$（参考公式 (\ref{rt>r'})）。然而经典SW定理只适用于理论研究，在实际中难以实现SW可达区域。为此，下一小节提出了一种更实用的基于伴随式穿刺的 DSC 方法。
+
+
+\subsubsection{基于伴随式穿刺的实际DSC方案}
+
+为了能更好的实现信源压缩，利用编码计算的固有特性，本研究设计了一种基于LDPC码的低复杂度信源编码方案。具体而言，该方案包括三个主要步骤，分别是伴随式生成，伴随式穿刺以及伴随式恢复。如图\ref{dsc}所示，为了达到目标压缩率$\eta_i$'s，每个节点首先根据$\left\{Y_i^{(j)}\right\}_{j=1}^n$生成长度为$m=\frac{nH(X)}{\log_2q}$的序列$\left\{S_{Y_i}^{(j)}\right\}_{j=1}^m$。随后，执行伴随式穿刺，使得每个 EN $i$ 只需要传输生成伴随式的一个子集 $\{S_{Y_i}^{(j)}\}_{j \in \Pi_i}$，其中 $\Pi_i \subseteq [m]$ 表示需由 EN $i$ 传输的伴随式的索引集合。这一步的主要目的是进一步降低压缩率，并允许（根据传输速率 $R_i$）自适应地调整压缩率。在伴随式恢复步骤中，移动设备利用接收到的伴随式 $\{S_{Y_i}^{(j)}\}_{j=1}^m (\forall i \in \mathcal{J})$ 重构未编码子任务计算结果 $\{X_v^{(j)}\}_{j=1}^n$ 的伴随式 $\{S_{X_v}^{(j)}\}_{j=1}^m$。注意，由于编码计算假设了线性关系 (\ref{yx})，这种伴随式恢复是可能的。此后，采用（基于伴随式的）置信传播 (BP) 译码算法 从 $\{S_{X_v}^{(j)}\}_{j=1}^m$ 中解码出 $\{X_v^{(j)}\}_{j=1}^n$。详细步骤如下。
+
+\begin{figure}[!t]
+\centering
+%	\setlength{\abovecaptionskip}{-0.1cm}
+\includegraphics[width = 1.03\textwidth]{figs/fig4.eps}
+\DeclareGraphicsExtensions.
+\caption{所提分布式信源编码方案图示}
+%			, and $\mathcal{J}_1=\{1,3,4\}, ~\mathcal{J}_2=\{1,2,4\}, ~\mathcal{J}_3=\{1,2,3\}, ~\mathcal{J}_4=\{2,3,4\}$.}
+\label{dsc}
+\end{figure}
+
+（1）伴随式生成：在此步骤中，利用 LDPC 码，从计算结果 $\mathbf{Y}_i^{1:n}$ 生成伴随式 $\mathbf{S}_{Y_i}^{1:m}$，如下所示：
+
+\begin{equation}
+\mathbf{S}_{Y_i}^{1:m}=\mathbf{Y}_i^{1:n}\mathbf{H}^{n\times m}, ~\forall i\in\mathcal{J},\label{sy}
+\end{equation}
+其中校验矩阵 $\mathbf{H}^{n \times m}$ 的元素取值于有限域 $GF(q)$，LDPC 码率\cite{1057683}设定为 $\eta_c = \frac{n-m}{n} = 1 - \frac{H(X)}{\log_2 q}$。
+
+（2）伴随式穿刺：在提出的方案中，为了实现更好的压缩，每个节点只传输由公式 (7) 生成的伴随式的一部分，其余部分被穿刺。特别是，对于给定的一组压缩率 $\{\eta_i\}_{i=1}^{|\mathcal{J}|}$，由 EN $i$ 传输的连续伴随式的索引集合 $\Pi_i$ 由下式给出：
+
+\begin{equation}
+\Pi_i=\left\{\alpha_{i-1}\oplus_m 0+1,\alpha_{i-1}\oplus_m 1+1,\cdots,\alpha_i\right\},\label{Pi}~\forall i\in\mathcal{J}.
+\end{equation}
+其中，$\oplus_m$表示对$m$做取余运算，$\alpha_i$表示节点$i$传输的最后一个数据下标索引，可以定义为
+\begin{equation}
+\alpha_i=\alpha_{i-1}\oplus_m(\lceil\eta_in\rceil-1)+1,~\forall i\in\mathcal{J},\label{split}
+\end{equation} 
+其中，$\alpha_0$定义为0，$\lceil \cdot \rceil$ 表示向上取整运算。为了便于理解，图\ref{fig3}提供了一个简单的伴随式穿刺示例，其中白色条表示被穿刺的伴随式。
+
+\begin{theorem}\label{proposition1}
+	在提出的编码下，如果目标压缩率 $\{\eta_i\}_{i=1}^{|\mathcal{J}|}$ 满足
+	
+	\begin{equation}
+		\sum_{i=1}^{|\mathcal{J}|} \eta_i \geq \frac{rH(X)}{\log_2 q},
+		\label{eq:prop_cond1}
+	\end{equation}
+	\begin{equation}
+		0 \leq \eta_i \leq \frac{H(X)}{\log_2 q}, \quad \forall i \in \mathcal{J},
+		\label{eq:prop_cond2}
+	\end{equation}
+	
+	那么，对于每一个索引 $1 \leq j \leq m$，都存在一个（至少）大小为 $r$ 的集合 $\mathcal{J}_j$，使得对于所有 $i \in \mathcal{J}_j$，都有 $j \in \Pi_i$。
+\end{theorem}
+\begin{proof}
+	详见附录 \ref{<appendix-proposition1>}。
+\end{proof}
+
+直观上，定理\ref{proposition1} 表明当 (\ref{eq:prop_cond1}) 和 (\ref{eq:prop_cond2}) 成立时，由 (\ref{Pi}) 和 (\ref{split}) 指定的伴随式穿刺步骤确保了对于每个索引 $j$，至少有 $r$ 个 节点传输了它们的第 $j$ 个伴随式。此外，不难验证，对应的集合 $\mathcal{J}_j$ 可以由 (\ref{eq:prop_cond1}) 中给出的索引集 $\Pi_i$ 唯一确定。注意，由于 $r$ 是底层编码计算机制的恢复阈值，这将使移动设备能够恢复未编码子任务结果的相应第 $j$ 个伴随式，如下面的伴随式恢复步骤所示。
+
+
+（c）伴随式恢复：在此步骤中，通过调用公式 (\ref{linear_re}) 中的编码计算属性，从定理\ref{proposition1} 中给出的集合 $\mathcal{J}_j$ 中的 $r$ 个 EN 传输的伴随式中，恢复出 $r$ 个未编码子任务计算结果的伴随式 $S_{X_v}^{(j)}$。具体地，使用向量 $\mathbf{S}_{X_v}^{1:m}$ 来紧凑地表示对应于未编码子任务 $\mathbf{X}_v^{1:n}$ 的计算结果的伴随式 $\{S_{X_v}^{(j)}\}_{j=1}^m$，它满足
+
+\begin{equation}
+\mathbf{S}_{X_\upsilon}^{1:m}=\mathbf{X}_\upsilon^{1:n}\mathbf{H}^{n\times m},~\forall \upsilon\in[r],\label{sx}
+\end{equation}
+其中，$\mathbf{H}^{n\times m}$是（\ref{sy}）中的奇偶检验矩阵。将（\ref{linear_re}）两边同时乘以$\mathbf{H}^{n\times m}$并比较（\ref{sy}）和（\ref{sx}）可以得出伴随式$\left\{S_{X_\upsilon}^{(j)}\right\}_{j=1}^{m}$ 可以从接收到的伴随式$\left\{S_{Y_i}^{(j)}\right\}_{j=1}^{m}$ 中恢复，如下所示
+\begin{equation}
+S_{X_\upsilon}^{(j)}=\sum\nolimits_{i\in \mathcal{J}_j} \beta_{\upsilon,i}S_{Y_i}^{(j)},~ \forall \upsilon\in[r],~\forall j\in [m].\label{linear}
+\end{equation}		
+一旦恢复了所有的伴随式 $\left\{S_{X_v}^{(j)}\right\}_{j=1}^m (\forall v \in [r])$，就可以使用基于伴随式的 BP 算法\cite{1042242, 4697499}解码出未编码子任务的计算结果 $\left\{X_v^{(j)}\right\}_{j=1}^n (\forall v \in [r])$。为了完整性，附录\ref{appendix-BP} 中给出了基于伴随式的 BP 算法的细节。
+
+所提出的基于伴随式打孔的 DSC 方法的计算复杂度分析如下。
+在编码阶段，伴随式生成步骤 (\ref{sy}) 和伴随式穿刺步骤 (\ref{split}) 的复杂度分别为 $O(mn|\mathcal{J}|)$ 和 $O(|\mathcal{J}|)$。在解码阶段，伴随式恢复步骤 (\ref{linear}) 和 BP 解码步骤的复杂度分别约为 $O(r^2m)$ 和 $O(n_{iter} n d_v q^2)$ ，其中 $n_{iter}$ 是 BP 算法的迭代次数，$d_v$ 是连接到每个变量节点的校验节点数。与3.2.2 部分描述的传统方法相比，所提出的方案仅在伴随式打孔和伴随式恢复步骤中引入了额外的复杂度，总计为 $O(|\mathcal{J}| + r^2m)$。由于 $m$ 与 $n$ 相当，这个额外的复杂度 $O(|\mathcal{J}| + r^2m)$ 与 BP 的单次迭代复杂度 $O(n d_v q^2)$ 相当。换句话说，所提出的编码引入的额外复杂度大致相当于只给 BP 算法增加了一次迭代，这通常只会导致下行链路复杂度的极小幅增加。
+
+\begin{figure}[!t]
+	\centering
+	%	\setlength{\abovecaptionskip}{-0.1cm}
+	\includegraphics[width = 0.6\textwidth]{figs/fig5.eps}
+	\DeclareGraphicsExtensions.
+	\caption{伴随式穿刺图示，其中$\Pi_1=\{1,\cdots,\alpha_1\},~ \Pi_2=\{\alpha_1\oplus_m 0+1,\cdots,\alpha_2\}, ~\Pi_3=\{\alpha_2\oplus_m 0+1,\cdots,\alpha_3\}$,  $ \Pi_4=\{\alpha_3\oplus_m 0+1,\cdots,\alpha_4\}$}
+	%			, and $\mathcal{J}_1=\{1,3,4\}, ~\mathcal{J}_2=\{1,2,4\}, ~\mathcal{J}_3=\{1,2,3\}, ~\mathcal{J}_4=\{2,3,4\}$.}
+\label{fig3}
+\end{figure}
+
+\begin{corollary}
+	上述提出的编码可以实现由 (\ref{eq:prop_cond1}) 和 (\ref{eq:prop_cond2}) 指定区域内包含的任何压缩率。
+\end{corollary}
+
+一般来说，所提出的编码的可达区域是理想 SW 可达区域的一个子区域。
+为了便于感知，图 \ref{example}提供了一个示例，其中比较了所提出的编码（蓝色）和理想 SW 区域（绿色）的理论可达区域。注意，虽然所提出的编码仅实现了 SW 区域的一个子区域，但它在选择合适的压缩率以匹配 节点信道质量和重新分配传输负载方面仍提供了很大的灵活性，这使其能够大幅减少下行链路延迟。
+
+\begin{figure}[htbp]
+	\centering
+	\setlength{\abovecaptionskip}{-0.1cm}
+	\includegraphics[width = 0.7\textwidth]{figs/sw_region7.eps}
+	%		 where an .eps filename suffix will be assumed under latex, 
+	%		 and a .pdf suffix will be assumed for pdflatex; or what has been declared
+	\DeclareGraphicsExtensions.
+	\caption{DSC可行区域的比较示例（其中 $\eta_c=0.5$, $q=64,~\frac{H(X)}{\log_2q}=0.5,~\frac{H(Y_i)}{\log_2q}=0.6~(\forall i\in\mathcal{J})$, $|\mathcal{J}|=3$, $r=2$）。}
+	\label{example}
+\end{figure}
+
+\subsubsection{高维数据下的DSC方案}
+
+所提实际分布式信源编码方案可以扩展到多维数据的场景。具体而言，对于 $V$ 维数据，将 $r$ 个未编码子任务的计算结果和 $k$ 个编码子任务的计算结果分别表示为 $X_i = [X_{i1}, \cdots, X_{iV}], \forall i \in [r]$ 和 $Y_i = [Y_{i1}, \cdots, Y_{iV}], \forall i \in [k]$。边缘节点$i$的长度为$n$的编码结果可以表示为一个大小为$V\times n$的矩阵$\textbf{Y}_i^{1:n} = \left[Y_{i_v}^{(j)}\right]_{v\in[V],j\in[n]}$，其中$i\in\mathcal{J}$。为了处理这种高维数据，可以将逐级编码\cite{5208477,4215156,coleman2006low}的思想与所提编码方法相结合，按顺序统一传输$\textbf{Y}_i^{1:n}$'s的每一行，总下行传输时延将是这些维度的传输时延之和。假设各维度将按照$1$到$V$的顺序进行压缩和传输。那么，对于每一个维度$v\in[V]$,可以应用上述所提的基于伴随式穿刺的分布式信源编码方法。在伴随式生成步骤中，所提方案将根据条件熵$H(X_{i_v}|X_{i_{v-1}},\cdots, X_{i_1})$，使用码率为$\eta_c=1-\frac{H(X_{i_v}|X_{i_{v-1}},\cdots, X_{i_1})}{\log_2 q}$的LDPC码，将序列$\left[Y_{i_v}^{(j)}\right]_{j\in[n]}$ 压缩为伴随式 $\left[S_{Y_{i_v}}^{(j)}\right]_{j\in[m]},~\forall i\in\mathcal{J}$。相应地，在置信传播译码算法中，所有的先验概率${\rm{Pr}} \{x_{i}=a\}$ 将更改为条件概率${\rm{Pr}} \{x_{i_v}=a|x_{i_{v-1}}\cdots x_{i_{1}}\},~\forall a\in GF(q)$。因为在假设的维度压缩和传输顺序下，前$v-1$个维度已经被成功解码，条件概率中$x_{i_{v-1}},\cdots,x_{i_1}$的值是已知的。
+
+\subsubsection{DSC辅助的编码计算结果传输示例}
+为了清晰起见，下面给出了所提出编码的一个简单示例。假设编码计算的恢复阈值为 $r = 2$，并且在计算阶段结束时有 $|\mathcal{J}| = 3$ 个 节点完成了计算。此外，假设 $H(X_1) = H(X_2) = 3$，并且已编码子任务的计算结果 $Y_1, Y_2$ 和 $Y_3$ 满足
+\begin{subequations}\label{eq:toy}
+	\begin{align}
+		Y_1 &= X_1 + X_2, \label{eq:toy_y1} \\
+		Y_2 &= X_1 + 2X_2, \label{eq:toy_y2} \\
+		Y_3 &= X_1 + 3X_2, \label{eq:toy_y3}
+	\end{align}
+\end{subequations}
+其中有限域为 $GF(64)$。在这个例子中，使用本原多项式 $x^6 + x + 1$ 进行域运算。此外，假设已编码子任务的计算结果 $\{Y_i\}_{i=1}^3$ 的目标压缩率 $\{\eta_i\}_{i=1}^3$ 分别为 $\eta_1 = 0.3, \eta_2 = 0.3$ 和 $\eta_3 = 0.4$。
+
+为了执行所提出的 DSC，长度为 $n = 10$ 的计算结果序列 $\{Y_i^{(j)}\}_{j=1}^n$ 将被非二进制 LDPC 码压缩，码率为 $\eta_c = 1 - \frac{H(X)}{\log_2 q} = 0.5$。对应的奇偶校验矩阵假设为
+\begin{equation}
+	\mathbf{H}^{n \times m} =
+	\begin{bmatrix}
+		10 & 0 & 0 & 0 & 0 & 18 & 0 & 2 & 0 & 5 \\
+		0 & 2 & 0 & 12 & 0 & 1 & 21 & 0 & 0 & 0 \\
+		0 & 7 & 3 & 0 & 0 & 0 & 0 & 29 & 11 & 0 \\
+		16 & 0 & 0 & 31 & 3 & 0 & 0 & 0 & 41 & 0 \\
+		0 & 0 & 9 & 0 & 19 & 0 & 4 & 0 & 0 & 8
+	\end{bmatrix}^T,
+	\label{eq:toy_matrix}
+\end{equation}
+其中 $m = n(1 - \eta_c) = 5$。更具体地说，假设 $Y_1, Y_2$ 和 $Y_3$ 的符号序列如下
+\begin{subequations}
+	\begin{align}
+		\mathbf{Y}_1^{1:n} &= [3, 7, 9, 7, 9, 5, 9, 11, 10, 5], \label{eq:toy_seq_y1} \\
+		\mathbf{Y}_2^{1:n} &= [5, 10, 15, 8, 13, 8, 11, 18, 15, 9], \label{eq:toy_seq_y2} \\
+		\mathbf{Y}_3^{1:n} &= [7, 13, 21, 9, 17, 11, 13, 25, 20, 13]. \label{eq:toy_seq_y3}
+	\end{align}
+\end{subequations}
+根据 (\ref{sy})，生成的伴随式序列为
+\begin{subequations}
+	\begin{align}
+		\mathbf{S}_{Y_1}^{1:m} &= [\underline{0}, \underline{20}, \underline{9}, 35, 3], \label{eq:toy_syn_y1} \\
+		\mathbf{S}_{Y_2}^{1:m} &= [\underline{61}, 46, 46, \underline{36}, \underline{17}], \label{eq:toy_syn_y2} \\
+		\mathbf{S}_{Y_3}^{1:m} &= [29, \underline{18}, \underline{47}, \underline{14}, \underline{11}]. \label{eq:toy_syn_y3}
+	\end{align}
+\end{subequations}
+然后应用伴随式穿刺步骤，根据 (\ref{Pi})，这些 $|\mathcal{J}| = 3$ 个 节点将传输的伴随式 $\{S_{Y_i}^{(j)}\}_{j=1}^m (\forall i \in \mathcal{J})$ 的索引由下式给出
+\begin{equation}
+	\Pi_1 = \{1, 2, 3\}, \Pi_2 = \{4, 5, 1\}, \Pi_3 = \{2, 3, 4, 5\}.
+	\label{eq:toy_indices}
+\end{equation}
+也就是说，只有 (\ref{eq:toy_syn_y3}) 中带有下划线的伴随式会被传输。根据 (\ref{eq:toy_indices})，对应的集合 $\mathcal{J}_j$ 如下给出
+\begin{gather}
+	\mathcal{J}_1 = \{1, 2\}, \mathcal{J}_2 = \{1, 3\}, \mathcal{J}_3 = \{1, 3\}, \nonumber \\
+	\mathcal{J}_4 = \{2, 3\}, \mathcal{J}_5 = \{2, 3\}.
+	\label{eq:toy_sets}
+\end{gather}
+为了重构未编码子任务计算结果的伴随式序列，(\ref{linear}) 中的系数 $\beta_{v,i}$ 可以根据 (\ref{eq:toy})、(\ref{eq:toy_indices}) 中给出的索引以及 (\ref{eq:toy_sets}) 中的对应集合来确定，从而得出
+\begin{equation}
+	S_{X_1}^{(j)} =
+	\begin{cases}
+		2S_{Y_1}^{(j)} - S_{Y_2}^{(j)}, & \text{for } j = 1, \\
+		\frac{3}{2} S_{Y_1}^{(j)} - \frac{1}{2} S_{Y_3}^{(j)}, & \text{for } j = 2, 3, \\
+		3S_{Y_2}^{(j)} - 2S_{Y_3}^{(j)}, & \text{for } j = 4, 5,
+	\end{cases}
+	\label{eq:toy_recover_x1}
+\end{equation}
+以及
+\begin{equation}
+	S_{X_2}^{(j)} =
+	\begin{cases}
+		S_{Y_2}^{(j)} - S_{Y_1}^{(j)}, & \text{for } j = 1, \\
+		\frac{1}{2} S_{Y_3}^{(j)} - \frac{1}{2} S_{Y_1}^{(j)}, & \text{for } j = 2, 3, \\
+		S_{Y_3}^{(j)} - S_{Y_2}^{(j)}, & \text{for } j = 4, 5.
+	\end{cases}
+	\label{eq:toy_recover_x2}
+\end{equation}
+通过 (\ref{eq:toy_indices}) 中给出的索引集和 (\ref{eq:toy_recover_x1}) 与 (\ref{eq:toy_recover_x2}) 中的线性关系，可以恢复整个伴随式序列 $\{S_{X_v}^{(j)}\}_{j=1}^5 (\forall v \in [2])$。例如，
+\begin{equation}
+	S_{X_1}^{(1)} = 2S_{Y_1}^{(1)} - S_{Y_2}^{(1)} = 2 \times 0 - 61 = 61,
+	\label{eq:toy_calc_example1}
+\end{equation}
+以及
+\begin{equation}
+	S_{X_2}^{(1)} = S_{Y_2}^{(1)} - S_{Y_1}^{(1)} = 61 - 0 = 61.
+	\label{eq:toy_calc_example2}
+\end{equation}
+可以验证，在这个例子中，将恢复出以下伴随式序列：
+\begin{align}
+	\mathbf{S}_{X_1}^{1:m} &= [61, 23, 26, 51, 37], \label{eq:toy_res_x1} \\
+	\mathbf{S}_{X_2}^{1:m} &= [61, 3, 19, 42, 26]. \label{eq:toy_res_x2}
+\end{align}
+随后，通过将上述 $\mathbf{S}_{X_v}^{1:m}$ 输入到基于伴随式的 BP 算法中，将恢复出未编码子任务的计算结果 $X_v$。
+
+\subsection{DSC辅助的最小化下行传输延迟问题建模}
+借助 DSC，边缘节点可以灵活调整其压缩率，从而使其传输负载与传输速率更好地匹配，以便降低下行传输延迟。特别地，相应的优化问题可以建模如下
+\begin{align}
+	\mathcal{P}_1:& \min_{\mathbf{R},\mathbf{p}, \bar{\symbfit{\eta}},T_d} ~T_{d}\\
+	s.t.~ &(\ref{sw})\notag,\\
+	&R_{i}T_d\geq \bar{\eta_i} s\log_2q,~ \forall i\in \mathcal{J},\label{sw_rt>r'}\\
+	&R_i= B\log_2\left(1+\frac{g_ip_i}{Bn_0+\sum_{j=i+1}^{|\mathcal{J}|}g_jp_j}\right)\label{sic_j},~\forall i\in\mathcal{J},\\
+	& 0\leq p_i\leq P_{max}, ~\forall i\in \mathcal{J},\label{pi}
+\end{align}
+其中 $\mathbf{R} = [R_1, R_2, \cdots, R_{|\mathcal{J}|}]$, $\mathbf{p} = [p_1, p_2, \cdots, p_{|\mathcal{J}|}]$, 以及 $\bar{\symbfit{\eta}} = [\bar{\eta}_1, \bar{\eta}_2, \cdots, \bar{\eta}_{|\mathcal{J}|}]$ 是相应变量的紧凑表示；$P_{max}$ 是每个 EN 的最大发射功率；
+约束 (\ref{sw}) 表明压缩率必须是（理论上）可达的，因此位于 SW 区域内。注意，当采用3.2.3中的伴随式穿刺编码方案时，$\mathcal{P}_1$ 中的约束 (\ref{sw}) 将被 (\ref{eq:prop_cond1}) 和 (\ref{eq:prop_cond2}) 替换，且 $\bar{\eta}_i$ 将被 $\eta_i$ 替换。
+
+\begin{remark}
+直观地说，所提出的 DSC 辅助方案的关键优势可以理解如下。如果没有 DSC，压缩率优化变量的可行值是 SW 区域内的一个固定点（由 (\ref{straight}) 指定）。通过结合 DSC，所提出的方案显著扩大了 $\mathcal{P}_1$ 中压缩率的可行区域（从一个单点扩大到 SW 区域的整个主面）。因此，预期会有更好的优化结果。
+\end{remark}
+
+\begin{remark}
+	直观地说，所提出方案的性能增益来自于任务编码引起的强相关性。这可以从两个方面来理解。首先，当总信息量保持不变时，结果之间更强的相关性意味着更高的冗余度，这反过来留出了更多空间来执行良好的压缩。其次，随着相关性增强，SW 区域扩大，导致优化问题 $\mathcal{P}_1$ 的可行区域更大。	
+\end{remark}
+
+\section{基于分布式信源编码的编码计算下行传输算法}
+由于 $\mathcal{P}_1$ 是非凸的，它将首先被转换为凸差 规划，然后使用 CCCP 技术求解，该技术确保收敛（至少收敛到局部极小值或鞍点）\upcite{7547360}。CCCP 技术通过迭代求解原始问题的一系列凸近似来工作。特别地，在每次迭代中，凹分量在上次迭代的解附近进行线性化，而凸分量保持不变。每次迭代产生的凸问题可以使用标准凸优化方法高效求解 \upcite{boyd2004convex}。
+
+为此，通过向 $\mathcal{P}_1$ 引入辅助变量 $\symbfit{\nu} = \{\nu_i, \forall i \in \mathcal{J}\}$ 和 $\symbfit{\mu} = \{\mu_i, \forall i \in \mathcal{J}\}$，约束 (\ref{sw_rt>r'}) 可以等价地表示为以下 DC 形式
+\begin{subnumcases}
+	{}\nu_i=\frac{1}{2}\left(R_i+T_d\right),~\forall i\in\mathcal{J},\label{z}\\
+	\mu_i=\frac{1}{2}(R_i-T_d),~\forall i\in\mathcal{J},\label{x}\\
+	\nu_i^2-\mu_i^2-\bar{\eta}_i s\log_2 q\geq 0,~\forall i\in\mathcal{J}.\label{zx}
+\end{subnumcases}
+不难验证，(\ref{sic_j}) 已经是一个 DC 形式的约束。因此，$\mathcal{P}_1$ 可以等价地转换为如下的 DC 规划
+	\begin{align}
+	\mathcal{P}_2:& \min_{\mathbf{R},\mathbf{p},\symbfit{\nu},\symbfit{\mu},\symbfit{\bar{\eta}}} ~T_{d\label{p2}}\\
+	s.t.~ &(\ref{sw}),(\ref{sic_j}),(\ref{pi}),(\ref{z}),(\ref{x}),(\ref{zx})\notag.
+\end{align}
+为了使用 CCCP 求解 $\mathcal{P}_2$，在第 $(\tau + 1)$ 次迭代中，利用第 $\tau$ 次迭代得到的最佳解 $(\mathbf{R}^{(\tau)}, \mathbf{p}^{(\tau)},$ $ \symbfit{\nu}^{(\tau)}, \symbfit{\mu}^{(\tau)}, \bar{\symbfit{\eta}}^{(\tau)})$ 对约束中的凹部分进行线性化以近似 $\mathcal{P}_2$，
+其中 $\mathbf{R}^{(\tau)} = [R_1^{(\tau)}, \cdots, R_{|\mathcal{J}|}^{(\tau)}]$, $\mathbf{p}^{(\tau)} = [p_1^{(\tau)}, \cdots, p_{|\mathcal{J}|}^{(\tau)}]$, $\symbfit{\nu}^{(\tau)} = [\nu_1^{(\tau)}, \cdots, \nu_{|\mathcal{J}|}^{(\tau)}]$, $\symbfit{\mu}^{(\tau)} = [\mu_1^{(\tau)}, \cdots, \mu_{|\mathcal{J}|}^{(\tau)}]$, 以及 $\bar{\symbfit{\eta}}^{(\tau)} = [\bar{\eta}_1^{(\tau)}, \cdots, \bar{\eta}_{|\mathcal{J}|}^{(\tau)}]$ 是相应优化变量的向量形式。
+具体而言，第 $(\tau + 1)$ 次迭代中 (\ref{zx}) 的近似由下式给出
+	\begin{align}
+	%			& x_i^2-z_i^2+\eta_i s\log_2 \left(|\mathcal{X}|\right)\leq 0,~\forall i\in\mathcal{J},\\
+	\mu_i^2-\left(\left({\nu_i}^{(\tau)}\right)^2+2\nu_i^{(\tau)}\left(\nu_i-\nu_i^{(\tau)}\right)\right)
+	+&\bar{\eta}_i s\log_2q\leq 0,~ \forall i\in\mathcal{J}.\label{cccp1}
+\end{align} 
+同样，(\ref{sic_j}) 的凹部分利用第 $\tau$ 次迭代得到的最佳解 $(\mathbf{R}^{(\tau)}, \mathbf{p}^{(\tau)}, \symbfit{\nu}^{(\tau)}, \symbfit{\mu}^{(\tau)}, \bar{\symbfit{\eta}}^{(\tau)})$ 进行线性化，相应的近似由 （\ref{cccp2}） 给出。
+	\begin{align}
+	R_i=&B\log_2\left(1+\frac{g_ip_{i}}{Bn_0+\sum_{j={i+1}}^{|\mathcal{J}|}g_jp_j}\right)
+	\notag\\=&B\log_2\left(Bn_0+\sum\nolimits_{j={i}}^{|\mathcal{J}|}g_jp_j\right)-B\log_2\left(Bn_0+\sum\nolimits_{j={i+1}}^{|\mathcal{J}|}g_jp_j\right)\notag\\
+	%			B^d\log_2\left(1+\frac{|\mathbf{h}_{i}|^2p_{i}}{B^{d}n_0+\sum_{j\in [m]\setminus \{i\}}|\mathbf{h}_{j}|^2p_j}\right)\\
+	%			=B\log_2\left({Bn_0+\sum_{j\in [w]}h_{i}^2p_j}\right)\notag\\
+	%			-B\log_2\left({Bn_0+\sum_{j\in [w]\setminus \{i\}}h_{i}^2p_j}\right)\notag
+	\geq&
+	B\log_2\left({Bn_0+\sum\nolimits_{j={i}}^{|\mathcal{J}|}g_jp_j}\right)
+	-B\log_2\left({Bn_0+\sum\nolimits_{j={i+1}}^{|\mathcal{J}|}g_jp_j^{(\tau)}}\right)\notag\\&-
+	B\left(\frac{\sum_{j={i+1}}^{|\mathcal{J}|}g_j\left(p_{j}-p_{j}^{(\tau)}\right)}{(\ln2)\left(\sum_{j={i+1}}^{|\mathcal{J}|}g_jp_{j}^{(\tau)}+Bn_0\right)}\right)\label{cccp2}.
+\end{align}
+因此，在第 $(\tau + 1)$ 次迭代中，$\mathcal{P}_2$ 可以近似转化为如下凸问题
+\begin{align}
+	\mathcal{P}_3:& \min_{\mathbf{R},\mathbf{p},\symbfit{\nu},\symbfit{\mu},\symbfit{\bar{\eta}}} ~T_{d}\\
+	s.t.~ &(\ref{sw}),(\ref{pi}),(\ref{z}),(\ref{x}),(\ref{cccp1}),(\ref{cccp2})\notag,
+\end{align}
+该问题可以通过标准方法求解 \upcite{boyd2004convex}。具体过程总结在算法 1 中。算法 1 的总体复杂度主要由求解 $\mathcal{P}_3$ 的复杂度决定，其中涉及 $5|\mathcal{J}|$ 个优化变量。当使用内点法\upcite{boyd2004convex, potra2000interior} 时，每次迭代的复杂度为 $O(|\mathcal{J}|^{3.5})$ \upcite{hua2021joint}。鉴于编码计算中可访问的 EN 数量通常不会太大 \cite{gong2020delay,9328810,9062599}，算法 1 的可扩展性通常不会成为非常关键的问题。此外，算法 1 的收敛性由 CCCP 技术保证\upcite{6788812}。
+\begin{algorithm}[h]
+	%				\footnotesize
+	\caption{基于 CCCP 的 $\mathcal{P}_1$ 最小化算法 }
+	%			\begin{algorithmic}[1]
+	初始化：算法收敛精准度$\epsilon$，发射功率约束$P_{max}$，传输包符号数$s$;\\
+	选择一个初始可行点 ($\mathbf{p}^{(0)}$, $\symbfit{\nu}^{(0)}$) ，并设置迭代次数 $\tau=1$;\\
+		\Repeat{$|T_d^{(\tau)}-T_d^{(\tau-1)}|\leq \epsilon$}{
+			求解 $\mathcal{P}_3$ 基于 $\left\{\left(\mathbf{R}^{(\tau)},\mathbf{p}^{(\tau)},\symbfit{\nu}^{(\tau)},\symbfit{\mu}^{(\tau)},\symbfit{\bar{\eta}}^{(\tau)}\right)\right\}$;\\
+			计算 $T_d^{(\tau+1)}$ 利用 (\ref{z})-(\ref{zx});\\
+			令 $\tau=\tau+1$;}
+		\text{返回}$\mathbf{R}^*=\mathbf{R}^{(\tau)}$, $\mathbf{p}^*=\mathbf{p}^{(\tau)}$, $\symbfit{\eta}^*=\symbfit{\eta}^{(\tau)}$, $T_d^*=T_d^{(\tau)}$；
+		
+		%			\end{algorithmic}	
+\end{algorithm}
+
+\section{仿真与性能分析}
+
+在仿真中，有限域设定为 $GF(64)$；未编码子任务的结果 $X_i$ 取特定值 $j$ 的概率对于 $j \in \{0, \cdots, 7\}$ 设定为 $\frac{1}{8}$，对于 $j \in \{8, \cdots, 63\}$ 设定为零。
+对于下行传输，采用瑞利衰落信道模型 $g_i = |g_i|^2 \rho$ \cite{goldsmith2005wireless}，其中 $\rho$ 为平均增益，小尺度衰落系数 $g_i$ 服从复高斯分布 $\mathcal{CN}(0, 1)$。
+噪声功率谱密度 $n_0$ 设定为 $1 \times 10^{-17}$ (W/Hz)；下行信道带宽 $B$ 设定为 20 (MHz)。
+此外，除非另有说明，假设采用理想的容量可达 LDPC 码，因为良好 LDPC 码的设计与我们的工作是正交的。
+为了进行比较，第3.2.1 节描述的直接信源编码方案被视为基准方案。
+在仿真中，完成计算并参与下行传输的 $|\mathcal{J}|$ 个 EN 是随机选择的，并基于这些选择的 EN 执行 $1 \times 10^4$ 次蒙特卡洛运行以获得平均性能。
+
+图\ref{fig4}比较了不同平均信道增益 $\rho$ 下的平均下行延迟 $T_d$。可以观察到，所提出的方案在传输延迟方面显著优于基准方案。
+例如，当平均信道增益 $\rho$ 为 $-95$ (dB) 且 $|\mathcal{J}| = 4$ 和 $r = 3$ 时，所提出方案在理想 SW 码下（即在 $\mathcal{P}_1$ 中使用 (\ref{sw})）的延迟为 0.87 (ms)。
+所提出方案在提出的编码下（即在 $\mathcal{P}_1$ 中使用 (\ref{eq:prop_cond1}) 和 (\ref{eq:prop_cond2})）的延迟为 1.4 (ms)。在这两种情况下，所提出方案的延迟都远低于基准方案的延迟（约为 3.5 (ms)）。
+这也证实了所提出的编码是非常有效的，尽管与理想 SW 码相比是次优的。
+此外，从图 \ref{fig4} 可以看出，当平均信道增益 $\rho$ 变小时，相对性能增益更加显著。
+例如，当平均信道增益 $\rho$ 为 $-99$ (dB) 且 $|\mathcal{J}| = 4$ 和 $r = 3$ 时，与基准方案相比，所提出方案在理想 SW 码和提出的编码下分别将延迟降低了 78\% 和 63\%。
+当平均信道增益 $\rho$ 减小到 $-105$ (dB) 且 $|\mathcal{J}| = 4$ 和 $r = 3$ 时，与基准方案相比，所提出方案在理想 SW 码和提出的编码下分别进一步将延迟降低了 81\% 和 72\%。
+对于 $|\mathcal{J}| = 5$ 和 $r = 2$ 的情况，也可以观察到类似的现象。
+原因是，当平均信道条件较差时，基准方案受到传输速率较低的 EN 的限制更为严重。
+相比之下，所提出方案利用 DSC 更好地在 EN 之间分配传输负载的优势变得更加显著。
+
+
+\begin{figure}[!t]
+	\centering
+	\includegraphics[width = 0.65\textwidth]{figs/sic_rho_noerror_ms_revision.eps}
+	%		 where an .eps filename suffix will be assumed under latex, 
+	%		 and a .pdf suffix will be assumed for pdflatex; or what has been declared
+	%	\DeclareGraphicsExtensions.
+	\caption{不同平均信道功率增益$\rho$场景下的平均下行传输时延 $T_d$ 的比较 （$P_{max}=0.2$ (W), $k=11$）。}
+	\label{fig4}
+\end{figure}
+
+\begin{figure}[!t]
+	\centering
+	\includegraphics[width = 0.65\textwidth]{figs/sic_pi_noerror_ms_revision.eps}
+	\caption{不同最大发射功率 $P_{max}$场景下的平均下行传输时延$T_d$的比较 （$\rho=-105$ (dB), $k=11$）。}
+	\label{fig7}
+	%	\vspace{-0.6cm}
+\end{figure}
+
+图 \ref{fig7} 比较了不同最大发射功率 $P_{max}$ 下的平均下行延迟 $T_d$。可以看出，当最大发射功率 $P_{max}$ 变小时，相对性能增益更为显著。
+例如，当最大发射功率 $P_{max} = 0.5$ (W) 且 $|\mathcal{J}| = 4, r = 3$ 时，与基准方案相比，在理想 SW 码和所提出的编码下，所提出方案的相应性能增益分别为 78\% 和 61\%。
+当最大发射功率 $P_{max} = 0.1$ (W) 且 $|\mathcal{J}| = 4, r = 3$ 时，与基准方案相比，在理想 SW 码和所提出的编码下，所提出方案的相应性能增益分别为 81\% 和 72\%。
+这可以归因于当 节点 的通信能力较差时，所提出方案能够在更多 节点 之间分配传输负载的能力。
+
+为了更好地说明所提出方案的负载重分配能力，图 \ref{fig9}比较了 $|\mathcal{J}| = 4$ 和 $r = 3$ 情况下某次蒙特卡洛运行中的压缩率。从图 \ref{fig9}可以看出，当使用基准方案时，传输负载集中在前三个 节点上（即非零压缩率）。相比之下，所提出方案重新分配了传输负载，并将它们分发给了所有四个 节点。例如，在理想 SW 码的所提出方案下，节点 的压缩率分别为 0.64, 0.47, 0.28 和 0.11，而基准方案下的压缩率分别为 0.87, 0.87, 0.87 和 0。所提出方案的这种负载调节能力实现了 节点 之间更好的协作传输，从而导致了在图 \ref{fig4}和图 \ref{fig7} 中观察到的性能增益。
+
+图 \ref{fig5}还比较了不同参与下行传输的 EN 数量 $|\mathcal{J}|$ 下的平均下行传输延迟 $T_d$，其中 x 轴括号中的数字表示落后节点数量 $k - |\mathcal{J}|$。从图 \ref{fig5} 可以看出，在不同数量的非落后 EN $|\mathcal{J}|$（以及落后节点 $k - |\mathcal{J}|$）下，所提出方案始终优于基准方案。例如，当 $|\mathcal{J}| = 5$（$k - |\mathcal{J}| = 6$）且 $r = 3$ 时，理想 SW 码和所提出的编码下，所提出方案的延迟分别为 4.7 (ms) 和 6.2 (ms)。
+相比之下，基准方案大约需要 18.8 (ms) 才能完成下行传输。
+此外，可以观察到，当落后节点数量 $k - |\mathcal{J}|$ 减少时，所提出方案的性能有所提高。例如，当落后节点数量减少到 $k - |\mathcal{J}| = 3$ 且 $r = 3$ 时，所提出方案可以进一步将传输延迟降低到 2.8 (ms)。
+（注意，在这种情况下，理想 SW 码下和所提出的编码下的所提出方案的性能重合。原因是此时的最佳压缩率落在了相应速率区域的重叠部分。）
+
+\begin{figure}[!t]
+	\centering
+	\includegraphics[width = 0.65\textwidth]{figs/rate_reallocation1_2.eps}
+	\caption{边缘节点间下行链路传输负载（压缩率）比较（$\rho=-105$ (dB), $P_{max}=0.2$ (W), $k=11$）。}
+	\label{fig9}
+	%	\vspace{-0.6cm}
+\end{figure}
+
+\begin{figure}[!t]
+	\centering
+	\includegraphics[width = 0.65\textwidth]{figs/J_increase_ms_revision3.eps}
+	\caption{不同参与下行传输边缘节点数目 $|\mathcal{J}|$（迟滞节点数目$k-|\mathcal{J}|$） 场景下的平均下行传输时延$T_d$ 的比较 （$\rho=-105$ (dB), $P_{max}=0.2$ (W), $k=11$）。}
+	\label{fig5}
+	%	\vspace{-0.6cm}
+\end{figure}
+
+图 \ref{fig8}展示了当 $|\mathcal{J}| = 7$ 和 $r = 3$ 时，某次蒙特卡洛运行中的相应压缩率。
+可以看出，与基准方案使前三个 节点 在传输中过载不同，所提出方案可以允许其余四个 节点 通过使用 DSC 帮助分担很大一部分传输负载。这归功于图 \ref{fig5}中观察到的所提出方案的性能增益。
+
+
+\begin{figure}[!t]
+	\centering
+	\includegraphics[width = 0.65\textwidth]{figs/rate_reallocation_en7_2.eps}
+	\caption{边缘节点间下行链路传输负载（压缩率）比较 ($\rho=-105$ (dB), $P_{max}=0.2$ (W), $k=11$).}
+	\label{fig8}
+	%	\vspace{-0.6cm}
+\end{figure}
+
+为了进一步验证所提出方案在 节点 数量增加时的性能，图\ref{revision_r_45}展示了相应的平均下行传输延迟 $T_d$。从图 \ref{revision_r_45} 可以看出，即使当非落后 节点 的数量变大时，所提出方案仍继续提供卓越的性能。例如，当 $|\mathcal{J}| = 8$ 且 $r = 5$ 时，与基准方案相比，理想 SW 码和所提出的编码下的所提出方案分别将延迟降低了 75\% 和 69\%。
+当 $|\mathcal{J}| = 13$ 且 $r = 5$ 时，理想 SW 码和所提出的编码下的所提出方案均比基准方案降低了约 73\% 的延迟。
+直观上，这是因为对于给定的恢复阈值 $r$，随着非落后 节点 数量 $|\mathcal{J}|$ 的增加，具有良好信道的 节点 的期望数量也会增加。这增强了所提出方案识别并将传输负载重新分配给具有更好信道的 节点 的能力。
+
+\begin{figure}[!t]
+	\centering
+	\includegraphics[width = 0.65\textwidth]{figs/revision_r_45_3.eps}
+	\caption{不同参与下行传输边缘节点数目 $|\mathcal{J}|$（迟滞节点数目$k-|\mathcal{J}|$） 场景下的平均下行传输时延$T_d$ 的比较  （$\rho=-105$ (dB), $P_{max}=0.2$ (W), $k=15$）。}
+	\label{revision_r_45}
+	%	\vspace{-0.6cm}
+\end{figure}
+
+\begin{figure}[!t]
+	\centering
+	\includegraphics[width = 0.65\textwidth]{figs/revision_dimensions_4.eps}
+	\caption{高维数据场景中不同维度$v$下的平均下行传输时延$T_{d,v}$ 的比较 （$V=8$, $\rho=-105$ (dB), $P_{max}=0.2$ (W), $k=11$）。}
+	\label{high dimension}
+	%	\vspace{-0.6cm}
+\end{figure}
+
+为了验证所提出方案对高维数据的有效性，对 $V = 8$ 维的数据示例进行了仿真，其中不同维度的条件熵设定为 $[H(X_{i1}), H(X_{i2}|X_{i1}), \cdots, H(X_{iV}|X_{iV-1}, \cdots, X_{i1})] = [2.7, 2.6, 2.5, 2.4, 2.3, 2.2, 2.1, 2.0]$。
+每个维度 $v$ 的相应平均下行传输延迟 $T_{d,v}$ 在图 \ref{high dimension} 中展示，其中 x 轴 $v$ 是维度索引，y 轴 $T_{d,v}$ 是对应维度的传输延迟（总下行延迟由 $T_d = \sum_{v=1}^V T_{d,v}$ 给出）。从图 \ref{high dimension} 可以看出，所提出方案在所有维度上始终优于基准方案。例如，对于最后一个维度（即 $v = 8$），理想 SW 码和所提出的编码下，所提出方案的延迟分别为 4.1 (ms) 和 7.5 (ms)，而基准方案的延迟为 27.9 (ms)。
+对于其余维度也可以进行类似的观察。
+因此，很明显，当应用于这种高维数据时，与基准方案相比，所提出方案将导致低得多的总下行延迟。
+
+
+	\begin{figure}[!t]
+	\centering
+	\includegraphics[width = 0.65\textwidth]{figs/ldpc_implement_channel_29696_3.eps}
+	\caption{不同平均信道功率增益$\rho$场景下的平均下行传输时延 $T_d$ 的比较（$P_{max}=0.2$ (W), $k=11$）。}
+	\label{practical_example_channel}
+	%	\vspace{-0.6cm}
+\end{figure}
+
+\begin{figure}[!t]
+	\centering
+	\includegraphics[width = 0.65\textwidth]{figs/ldpc_implement_power_29696_3.eps}
+	\caption{不同最大发射功率 $P_{max}$场景下的平均下行传输时延$T_d$的比较（$\rho=-105$ (dB), $k=11$）。}
+	\label{practical_example_power}
+	%	\vspace{-0.6cm}
+\end{figure}
+
+为了展示所提出方案的实际适用性，考虑了一个取自实际 Transformer 架构\upcite{vaswani2017attention}的编码矩阵乘法示例。具体而言，考虑 Qwen2.5-72B-Instruct-GPTQ-Int4 模型 \upcite{vaswani2017attention, qwen2.5,qwen2} 的 Transformer 架构中前馈神经网络第一层的权重矩阵 $\mathbf{A}$ 与其输入向量 $\mathbf{b}$ 之间的编码乘法。
+该权重矩阵 $\mathbf{A}$ 和输入向量 $\mathbf{b}$ 的大小分别为 $29696 \times 8192$ 和 $8192 \times 1$。
+当采用任务编码矩阵 $\symbfit{\Phi} = [1 \ 1 \ 1 \ 2; 1 \ 1 \ 2 \ 1; 1 \ 2 \ 1 \ 1]^T$ 时，矩阵 $\mathbf{A}$ 被划分为三个大小相等的 $9899 \times 8192$ 的子矩阵 $[\mathbf{A}_1, \mathbf{A}_2, \mathbf{A}_3]$（参考文献 \upcite{8002642} 中的常见做法，当 $\mathbf{A}$ 的行数不能被 $r$ 整除时，向 $\mathbf{A}$ 附加零行）。然后，这些子矩阵 $\mathbf{A}_i$ 将被编码为四个已编码子矩阵 $\{\mathbf{A}_i^{enc}\}_{i=1}^4$。
+相应的编码计算结果 $\mathbf{Y}_i = \mathbf{A}_i^{enc} \mathbf{b}, \forall i \in [4]$，由所提出的基于伴随式打孔的 DSC 方法进行压缩。
+
+不同平均信道增益 $\rho$ 和最大发射功率 $P_{max}$ 下的相应平均下行延迟 $T_d$ 分别在图 \ref{practical_example_channel} 和图 \ref{practical_example_power}中进行了比较。
+从图 \ref{practical_example_channel} 和图 \ref{practical_example_power}可以看出，所提出方案始终优于基准方案。例如，如图 \ref{practical_example_channel} 所示，当平均信道功率增益 $\rho$ 为 -95 (dB) 时，对于 $|\mathcal{J}| = 4$ 和 $r = 3$，所提出方案（使用 $\Delta \eta_c = 0.092$ 的实用 LDPC 码）的延迟为 10.2 (ms)，而基准方案的延迟为 21.8 (ms)。（对于任何实用的有限长 LDPC 码，对于给定的误符号率 (SER) 要求，通常会观察到实际压缩率与其标称值之间的差异 \cite{4471935}，但设计好的 LDPC 码以最小化这种差异与本工作是正交的。
+为了补偿这种差异，通常需要具有稍大压缩率 $\hat{\eta}_c = \eta_c + \Delta \eta_c$ 的 LDPC 码。
+特别地，鉴于本例中的标称压缩率 $\eta_c = 1 - \frac{H(X)}{\log_2 q} = 0.5$，此实现中使用 $\Delta \eta_c = 0.092$ 的 LDPC 码 以实现低于 $10^{-5}$ 的 SER。）
+同样，当平均信道功率增益 $\rho$ 为 -105 (dB) 时，对于 $|\mathcal{J}| = 4$ 和 $r = 3$，所提出方案（使用 $\Delta \eta_c = 0.092$ 的实用 LDPC 码）的延迟为 79.0 (ms)，而基准方案的延迟为 197.0 (ms)。
+在图 \ref{practical_example_power} 中也可以观察到类似的现象。
+
+\section{本章小结}
+本文针对编码边缘计算系统中的下行传输瓶颈问题，提出了一种新颖的DSC辅助传输方案。现有的编码计算研究往往忽略了任务编码在计算结果中引入的固有相关性，从而导致传输效率低下。针对这一问题，本文的主要工作总结如下：首先，通过探索编码计算与 DSC 问题之间的类比关系，建立了 DSC 辅助框架。通过利用 DSC，边缘节点可以根据自身的信道条件灵活调整压缩率。这使得系统能够在不增加额外通信开销的情况下，虚拟地将传输负载从信道较差的节点“重新分配”给信道较好的节点，从而有效缓解了由“短板”节点导致的传输延迟。其次，为了将理论上的 SW压缩增益转化为实际效益，开发了一种基于 LDPC 码和伴随式穿刺的实际DSC 方法。该方法利用编码计算的线性特性，实现了伴随式的生成、打孔和恢复，能够在保证计算结果可恢复性的同时实现灵活的速率适配。
+第三，建立了下行传输延迟最小化问题，并开发了一种基于凸-凹过程的算法，以高效求解最优发射功率和压缩率配置。最后，仿真结果表明，与直接压缩传输的基准方案相比，所提方案显著降低了下行延迟，特别是在信道条件较差或功率受限的场景下。
+综上所述，本文通过挖掘计算与通信之间的深层联系，为编码边缘计算系统提供了一种高效的低延迟下行传输解决方案。
+
+
+
+
+
+
+
+
+%为了进一步说明上述位置信息推理方法的有效性，基于信道测量的仿真被执行，其中假设用户采用常规的卸载策略，即总选择将计算任务卸载至具有更高信道增益的边缘节点组合上执行。表\ref{<table-MSPRTresults-without-privacy-protection>}中给出了相应的仿真结果\footnote{具体的信道分布测量场景与结果、仿真参数设置详见\ref{section-simulation-location-information}节。}，其中``\ding{55}''表示在相应的服务时间内（以时隙数为单位）不能做出接受任意假设的决定，而``\ding{51}''表示在相应的服务时间内成功的推理出了用户的位置。这里，与文献\cite{he2018deep}类似，时隙长度被设置为3毫秒。表\ref{<table-MSPRTresults-without-privacy-protection>}中的结果说明即使用户接入边缘计算服务的时间仅有几十秒，用户的位置信息依然可能会被推理出来。例如，当用户处于位置$U_1$时，即使其只接入边缘计算服务的时间仅有$8 \times 10^3$个时隙（24秒），其位置信息就已经能够被推理出来。当服务时间延长至$50 \times 10^3$个时隙（2.5分钟）时，不管用户处于哪个位置，其位置信息总能够被推理出来。这些结果充分说明了位置信息的脆弱性。
+
+% \begin{table}
+% \begin{spacing}{1}
+%     % \footnotesize
+%     \centering
+%     \caption{常规的卸载策略下，基于MSPRT的用户位置信息推理方法的性能}
+%     \begin{tabular}{m{7em}<{\centering} m{2em}<{\centering} m{2em}<{\centering} m{2em}<{\centering} m{2em}<{\centering} m{2em}<{\centering} m{2em}<{\centering} m{5em}<{\centering}}
+% \toprule
+%         \vspace{-1em}
+%         %True location & $2 \times 10^3$ & $4 \times 10^3$  & $6 \times 10^3$  & $8 \times 10^3$ & $1 \times 10^4$  & $5 \times 10^4$  & $1 \times 10^5$ \\
+%         \diagbox[innerwidth=7em, innerleftsep = 0.1em, innerrightsep = 0.1em]{用户位置}{服务时间} & \shortstack{$2$} & \shortstack{$4$}  & \shortstack{$6$}  & \shortstack{$8$} & \shortstack{$10$}  & \shortstack{$50$}  & \shortstack{\shortstack{$100$ ($\times 10^3$\\个时隙)}} \\
+%         \midrule
+%         $U_1$    & \ding{55} & \ding{55} & \ding{55} & \ding{51} & \ding{51} & \ding{51} & \ding{51} \\
+%         $U_2$    & \ding{51} & \ding{51} & \ding{51} & \ding{51} & \ding{51} & \ding{51} & \ding{51} \\
+%         $U_3$    & \ding{51} & \ding{51} & \ding{51} & \ding{51} & \ding{51} & \ding{51} & \ding{51} \\
+%         $U_4$    & \ding{55} & \ding{55} & \ding{51} & \ding{51} & \ding{51} & \ding{51} & \ding{51} \\
+%         $U_5$    & \ding{51} & \ding{51} & \ding{51} & \ding{51} & \ding{51} & \ding{51} & \ding{51} \\
+%         $U_6$    & \ding{55} & \ding{51} & \ding{51} & \ding{51} & \ding{51} & \ding{51} & \ding{51} \\
+%         $U_7$    & \ding{55} & \ding{55} & \ding{55} & \ding{55} & \ding{51} & \ding{51} & \ding{51} \\
+%         $U_8$    & \ding{55} & \ding{55} & \ding{51} & \ding{51} & \ding{51} & \ding{51} & \ding{51} \\
+%         $U_9$    & \ding{55} & \ding{51} & \ding{51} & \ding{51} & \ding{51} & \ding{51} & \ding{51} \\
+%         $U_{10}$   & \ding{55} & \ding{55} & \ding{55} & \ding{55} & \ding{55} & \ding{55} & \ding{51} \\
+%         \bottomrule
+
+%     \end{tabular}
+%     \label{<table-MSPRTresults-without-privacy-protection>}
+% \end{spacing}
+% \end{table}
+
+%\subsection{位置信息约束条件建模}

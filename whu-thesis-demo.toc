@@ -1,0 +1,54 @@
+\contentsline {chapter}{摘\hskip 2em\relax 要}{I}{section*.2}%
+\contentsline {chapter}{ABSTRACT}{III}{section*.4}%
+\contentsline {chapter}{\numberline {1\hspace {.3em}}绪论}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}研究背景与意义}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}国内外研究现状}{3}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}编码计算}{3}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}分布式信源编码}{5}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}主要研究内容与论文结构}{7}{section.1.3}%
+\contentsline {chapter}{\numberline {2\hspace {.3em}}理论基础与相关技术}{10}{chapter.2}%
+\contentsline {section}{\numberline {2.1}编码计算}{10}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}面向矩阵-向量乘法的编码计算}{10}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}面向分布式学习的编码计算}{12}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}分布式信源编码}{14}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}面向独立恢复的DSC}{14}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}面向线性恢复的DSC}{16}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}NOMA}{19}{section.2.3}%
+\contentsline {section}{\numberline {2.4}凹凸过程与差分凸规划理论}{20}{section.2.4}%
+\contentsline {section}{\numberline {2.5}本章小结}{21}{section.2.5}%
+\contentsline {chapter}{\numberline {3\hspace {.3em}}面向独立恢复的DSC辅助编码计算结果传输方法研究}{23}{chapter.3}%
+\contentsline {section}{\numberline {3.1}引言}{23}{section.3.1}%
+\contentsline {section}{\numberline {3.2}系统模型与问题建模}{24}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}计算模型}{24}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}通信模型}{25}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}面向独立恢复的DSC辅助的编码计算结果下行传输机制}{26}{subsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.3.1}DSC模型}{27}{subsubsection.3.2.3.1}%
+\contentsline {subsubsection}{\numberline {3.2.3.2}基于伴随式穿刺的实际DSC方案}{27}{subsubsection.3.2.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.3.3}高维数据下的DSC方案}{30}{subsubsection.3.2.3.3}%
+\contentsline {subsubsection}{\numberline {3.2.3.4}DSC辅助的编码计算结果传输示例}{31}{subsubsection.3.2.3.4}%
+\contentsline {subsection}{\numberline {3.2.4}DSC辅助的最小化下行传输延迟问题建模}{33}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}基于分布式信源编码的编码计算下行传输算法}{33}{section.3.3}%
+\contentsline {section}{\numberline {3.4}仿真与性能分析}{35}{section.3.4}%
+\contentsline {section}{\numberline {3.5}本章小结}{41}{section.3.5}%
+\contentsline {chapter}{\numberline {4\hspace {.3em}}面向线性恢复的DSC辅助编码计算结果下行传输方法}{42}{chapter.4}%
+\contentsline {section}{\numberline {4.1}引言}{42}{section.4.1}%
+\contentsline {section}{\numberline {4.2}系统模型与问题建模}{42}{section.4.2}%
+\contentsline {section}{\numberline {4.3}面向线性恢复的DSC辅助编码计算结果下行传输机制}{45}{section.4.3}%
+\contentsline {section}{\numberline {4.4}面向线性恢复的DSC辅助编码计算结果传输算法}{46}{section.4.4}%
+\contentsline {section}{\numberline {4.5}仿真结果与分析}{49}{section.4.5}%
+\contentsline {section}{\numberline {4.6}本章小结}{53}{section.4.6}%
+\contentsline {chapter}{\numberline {5\hspace {.3em}}总结与展望}{54}{chapter.5}%
+\contentsline {section}{\numberline {5.1}全文总结}{54}{section.5.1}%
+\contentsline {section}{\numberline {5.2}未来展望}{54}{section.5.2}%
+\contentsline {chapter}{参考文献}{56}{section*.36}%
+\contentsline {chapter}{\numberline {附录 A\hspace {.3em}}面向完整重构的DSC辅助编码计算结果传输方法研究}{64}{appendix.A}%
+\contentsline {section}{\numberline {A.1}定理\ref {proposition1}的证明}{64}{section.A.1}%
+\contentsline {section}{\numberline {A.2}BP译码算法}{64}{section.A.2}%
+\contentsline {chapter}{\numberline {附录 B\hspace {.3em}}面向线性恢复的DSC辅助编码计算结果传输方法研究}{66}{appendix.B}%
+\contentsline {section}{\numberline {B.1}定理\ref {<linear>}的证明}{66}{section.B.1}%
+\contentsline {subsection}{\numberline {B.1.1}完整恢复边界}{66}{subsection.B.1.1}%
+\contentsline {subsection}{\numberline {B.1.2}线性恢复边界}{66}{subsection.B.1.2}%
+\contentsline {section}{\numberline {B.2}定理\ref {condition}的证明}{67}{section.B.2}%
+\contentsline {section}{\numberline {B.3}嵌套线性码编码方案}{67}{section.B.3}%
+\contentsline {chapter}{攻读硕士学位期间取得的科研成果}{70}{section*.39}%
+\contentsline {chapter}{致谢}{71}{section*.41}%

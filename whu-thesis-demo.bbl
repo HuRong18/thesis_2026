@@ -1,0 +1,743 @@
+\begin{thebibliography}{112}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax\else
+  \urlstyle{same}\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \DeclareUrlCommand\doi{\urlstyle{rm}}
+  \def\eprint#1#2{#2}
+\else
+  \def\doi#1{\href{https://doi.org/#1}{\nolinkurl{#1}}}
+  \let\eprint\href
+\fi
+
+\bibitem[中华人民共和国工业和信息化部(2026)]{miit2025}
+中华人民共和国工业和信息化部.
+\newblock 2025 年通信业统计公报\allowbreak[EB/OL].
+\newblock 2026\allowbreak[2026-01-23].
+\newblock
+  \url{https://www.miit.gov.cn/gxsj/tjfx/txy/art/2026/art_5c99d65350f7452f999e8efcb1ee2d6a.html}.
+
+\bibitem[Bastug et~al.(2017)Bastug, Bennis, Medard, and Debbah]{7946930}
+Bastug~E, Bennis~M, Medard~M, et~al.
+\newblock Toward interconnected virtual reality: Opportunities, challenges, and
+  enablers\allowbreak[J].
+\newblock IEEE Communications Magazine, 2017, 55\allowbreak (6): 110-117.
+
+\bibitem[Elbamby et~al.(2018)Elbamby, Perfecto, Bennis, and Doppler]{8329628}
+Elbamby~M~S, Perfecto~C, Bennis~M, et~al.
+\newblock Toward low-latency and ultra-reliable virtual reality\allowbreak[J].
+\newblock IEEE Network, 2018, 32\allowbreak (2): 78-84.
+
+\bibitem[Liu et~al.(2021)Liu, Chen, Pei, Maharjan, and Zhang]{liu2021vehicular}
+Liu~L, Chen~C, Pei~Q, et~al.
+\newblock Vehicular edge computing and networking: A survey\allowbreak[J].
+\newblock Mobile networks and applications, 2021, 26\allowbreak (3): 1145-1168.
+
+\bibitem[Mao et~al.(2017)Mao, You, Zhang, Huang, and Letaief]{8016573}
+Mao~Y, You~C, Zhang~J, et~al.
+\newblock A survey on mobile edge computing: {T}he communication
+  perspective\allowbreak[J].
+\newblock IEEE Commun. Surveys Tuts., 2017, 19\allowbreak (4): 2322-2358.
+
+\bibitem[Patel et~al.(2014)Patel, Naughton, Chan, et~al.]{patel2014mobile}
+Patel~M, Naughton~B, Chan~C, et~al.
+\newblock Mobile-edge computing: introductory technical white
+  paper\allowbreak[R].
+\newblock Sophia Antipolis, France: ETSI, 2014.
+
+\bibitem[Siriwardhana et~al.(2021)Siriwardhana, Porambage, Liyanage, and
+  Ylianttila]{9363323}
+Siriwardhana~Y, Porambage~P, Liyanage~M, et~al.
+\newblock A survey on mobile augmented reality with 5{G} mobile edge computing:
+  Architectures, applications, and technical aspects\allowbreak[J].
+\newblock IEEE Communications Surveys & Tutorials, 2021, 23\allowbreak (2):
+  1160-1192.
+
+\bibitem[Chen et~al.(2022{\natexlab{a}})Chen, Zhu, Song, He, and Xia]{9789210}
+Chen~Z, Zhu~H, Song~L, et~al.
+\newblock Wireless multiplayer interactive virtual reality game systems with
+  edge computing: Modeling and optimization\allowbreak[J].
+\newblock IEEE Transactions on Wireless Communications, 2022{\natexlab{a}},
+  21\allowbreak (11): 9684-9699.
+
+\bibitem[Katare et~al.(2023)Katare, Perino, Nurmi, Warnier, Janssen, and
+  Ding]{10213996}
+Katare~D, Perino~D, Nurmi~J, et~al.
+\newblock A survey on approximate edge ai for energy efficient autonomous
+  driving services\allowbreak[J].
+\newblock IEEE Communications Surveys & Tutorials, 2023, 25\allowbreak (4):
+  2714-2754.
+
+\bibitem[Wang et~al.(2019)Wang, Liu, and Kato]{8584062}
+Wang~J, Liu~J, Kato~N.
+\newblock Networking and communications in autonomous driving: A
+  survey\allowbreak[J].
+\newblock IEEE Communications Surveys & Tutorials, 2019, 21\allowbreak (2):
+  1243-1274.
+
+\bibitem[McEnroe et~al.(2022)McEnroe, Wang, and Liyanage]{9778241}
+McEnroe~P, Wang~S, Liyanage~M.
+\newblock A survey on the convergence of edge computing and ai for uavs:
+  Opportunities and challenges\allowbreak[J].
+\newblock IEEE Internet of Things Journal, 2022, 9\allowbreak (17):
+  15435-15459.
+
+\bibitem[周晓天，杨潇辉，张海霞，等(2024)]{uavassited}
+周晓天，杨潇辉，张海霞，等.
+\newblock
+  无人机辅助边缘计算网络的任务卸载与资源分配联合优化\allowbreak[J].
+\newblock 电子与信息学报, 2024, 46\allowbreak (12): 4399-4408.
+
+\bibitem[Rafique et~al.(2025)Rafique, Rani~Barai, Fapojuwo, and
+  Krishnamurthy]{10551400}
+Rafique~W, Rani~Barai~J, Fapojuwo~A~O, et~al.
+\newblock A survey on beyond 5g network slicing for smart cities
+  applications\allowbreak[J].
+\newblock IEEE Communications Surveys & Tutorials, 2025, 27\allowbreak (1):
+  595-628.
+
+\bibitem[Khan et~al.(2020)Khan, Yaqoob, Tran, Kazmi, Dang, and Hong]{9063670}
+Khan~L~U, Yaqoob~I, Tran~N~H, et~al.
+\newblock Edge-computing-enabled smart cities: A comprehensive
+  survey\allowbreak[J].
+\newblock IEEE Internet of Things Journal, 2020, 7\allowbreak (10):
+  10200-10232.
+
+\bibitem[Dong et~al.(2024)Dong, Sun, Shafiq, Hu, Liu, and Tian]{10339657}
+Dong~C, Sun~Y, Shafiq~M, et~al.
+\newblock Optimizing mobility-aware task offloading in smart healthcare for
+  internet of medical things through multiagent reinforcement
+  learning\allowbreak[J].
+\newblock IEEE Internet of Things Journal, 2024, 11\allowbreak (8):
+  13677-13691.
+
+\bibitem[Bollineni et~al.(2025)Bollineni, Sharma, Hazra, Kumari, Manipriya, and
+  Tomar]{11008531}
+Bollineni~C, Sharma~M, Hazra~A, et~al.
+\newblock Iot for next-generation smart healthcare: A comprehensive
+  survey\allowbreak[J].
+\newblock IEEE Internet of Things Journal, 2025, 12\allowbreak (16):
+  32616-32639.
+
+\bibitem[唐伦单贞贞~陈前斌(2023)]{autodriving}
+唐伦单贞贞~陈前斌.
+\newblock
+  移动边缘计算辅助智能驾驶中基于高效联邦学习的碰撞预警算法\allowbreak[J].
+\newblock 电子与信息学报, 2023, 45\allowbreak (7): 2406-2414.
+
+\bibitem[Fang et~al.(2023{\natexlab{a}})Fang, He, Yu, Li, and Leung]{10333824}
+Fang~J, He~Y, Yu~F~R, et~al.
+\newblock Large language models (llms) inference offloading and resource
+  allocation in cloud-edge networks: An active inference
+  approach\allowbreak[C]//\allowbreak
+2023 IEEE 98th Vehicular Technology Conference (VTC2023-Fall).
+\newblock 2023{\natexlab{a}}: 1-5.
+
+\bibitem[Qu et~al.(2025)Qu, Chen, Wei, Lin, Chen, and Huang]{10835069}
+Qu~G, Chen~Q, Wei~W, et~al.
+\newblock Mobile edge intelligence for large language models: A contemporary
+  survey\allowbreak[J].
+\newblock IEEE Communications Surveys & Tutorials, 2025, 27\allowbreak (6):
+  3820-3860.
+
+\bibitem[Gong(2020)]{gong2020delay}
+Gong~X.
+\newblock Delay-optimal distributed edge computing in wireless edge
+  networks\allowbreak[C]//\allowbreak
+Proc. IEEE INFOCOM.
+\newblock Toronto, ON, Canada, 2020.
+
+\bibitem[Varghese et~al.(2016)Varghese, Wang, Barbhuiya, Kilpatrick, and
+  Nikolopoulos]{7796149}
+Varghese~B, Wang~N, Barbhuiya~S, et~al.
+\newblock Challenges and opportunities in edge
+  computing\allowbreak[C]//\allowbreak
+2016 IEEE International Conference on Smart Cloud (SmartCloud).
+\newblock 2016: 20-26.
+
+\bibitem[Chen et~al.(2023)Chen, Gong, and Cao]{9827607}
+Chen~M, Gong~X, Cao~Y.
+\newblock Delay-optimal distributed edge computation offloading with correlated
+  computation and communication workloads\allowbreak[J].
+\newblock IEEE Transactions on Mobile Computing, 2023, 22\allowbreak (10):
+  5846-5857.
+
+\bibitem[Ng et~al.(2021)Ng, Lim, Luong, and Xiong]{ng2021comprehensive}
+Ng~J~S, Lim~W~Y~B, Luong~N~C, et~al.
+\newblock A comprehensive survey on coded distributed computing:
+  {F}undamentals, challenges, and networking applications\allowbreak[J].
+\newblock IEEE Commun. Surveys Tuts., 2021, 23\allowbreak (3): 1800-1837.
+
+\bibitem[Li et~al.(2016)Li, Maddah-Ali, and Avestimehr]{7848828}
+Li~S, Maddah-Ali~M~A, Avestimehr~A~S.
+\newblock A unified coding framework for distributed computing with straggling
+  servers\allowbreak[C]//\allowbreak
+2016 IEEE Globecom Workshops (GC Wkshps).
+\newblock 2016: 1-6.
+
+\bibitem[Taik~Kim et~al.(2020)Taik~Kim, Joe-Wong, and Chiang]{9155226}
+Taik~Kim~K, Joe-Wong~C, Chiang~M.
+\newblock Coded edge computing\allowbreak[C]//\allowbreak
+Proc. IEEE INFOCOM.
+\newblock Toronto, ON, Canada, 2020.
+
+\bibitem[Lee et~al.(2018)Lee, Lam, Pedarsani, Papailiopoulos, and
+  Ramchandran]{8002642}
+Lee~K, Lam~M, Pedarsani~R, et~al.
+\newblock Speeding up distributed machine learning using codes\allowbreak[J].
+\newblock IEEE Trans. Inf. Theory, 2018, 64\allowbreak (3): 1514-1529.
+
+\bibitem[Lin et~al.(2004)Lin and Costello]{lin2004error}
+Lin~S, Costello~D.
+\newblock Error control coding: Fundamentals and applications\allowbreak[M].
+\newblock 2nd ed.
+\newblock Upper Saddle River, NJ: Pearson-Prentice Hall, 2004.
+
+\bibitem[郑腾飞\ 等(2021)郑腾飞, 周桐庆, 蔡志平, and
+  吴虹佳]{2021-10-2187}
+郑腾飞, 周桐庆, 蔡志平, 等.
+\newblock 编码计算研究综述\allowbreak[J/OL].
+\newblock 计算机研究与发展, 2021, 58\allowbreak (10): 2187-2212.
+\newblock
+  \url{https://crad.ict.ac.cn/cn/article/doi/10.7544/issn1000-1239.2021.20210496}.
+
+\bibitem[Peng et~al.(2020)Peng, Soljanin, and Whiting]{peng2020diversity}
+Peng~P, Soljanin~E, Whiting~P.
+\newblock Diversity vs. parallelism in distributed computing with
+  redundancy\allowbreak[C]//\allowbreak
+Proc. IEEE ISIT.
+\newblock Los Angeles, CA, USA, 2020.
+
+\bibitem[Wu et~al.(2020)Wu and Chen]{9046826}
+Wu~F, Chen~L.
+\newblock Latency optimization for coded computation straggled by wireless
+  transmission\allowbreak[J].
+\newblock IEEE Wireless Commun. Lett., 2020, 9\allowbreak (7): 1124-1128.
+
+\bibitem[He et~al.(2022)He, Li, Jin, and Dai]{9829189}
+He~X, Li~T, Jin~R, et~al.
+\newblock Delay-optimal coded offloading for distributed edge computing in
+  fading environments\allowbreak[J].
+\newblock IEEE Trans. Wireless Commun., 2022, 21\allowbreak (12): 10796-10808.
+
+\bibitem[Li et~al.(2021)Li, Tao, Zhang, and Simeone]{9328810}
+Li~K, Tao~M, Zhang~J, et~al.
+\newblock Coded computing and cooperative transmission for wireless distributed
+  matrix multiplication\allowbreak[J].
+\newblock IEEE Trans. Commun., 2021, 69\allowbreak (4): 2224-2239.
+
+\bibitem[Fang et~al.(2023{\natexlab{b}})Fang, Han, Wang, and Chen]{9820783}
+Fang~B, Han~K, Wang~Z, et~al.
+\newblock Latency optimization for {L}uby transform coded computation in
+  wireless networks\allowbreak[J].
+\newblock IEEE Wireless Commun. Lett., 2023{\natexlab{b}}, 12\allowbreak (2):
+  197-201.
+
+\bibitem[Slepian et~al.(1973)Slepian and Wolf]{1055037}
+Slepian~D, Wolf~J.
+\newblock Noiseless coding of correlated information sources\allowbreak[J].
+\newblock IEEE Trans. Inf. Theory, 1973, 19\allowbreak (4): 471-480.
+
+\bibitem[Xiong et~al.(2004)Xiong, Liveris, and Cheng]{1328091}
+Xiong~Z, Liveris~A, Cheng~S.
+\newblock Distributed source coding for sensor networks\allowbreak[J].
+\newblock IEEE Signal Process. Mag., 2004, 21\allowbreak (5): 80-94.
+
+\bibitem[Lee et~al.(2017)Lee, Suh, and Ramchandran]{8006963}
+Lee~K, Suh~C, Ramchandran~K.
+\newblock High-dimensional coded matrix
+  multiplication\allowbreak[C]//\allowbreak
+2017 IEEE International Symposium on Information Theory (ISIT).
+\newblock 2017: 2418-2422.
+
+\bibitem[Costello et~al.(1998)Costello, Hagenauer, Imai, and Wicker]{720548}
+Costello~D, Hagenauer~J, Imai~H, et~al.
+\newblock Applications of error-control coding\allowbreak[J].
+\newblock IEEE Transactions on Information Theory, 1998, 44\allowbreak (6):
+  2531-2560.
+
+\bibitem[Yu et~al.(2017)Yu, Maddah-Ali, and Avestimehr]{yu2017polynomial}
+Yu~Q, Maddah-Ali~M, Avestimehr~S.
+\newblock Polynomial codes: an optimal design for high-dimensional coded matrix
+  multiplication\allowbreak[J].
+\newblock Advances in Neural Information Processing Systems, 2017, 30.
+
+\bibitem[Dutta et~al.(2019)Dutta, Fahim, Haddadpour, Jeong, Cadambe, and
+  Grover]{dutta2019optimal}
+Dutta~S, Fahim~M, Haddadpour~F, et~al.
+\newblock On the optimal recovery threshold of coded matrix
+  multiplication\allowbreak[J].
+\newblock IEEE Transactions on Information Theory, 2019, 66\allowbreak (1):
+  278-301.
+
+\bibitem[Yu et~al.(2020)Yu, Maddah-Ali, and Avestimehr]{yu2020straggler}
+Yu~Q, Maddah-Ali~M~A, Avestimehr~A~S.
+\newblock Straggler mitigation in distributed matrix multiplication:
+  Fundamental limits and optimal coding\allowbreak[J].
+\newblock IEEE Transactions on Information Theory, 2020, 66\allowbreak (3):
+  1920-1933.
+
+\bibitem[Tandon et~al.(2017)Tandon, Lei, Dimakis, and
+  Karampatziakis]{tandon2017gradient}
+Tandon~R, Lei~Q, Dimakis~A~G, et~al.
+\newblock Gradient coding: Avoiding stragglers in distributed
+  learning\allowbreak[C]//\allowbreak
+Proc. ICML.
+\newblock New York, 2017.
+
+\bibitem[Halbawi et~al.(2018)Halbawi, Azizan, Salehi, and
+  Hassibi]{halbawi2018improving}
+Halbawi~W, Azizan~N, Salehi~F, et~al.
+\newblock Improving distributed gradient descent using {R}eed-{S}olomon
+  codes\allowbreak[C]//\allowbreak
+2018 IEEE International Symposium on Information Theory (ISIT).
+\newblock IEEE, 2018: 2027-2031.
+
+\bibitem[Cao et~al.(2021)Cao, Yan, Tang, and Han]{cao2021adaptive}
+Cao~H, Yan~Q, Tang~X, et~al.
+\newblock Adaptive gradient coding\allowbreak[J].
+\newblock IEEE/ACM Transactions on Networking, 2021, 30\allowbreak (2):
+  717-734.
+
+\bibitem[Yu et~al.(2019)Yu, Li, Raviv, Kalan, Soltanolkotabi, and
+  Avestimehr]{yu2019lagrange}
+Yu~Q, Li~S, Raviv~N, et~al.
+\newblock Lagrange coded computing: Optimal design for resiliency, security,
+  and privacy\allowbreak[C]//\allowbreak
+The 22nd International Conference on Artificial Intelligence and Statistics.
+\newblock PMLR, 2019: 1215-1225.
+
+\bibitem[Jahani-Nezhad et~al.(2022)Jahani-Nezhad and
+  Maddah-Ali]{jahani2022berrut}
+Jahani-Nezhad~T, Maddah-Ali~M~A.
+\newblock Berrut approximated coded computing: Straggler resistance beyond
+  polynomial computing\allowbreak[J].
+\newblock IEEE Transactions on Pattern Analysis and Machine Intelligence, 2022,
+  45\allowbreak (1): 111-122.
+
+\bibitem[Das et~al.(2024)Das, Ramamoorthy, Love, and Brinton]{10633712}
+Das~A~B, Ramamoorthy~A, Love~D~J, et~al.
+\newblock Sparsity-preserving encodings for straggler-optimal distributed
+  matrix computations at the edge\allowbreak[J].
+\newblock IEEE Internet Things J., 2024, 11\allowbreak (21): 34455-34470.
+
+\bibitem[Reisizadeh et~al.(2019)Reisizadeh, Prakash, Pedarsani, and
+  Avestimehr]{8663353}
+Reisizadeh~A, Prakash~S, Pedarsani~R, et~al.
+\newblock Coded computation over heterogeneous clusters\allowbreak[J].
+\newblock IEEE Trans. Inf. Theory, 2019, 65\allowbreak (7): 4227-4242.
+
+\bibitem[Ozfatura et~al.(2022)Ozfatura, Ulukus, and Gündüz]{9641837}
+Ozfatura~E, Ulukus~S, Gündüz~D.
+\newblock Coded distributed computing with partial recovery\allowbreak[J].
+\newblock IEEE Trans. Inf. Theory, 2022, 68\allowbreak (3): 1945-1959.
+
+\bibitem[Chen et~al.(2022{\natexlab{b}})Chen, Han, Du, and Wang]{9606237}
+Chen~L, Han~K, Du~Y, et~al.
+\newblock Block-division-based wireless coded computation\allowbreak[J].
+\newblock IEEE Wireless Commun. Lett., 2022{\natexlab{b}}, 11\allowbreak (2):
+  283-287.
+
+\bibitem[Li et~al.(2017)Li, Yu, Maddah-Ali, and Avestimehr]{7935426}
+Li~S, Yu~Q, Maddah-Ali~M~A, et~al.
+\newblock A scalable framework for wireless distributed
+  computing\allowbreak[J].
+\newblock IEEE/ACM Trans. Netw., 2017, 25\allowbreak (5): 2643-2654.
+
+\bibitem[Li et~al.(2018)Li, Maddah-Ali, Yu, and Avestimehr]{8051074}
+Li~S, Maddah-Ali~M~A, Yu~Q, et~al.
+\newblock A fundamental tradeoff between computation and communication in
+  distributed computing\allowbreak[J].
+\newblock IEEE Trans. Inf. Theory, 2018, 64\allowbreak (1): 109-128.
+
+\bibitem[Zhang et~al.(2019)Zhang and Simeone]{8691770}
+Zhang~J, Simeone~O.
+\newblock On model coding for distributed inference and transmission in mobile
+  edge computing systems\allowbreak[J].
+\newblock IEEE Wireless Commun. Lett., 2019, 23\allowbreak (6): 1065-1068.
+
+\bibitem[Li et~al.(2020)Li, Tao, and Chen]{9062599}
+Li~K, Tao~M, Chen~Z.
+\newblock Exploiting computation replication for mobile edge computing: {A}
+  fundamental computation-communication tradeoff study\allowbreak[J].
+\newblock IEEE Trans. Wireless Commun., 2020, 19\allowbreak (7): 4563-4578.
+
+\bibitem[Frigård et~al.(2021)Frigård, Kumar, Rosnes, and i~Amat]{9562193}
+Frigård~A, Kumar~S, Rosnes~E, et~al.
+\newblock Low-latency distributed inference at the network edge using rateless
+  codes (invited paper)\allowbreak[C]//\allowbreak
+Proc. IEEE ISWCS.
+\newblock Berlin, Germany, 2021.
+
+\bibitem[Wyner et~al.(1976)Wyner and Ziv]{1055508}
+Wyner~A, Ziv~J.
+\newblock The distortion function for source coding with side information at
+  the decoder\allowbreak[J].
+\newblock IEEE Trans. Inf. Theory, 1976, 22\allowbreak (1): 1-10.
+
+\bibitem[Cover(1999)]{cover1999elements}
+Cover~T~M.
+\newblock Elements of {Information Theory}\allowbreak[M].
+\newblock John Wiley \& Sons, 1999.
+
+\bibitem[Berger(1977)]{Tberger}
+Berger~T.
+\newblock Multiterminal source coding\allowbreak[C]//\allowbreak
+New York: Springer-Verlag, 1977: 171-231.
+
+\bibitem[Cristescu et~al.(2005)Cristescu, Beferull-Lozano, and
+  Vetterli]{1542403}
+Cristescu~R, Beferull-Lozano~B, Vetterli~M.
+\newblock Networked {Slepian-Wolf}: {T}heory, algorithms, and scaling
+  laws\allowbreak[J].
+\newblock IEEE Trans. Inf. Theory, 2005, 51\allowbreak (12): 4057-4073.
+
+\bibitem[Yeung et~al.(1999)Yeung and Zhang]{761254}
+Yeung~R, Zhang~Z.
+\newblock Distributed source coding for satellite communications\allowbreak[J].
+\newblock IEEE Trans. Inf. Theory, 1999, 45\allowbreak (4): 1111-1120.
+
+\bibitem[Diao et~al.(2024)Diao, Meng, Xu, She, and Zhao]{10620735}
+Diao~Y, Meng~Z, Xu~X, et~al.
+\newblock Task-oriented source-channel coding enabled autonomous driving based
+  on edge computing\allowbreak[C]//\allowbreak
+Proc. IEEE INFOCOM.
+\newblock Vancouver, BC, Canada, 2024.
+
+\bibitem[Chen et~al.(2008)Chen and Berger]{4567562}
+Chen~J, Berger~T.
+\newblock Robust distributed source coding\allowbreak[J].
+\newblock IEEE Trans. Inf. Theory, 2008, 54\allowbreak (8): 3385-3398.
+
+\bibitem[Prabhakaran et~al.(2007)Prabhakaran and Ramchandran]{4313115}
+Prabhakaran~V, Ramchandran~K.
+\newblock On secure distributed source coding\allowbreak[C]//\allowbreak
+Proc. IEEE ITW.
+\newblock Tahoe City, CA, USA, 2007.
+
+\bibitem[Pradhan et~al.(2003{\natexlab{a}})Pradhan and Ramchandran]{1184140}
+Pradhan~S, Ramchandran~K.
+\newblock Distributed source coding using syndromes (discus): {Design} and
+  construction\allowbreak[J].
+\newblock IEEE Trans. Inf. Theory, 2003{\natexlab{a}}, 49\allowbreak (3):
+  626-643.
+
+\bibitem[Pradhan et~al.(2005)Pradhan and Ramchandran]{1512420}
+Pradhan~S, Ramchandran~K.
+\newblock Generalized coset codes for distributed binning\allowbreak[J].
+\newblock IEEE Trans. Inf. Theory, 2005, 51\allowbreak (10): 3457-3474.
+
+\bibitem[Stankovic et~al.(2004)Stankovic, Liveris, Xiong, and
+  Georghiades]{1281475}
+Stankovic~V, Liveris~A, Xiong~Z, et~al.
+\newblock Design of {Slepian-Wolf} codes by channel code
+  partitioning\allowbreak[C]//\allowbreak
+Proc. IEEE DCC.
+\newblock Snowbird, UT, USA, 2004.
+
+\bibitem[Wyner(1974)]{1055171}
+Wyner~A.
+\newblock Recent results in the shannon theory\allowbreak[J].
+\newblock IEEE Transactions on Information Theory, 1974, 20\allowbreak (1):
+  2-10.
+
+\bibitem[Frey et~al.(2001)Frey, Koetter, Forney, Kschischang, McEliece, and
+  Spielman]{910571}
+Frey~B, Koetter~R, Forney~G, et~al.
+\newblock Introduction to the special issue on codes on graphs and iterative
+  algorithms\allowbreak[J].
+\newblock IEEE Transactions on Information Theory, 2001, 47\allowbreak (2):
+  493-497.
+
+\bibitem[Lan et~al.(2004)Lan, Liveris, Narayanan, Xiong, and
+  Georghiades]{1281525}
+Lan~C~F, Liveris~A, Narayanan~K, et~al.
+\newblock {Slepian-Wolf} coding of multiple {M}-ary sources using {LDPC}
+  codes\allowbreak[C]//\allowbreak
+Proc. IEEE DCC.
+\newblock Snowbird, UT, USA, 2004.
+
+\bibitem[Zhao et~al.(2005)Zhao and Garcia-Frias]{1413577}
+Zhao~Y, Garcia-Frias~J.
+\newblock Joint estimation and compression of correlated nonbinary sources
+  using punctured turbo codes\allowbreak[J].
+\newblock IEEE Trans. Commun., 2005, 53\allowbreak (3): 385-390.
+
+\bibitem[Garcia-Frias et~al.(2003)Garcia-Frias and Zhong]{1187376}
+Garcia-Frias~J, Zhong~W.
+\newblock Ldpc codes for compression of multi-terminal sources with hidden
+  markov correlation\allowbreak[J].
+\newblock IEEE Communications Letters, 2003, 7\allowbreak (3): 115-117.
+
+\bibitem[Schonberg et~al.(2004)Schonberg, Pradhan, and Ramchandran]{1281474}
+Schonberg~D, Pradhan~S, Ramchandran~K.
+\newblock Distributed code constructions for the entire {Slepian-Wolf} rate
+  region for arbitrarily correlated sources\allowbreak[C]//\allowbreak
+Proc. IEEE DCC.
+\newblock Snowbird, UT, USA, 2004.
+
+\bibitem[Coleman et~al.(2006{\natexlab{a}})Coleman, Lee, Medard, and
+  Effros]{1661834}
+Coleman~T, Lee~A, Medard~M, et~al.
+\newblock Low-complexity approaches to {Slepian–Wolf} near-lossless
+  distributed data compression\allowbreak[J].
+\newblock IEEE Trans. Inf. Theory, 2006{\natexlab{a}}, 52\allowbreak (8):
+  3546-3561.
+
+\bibitem[Stankovic et~al.(2006)Stankovic, Liveris, Xiong, and
+  Georghiades]{1614079}
+Stankovic~V, Liveris~A, Xiong~Z, et~al.
+\newblock On code design for the {Slepian-Wolf} problem and lossless
+  multiterminal networks\allowbreak[J].
+\newblock IEEE Trans. Inf. Theory, 2006, 52\allowbreak (4): 1495-1507.
+
+\bibitem[Li et~al.(2012)Li and Ramamoorthy]{6241374}
+Li~S, Ramamoorthy~A.
+\newblock Multiple-source {Slepian-Wolf} coding under a linear equation
+  correlation model\allowbreak[J].
+\newblock IEEE Trans. Commun., 2012, 60\allowbreak (9): 2402-2407.
+
+\bibitem[Whang et~al.(2024)Whang, Nagle, Acharya, Kim, and Dimakis]{10557705}
+Whang~J, Nagle~A, Acharya~A, et~al.
+\newblock Neural distributed source coding\allowbreak[J].
+\newblock IEEE J. Sel. Areas Inf. Theory, 2024.
+
+\bibitem[Pradhan et~al.(2003{\natexlab{b}})Pradhan, Chou, and
+  Ramchandran]{1197848}
+Pradhan~S, Chou~J, Ramchandran~K.
+\newblock Duality between source coding and channel coding and its extension to
+  the side information case\allowbreak[J].
+\newblock IEEE Transactions on Information Theory, 2003{\natexlab{b}},
+  49\allowbreak (5): 1181-1203.
+
+\bibitem[Zamir et~al.(2002)Zamir, Shamai, and Erez]{1003821}
+Zamir~R, Shamai~S, Erez~U.
+\newblock Nested linear/lattice codes for structured multiterminal
+  binning\allowbreak[J].
+\newblock IEEE Transactions on Information Theory, 2002, 48\allowbreak (6):
+  1250-1276.
+
+\bibitem[Servetto(2000)]{838191}
+Servetto~S.
+\newblock Lattice quantization with side information\allowbreak[C]//\allowbreak
+Proceedings DCC 2000. Data Compression Conference.
+\newblock 2000: 510-519.
+
+\bibitem[Tung(1978)]{tung1978multiterminal}
+Tung~S~Y.
+\newblock Multiterminal source coding.\allowbreak[M].
+\newblock Cornell University, 1978.
+
+\bibitem[Berger et~al.(1979)Berger, Housewright, Omura, Yung, and
+  Wolfowitz]{1056105}
+Berger~T, Housewright~K, Omura~J, et~al.
+\newblock An upper bound on the rate distortion function for source coding with
+  partial side information at the decoder\allowbreak[J].
+\newblock IEEE Transactions on Information Theory, 1979, 25\allowbreak (6):
+  664-666.
+
+\bibitem[Korner et~al.(1979)Korner and Marton]{1056022}
+Korner~J, Marton~K.
+\newblock How to encode the modulo-two sum of binary sources
+  (corresp.)\allowbreak[J].
+\newblock IEEE Transactions on Information Theory, 1979, 25\allowbreak (2):
+  219-221.
+
+\bibitem[Han et~al.(1987)Han and Kobayashi]{1057272}
+Han~T, Kobayashi~K.
+\newblock A dichotomy of functionsf(x, y)of correlated sources(x,
+  y)\allowbreak[J].
+\newblock IEEE Transactions on Information Theory, 1987, 33\allowbreak (1):
+  69-76.
+
+\bibitem[Krithivasan et~al.(2008)Krithivasan and Pradhan]{4797745}
+Krithivasan~D, Pradhan~S~S.
+\newblock Distributed source coding using abelian group codes: Extracting
+  performance from structure\allowbreak[C]//\allowbreak
+2008 46th Annual Allerton Conference on Communication, Control, and Computing.
+\newblock 2008: 1538-1545.
+
+\bibitem[Lalitha et~al.(2013)Lalitha, Prakash, Vinodh, Kumar, and
+  Pradhan]{6481622}
+Lalitha~V, Prakash~N, Vinodh~K, et~al.
+\newblock Linear coding schemes for the distributed computation of
+  subspaces\allowbreak[J].
+\newblock IEEE Journal on Selected Areas in Communications, 2013, 31\allowbreak
+  (4): 678-690.
+
+\bibitem[Lim et~al.(2019)Lim, Feng, Pastore, Nazer, and
+  Gastpar]{lim2019towards}
+Lim~S~H, Feng~C, Pastore~A, et~al.
+\newblock Towards an algebraic network information theory: Distributed lossy
+  computation of linear functions\allowbreak[C]//\allowbreak
+2019 IEEE International Symposium on Information Theory (ISIT).
+\newblock IEEE, 2019: 1827-1831.
+
+\bibitem[Chou et~al.(2003)Chou, Petrovic, and Ramachandran]{1208942}
+Chou~J, Petrovic~D, Ramachandran~K.
+\newblock A distributed and adaptive signal processing approach to reducing
+  energy consumption in sensor networks\allowbreak[C]//\allowbreak
+IEEE INFOCOM 2003. Twenty-second Annual Joint Conference of the IEEE Computer
+  and Communications Societies (IEEE Cat. No.03CH37428): volume~2.
+\newblock 2003: 1054-1062 vol.2.
+
+\bibitem[Huang et~al.(2011)Huang, Rakêt, Van~Luong, Nielsen, Lauze, and
+  Forchhammer]{6093771}
+Huang~X, Rakêt~L~L, Van~Luong~H, et~al.
+\newblock Multi-hypothesis transform domain wyner-ziv video coding including
+  optical flow\allowbreak[C]//\allowbreak
+2011 IEEE 13th International Workshop on Multimedia Signal Processing.
+\newblock 2011: 1-6.
+
+\bibitem[Nayak et~al.(2009)Nayak and Tuncel]{5208477}
+Nayak~J, Tuncel~E.
+\newblock Successive coding of correlated sources\allowbreak[J].
+\newblock IEEE Trans. Inf. Theory, 2009, 55\allowbreak (9): 4286-4298.
+
+\bibitem[Wang et~al.(2008)Wang, Li, and Li]{4697499}
+Wang~Z, Li~X, Li~J.
+\newblock {Q-LDPCA} based distributed coding for asymmetrical correlated
+  non-binary sources\allowbreak[C]//\allowbreak
+Proc. IEEE ICSP.
+\newblock Beijing, China, 2008.
+
+\bibitem[Chen et~al.(2021)Chen, Gündüz, Huang, Saad, Bennis, Feljan, and
+  Poor]{9562559}
+Chen~M, Gündüz~D, Huang~K, et~al.
+\newblock Distributed learning in wireless networks: Recent progress and future
+  challenges\allowbreak[J].
+\newblock IEEE Journal on Selected Areas in Communications, 2021, 39\allowbreak
+  (12): 3579-3605.
+
+\bibitem[Mao et~al.(2022)Mao, Dizdar, Clerckx, Schober, Popovski, and
+  Poor]{9831440}
+Mao~Y, Dizdar~O, Clerckx~B, et~al.
+\newblock Rate-splitting multiple access: {F}undamentals, survey, and future
+  research trends\allowbreak[J].
+\newblock IEEE Commun. Surveys Tuts., 2022, 24\allowbreak (4): 2073-2126.
+
+\bibitem[Dai et~al.(2018)Dai, Wang, Ding, Wang, Chen, and Hanzo]{8357810}
+Dai~L, Wang~B, Ding~Z, et~al.
+\newblock A survey of non-orthogonal multiple access for {5G}\allowbreak[J].
+\newblock IEEE Commun. Surveys Tuts., 2018, 20\allowbreak (3): 2294-2323.
+
+\bibitem[李钊陈柯宇~肖丽媛(2017)]{161197}
+李钊陈柯宇~肖丽媛.
+\newblock
+  非正交多址接入下行链路用户匹配与功率优化算法\allowbreak[J].
+\newblock 电子与信息学报, 2017, 39\allowbreak (08): 1804-1811.
+
+\bibitem[邵凯王光宇(2018)]{170618}
+邵凯王光宇.
+\newblock 多用户共享接入系统扩展序列优化与改进\allowbreak[J].
+\newblock 电子与信息学报, 2018, 40\allowbreak (04): 832-838.
+
+\bibitem[Boyd et~al.(2004)Boyd and Vandenberghe]{boyd2004convex}
+Boyd~S~P, Vandenberghe~L.
+\newblock Convex {O}ptimization\allowbreak[M].
+\newblock Cambridge {U}niversity {P}ress, 2004.
+
+\bibitem[Potra et~al.(2000)Potra and Wright]{potra2000interior}
+Potra~F~A, Wright~S~J.
+\newblock Interior-point methods\allowbreak[J].
+\newblock J. Comput. Appl. Math, 2000, 124\allowbreak (1-2): 281-302.
+
+\bibitem[Sun et~al.(2017)Sun, Babu, and Palomar]{7547360}
+Sun~Y, Babu~P, Palomar~D~P.
+\newblock Majorization-minimization algorithms in signal processing,
+  communications, and machine learning\allowbreak[J].
+\newblock IEEE Trans. Signal Process., 2017, 65\allowbreak (3): 794-816.
+
+\bibitem[Yu et~al.(2021)Yu and Avestimehr]{9229375}
+Yu~Q, Avestimehr~A~S.
+\newblock Coded computing for resilient, secure, and privacy-preserving
+  distributed matrix multiplication\allowbreak[J].
+\newblock IEEE Trans. Commun., 2021, 69\allowbreak (1): 59-72.
+
+\bibitem[Thomas et~al.(2006)Thomas and
+  Joy]{doi:https://doi.org/10.1002/047174882X.ch15}
+Thomas~M, Joy~A~T.
+\newblock Elements of {I}nformation {T}heory\allowbreak[M].
+\newblock Hoboken, NJ, USA: Wiley, 2006.
+
+\bibitem[Gallager(1962)]{1057683}
+Gallager~R.
+\newblock Low-density parity-check codes\allowbreak[J].
+\newblock IEEE Trans. Inf. Theory, 1962, 8\allowbreak (1): 21-28.
+
+\bibitem[Liveris et~al.(2002)Liveris, Xiong, and Georghiades]{1042242}
+Liveris~A, Xiong~Z, Georghiades~C.
+\newblock Compression of binary sources with side information at the decoder
+  using {LDPC} codes\allowbreak[J].
+\newblock IEEE Commun. Lett., 2002, 6\allowbreak (10): 440-442.
+
+\bibitem[Zhang et~al.(2007)Zhang, Chen, Wicker, and Berger]{4215156}
+Zhang~X, Chen~J, Wicker~S~B, et~al.
+\newblock Successive coding in multiuser information theory\allowbreak[J].
+\newblock IEEE Trans. Inf. Theory, 2007, 53\allowbreak (6): 2246-2254.
+
+\bibitem[Coleman(2006{\natexlab{b}})]{coleman2006low}
+Coleman~T.
+\newblock Low-complexity approaches to distributed data
+  dissemination\allowbreak[D].
+\newblock Massachusetts Institute of Technology, 2006{\natexlab{b}}.
+
+\bibitem[Hua et~al.(2021)Hua and Wu]{hua2021joint}
+Hua~M, Wu~Q.
+\newblock Joint dynamic passive beamforming and resource allocation for
+  {IRS}-aided full-duplex {WPCN}\allowbreak[J].
+\newblock IEEE Trans. Wireless Commun., 2021, 21\allowbreak (7): 4829-4843.
+
+\bibitem[Yuille et~al.(2003)Yuille and Rangarajan]{6788812}
+Yuille~A~L, Rangarajan~A.
+\newblock The concave-convex procedure\allowbreak[J].
+\newblock Neural Computation, 2003, 15\allowbreak (4): 915-936.
+
+\bibitem[Goldsmith(2005)]{goldsmith2005wireless}
+Goldsmith~A.
+\newblock Wireless {C}ommunications\allowbreak[M].
+\newblock Cambridge {U}niversity {P}ress, 2005.
+
+\bibitem[Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez,
+  Kaiser, and Polosukhin]{vaswani2017attention}
+Vaswani~A, Shazeer~N, Parmar~N, et~al.
+\newblock Attention is all you need\allowbreak[C]//\allowbreak
+Proc. of Int. Conf. Neural Inf. Process. Syst.
+\newblock Long Beach, USA, 2017.
+
+\bibitem[Team(2024)]{qwen2.5}
+Team~Q.
+\newblock Qwen2.5: A party of foundation models\allowbreak[EB/OL].
+\newblock 2024.
+\newblock \url{https://qwenlm.github.io/blog/qwen2.5/.}
+
+\bibitem[Yang et~al.(2024)Yang, Yang, Hui, et~al.]{qwen2}
+Yang~A, Yang~B, Hui~B, et~al.
+\newblock Qwen2 technical report\allowbreak[J].
+\newblock arXiv preprint arXiv:2407.10671, 2024.
+
+\bibitem[Sartipi et~al.(2008)Sartipi and Fekri]{4471935}
+Sartipi~M, Fekri~F.
+\newblock Distributed source coding using short to moderate length
+  rate-compatible {LDPC} codes: {T}he entire {Slepian-Wolf} rate
+  region\allowbreak[J].
+\newblock IEEE Trans. Commun., 2008, 56\allowbreak (3): 400-411.
+
+\bibitem[Buyukates et~al.(2023)Buyukates, Ozfatura, Ulukus, and
+  Gündüz]{9755943}
+Buyukates~B, Ozfatura~E, Ulukus~S, et~al.
+\newblock Gradient coding with dynamic clustering for straggler-tolerant
+  distributed learning\allowbreak[J].
+\newblock IEEE Transactions on Communications, 2023, 71\allowbreak (6):
+  3317-3332.
+
+\bibitem[Potluri et~al.(2007)Potluri, Chilumuru, Kambhampati, and
+  Namuduri]{4259766}
+Potluri~M, Chilumuru~S, Kambhampati~S, et~al.
+\newblock Distributed source coding using non-binary {LDPC} codes for sensor
+  network applications\allowbreak[C]//\allowbreak
+Proc. IEEE CWIT.
+\newblock Edmonton, AB, Canada, 2007.
+
+\end{thebibliography}
