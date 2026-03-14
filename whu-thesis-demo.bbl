@@ -1,4 +1,4 @@
-\begin{thebibliography}{112}
+\begin{thebibliography}{123}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\else
@@ -263,13 +263,13 @@ Yu~Q, Maddah-Ali~M, Avestimehr~S.
   multiplication\allowbreak[J].
 \newblock Advances in Neural Information Processing Systems, 2017, 30.
 
-\bibitem[Dutta et~al.(2019)Dutta, Fahim, Haddadpour, Jeong, Cadambe, and
-  Grover]{dutta2019optimal}
+\bibitem[Dutta et~al.(2019{\natexlab{a}})Dutta, Fahim, Haddadpour, Jeong,
+  Cadambe, and Grover]{dutta2019optimal}
 Dutta~S, Fahim~M, Haddadpour~F, et~al.
 \newblock On the optimal recovery threshold of coded matrix
   multiplication\allowbreak[J].
-\newblock IEEE Transactions on Information Theory, 2019, 66\allowbreak (1):
-  278-301.
+\newblock IEEE Transactions on Information Theory, 2019{\natexlab{a}},
+  66\allowbreak (1): 278-301.
 
 \bibitem[Yu et~al.(2020)Yu, Maddah-Ali, and Avestimehr]{yu2020straggler}
 Yu~Q, Maddah-Ali~M~A, Avestimehr~A~S.
@@ -405,10 +405,11 @@ Diao~Y, Meng~Z, Xu~X, et~al.
 Proc. IEEE INFOCOM.
 \newblock Vancouver, BC, Canada, 2024.
 
-\bibitem[Chen et~al.(2008)Chen and Berger]{4567562}
+\bibitem[Chen et~al.(2008{\natexlab{a}})Chen and Berger]{4567562}
 Chen~J, Berger~T.
 \newblock Robust distributed source coding\allowbreak[J].
-\newblock IEEE Trans. Inf. Theory, 2008, 54\allowbreak (8): 3385-3398.
+\newblock IEEE Trans. Inf. Theory, 2008{\natexlab{a}}, 54\allowbreak (8):
+  3385-3398.
 
 \bibitem[Prabhakaran et~al.(2007)Prabhakaran and Ramchandran]{4313115}
 Prabhakaran~V, Ramchandran~K.
@@ -649,6 +650,75 @@ Sun~Y, Babu~P, Palomar~D~P.
   communications, and machine learning\allowbreak[J].
 \newblock IEEE Trans. Signal Process., 2017, 65\allowbreak (3): 794-816.
 
+\bibitem[Kianidehkordi et~al.(2021)Kianidehkordi, Ferdinand, and
+  Draper]{9252114}
+Kianidehkordi~S, Ferdinand~N, Draper~S~C.
+\newblock Hierarchical coded matrix multiplication\allowbreak[J].
+\newblock IEEE Trans. Inf. Theory, 2021, 67\allowbreak (2): 726-754.
+
+\bibitem[Dutta et~al.(2019{\natexlab{b}})Dutta, Cadambe, and Grover]{8758338}
+Dutta~S, Cadambe~V, Grover~P.
+\newblock “short-dot”: Computing large linear transforms distributedly
+  using coded short dot products\allowbreak[J].
+\newblock IEEE Trans. Inf. Theory, 2019{\natexlab{b}}, 65\allowbreak (10):
+  6171-6193.
+
+\bibitem[Cover(1975)]{1055356}
+Cover~T.
+\newblock A proof of the data compression theorem of {Slepian and Wolf} for
+  ergodic sources (corresp.)\allowbreak[J].
+\newblock IEEE Trans. Inf. Theory, 1975, 21\allowbreak (2): 226-228.
+
+\bibitem[Sun et~al.(2010)Sun, Tian, Chen, and Wong]{5407617}
+Sun~Z, Tian~C, Chen~J, et~al.
+\newblock {LDPC} code design for asynchronous {Slepian-Wolf}
+  coding\allowbreak[J].
+\newblock IEEE Trans. Commun., 2010, 58\allowbreak (2): 511-520.
+
+\bibitem[Matsuta et~al.(2015)Matsuta and Uyematsu]{7360786}
+Matsuta~T, Uyematsu~T.
+\newblock Achievable rate regions for asynchronous {Slepian-Wolf} coding
+  systems\allowbreak[C]//\allowbreak
+Proc. IEEE ITW.
+\newblock Jeju, Korea (South), 2015.
+
+\bibitem[Chen et~al.(2008{\natexlab{b}})Chen and Berger]{4475358}
+Chen~J, Berger~T.
+\newblock Successive {Wyner–Ziv} coding scheme and its application to the
+  quadratic {Gaussian CEO} problem\allowbreak[J].
+\newblock IEEE Trans. Inf. Theory, 2008{\natexlab{b}}, 54\allowbreak (4):
+  1586-1603.
+
+\bibitem[Yang et~al.(2008)Yang, Stankovic, Xiong, and Zhao]{4494710}
+Yang~Y, Stankovic~V, Xiong~Z, et~al.
+\newblock On multiterminal source code design\allowbreak[J].
+\newblock IEEE Trans. Inf. Theory, 2008, 54\allowbreak (5): 2278-2302.
+
+\bibitem[Garcia-Frias et~al.(2004)Garcia-Frias and Cabarcas]{1365367}
+Garcia-Frias~J, Cabarcas~F.
+\newblock Approaching the {Slepian-Wolf} boundary using practical channel
+  codes\allowbreak[C]//\allowbreak
+Proc. IEEE ISIT.
+\newblock Chicago, IL, USA, 2004.
+
+\bibitem[Gehrig et~al.(2005)Gehrig and Dragotti]{1375242}
+Gehrig~N, Dragotti~P.
+\newblock Symmetric and asymmetric {Slepian-Wolf} codes with systematic and
+  nonsystematic linear codes\allowbreak[J].
+\newblock IEEE Commun. Lett., 2005, 9\allowbreak (1): 61-63.
+
+\bibitem[Dupraz et~al.(2014)Dupraz, Roumy, and Kieffer]{6685982}
+Dupraz~E, Roumy~A, Kieffer~M.
+\newblock Source coding with side information at the decoder and uncertain
+  knowledge of the correlation\allowbreak[J].
+\newblock IEEE Trans. Commun., 2014, 62\allowbreak (1): 269-279.
+
+\bibitem[Liveris et~al.(2002)Liveris, Xiong, and Georghiades]{1042242}
+Liveris~A, Xiong~Z, Georghiades~C.
+\newblock Compression of binary sources with side information at the decoder
+  using {LDPC} codes\allowbreak[J].
+\newblock IEEE Commun. Lett., 2002, 6\allowbreak (10): 440-442.
+
 \bibitem[Yu et~al.(2021)Yu and Avestimehr]{9229375}
 Yu~Q, Avestimehr~A~S.
 \newblock Coded computing for resilient, secure, and privacy-preserving
@@ -666,11 +736,12 @@ Gallager~R.
 \newblock Low-density parity-check codes\allowbreak[J].
 \newblock IEEE Trans. Inf. Theory, 1962, 8\allowbreak (1): 21-28.
 
-\bibitem[Liveris et~al.(2002)Liveris, Xiong, and Georghiades]{1042242}
-Liveris~A, Xiong~Z, Georghiades~C.
-\newblock Compression of binary sources with side information at the decoder
-  using {LDPC} codes\allowbreak[J].
-\newblock IEEE Commun. Lett., 2002, 6\allowbreak (10): 440-442.
+\bibitem[Davey et~al.(1998)Davey and MacKay]{706440}
+Davey~M, MacKay~D.
+\newblock Low density parity check codes over
+  {GF}(q)\allowbreak[C]//\allowbreak
+Proc. IEEE ITW.
+\newblock Killarney, Ireland, 1998.
 
 \bibitem[Zhang et~al.(2007)Zhang, Chen, Wicker, and Berger]{4215156}
 Zhang~X, Chen~J, Wicker~S~B, et~al.

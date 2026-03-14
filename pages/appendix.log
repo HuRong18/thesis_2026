@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.3)  3 FEB 2026 15:26
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.3)  14 MAR 2026 14:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -832,55 +832,38 @@ Missing character: There is no 四 ("56DB) in font nullfont!
 Missing character: There is no 个 ("4E2A) in font nullfont!
 Missing character: There is no 步 ("6B65) in font nullfont!
 Missing character: There is no 骤 ("9AA4) in font nullfont!
-Missing character: There is no [ ("5B) in font nullfont!
-\citation{1042242}
 ! Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .^^J
-l.35 ...算法涉及以下四个步骤\cite{1042242, 4697499, 4259766}
-                                                  ：
+l.35 基于伴随式的 BP 解码算法涉及以下四个步骤\upcite
+                                  {1042242, 4697499, 4259766}：
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-
-LaTeX Warning: Citation `1042242' on page  undefined on input line 35.
-
+Missing character: There is no 1 ("31) in font nullfont!
+Missing character: There is no 0 ("30) in font nullfont!
+Missing character: There is no 4 ("34) in font nullfont!
+Missing character: There is no 2 ("32) in font nullfont!
+Missing character: There is no 2 ("32) in font nullfont!
+Missing character: There is no 4 ("34) in font nullfont!
+Missing character: There is no 2 ("32) in font nullfont!
 Missing character: There is no , ("2C) in font nullfont!
-\citation{4697499}
-! Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .^^J
-l.35 ...算法涉及以下四个步骤\cite{1042242, 4697499, 4259766}
-                                                  ：
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `4697499' on page  undefined on input line 35.
-
+Missing character: There is no 4 ("34) in font nullfont!
+Missing character: There is no 6 ("36) in font nullfont!
+Missing character: There is no 9 ("39) in font nullfont!
+Missing character: There is no 7 ("37) in font nullfont!
+Missing character: There is no 4 ("34) in font nullfont!
+Missing character: There is no 9 ("39) in font nullfont!
+Missing character: There is no 9 ("39) in font nullfont!
 Missing character: There is no , ("2C) in font nullfont!
-\citation{4259766}
-! Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .^^J
-l.35 ...算法涉及以下四个步骤\cite{1042242, 4697499, 4259766}
-                                                  ：
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `4259766' on page  undefined on input line 35.
-
-Missing character: There is no ] ("5D) in font nullfont!
+Missing character: There is no 4 ("34) in font nullfont!
+Missing character: There is no 2 ("32) in font nullfont!
+Missing character: There is no 5 ("35) in font nullfont!
+Missing character: There is no 9 ("39) in font nullfont!
+Missing character: There is no 7 ("37) in font nullfont!
+Missing character: There is no 6 ("36) in font nullfont!
+Missing character: There is no 6 ("36) in font nullfont!
 Missing character: There is no ： ("FF1A) in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 30--36
@@ -970,21 +953,6 @@ Overfull \hbox (8.90106pt too wide) in paragraph at lines 30--36
 
 Overfull \hbox (9.04456pt too wide) in paragraph at lines 30--36
 \OML/cmm/m/it/10 x[]$
- []
-
-
-Overfull \hbox (5.43pt too wide) in paragraph at lines 30--36
-[]
- []
-
-
-Overfull \hbox (5.43pt too wide) in paragraph at lines 30--36
-[]
- []
-
-
-Overfull \hbox (5.43pt too wide) in paragraph at lines 30--36
-[] 
  []
 
 
@@ -1895,7 +1863,7 @@ Overfull \hbox (70.54697pt too wide) in paragraph at lines 70--75
  []
 
 
-Overfull \hbox (24.25967pt too wide) in paragraph at lines 70--75
+Overfull \hbox (23.77219pt too wide) in paragraph at lines 70--75
 \OML/cmm/m/it/10 L[] \OT1/cmr/m/n/10 =
  []
 
@@ -2061,9 +2029,35 @@ Missing character: There is no 为 ("4E3A) in font nullfont!
 Missing character: There is no 向 ("5411) in font nullfont!
 Missing character: There is no 量 ("91CF) in font nullfont!
 Missing character: There is no 。 ("3002) in font nullfont!
+Missing character: There is no 当 ("5F53) in font nullfont!
 Missing character: There is no 取 ("53D6) in font nullfont!
+Missing character: There is no 遍 ("904D) in font nullfont!
+Missing character: There is no 所 ("6240) in font nullfont!
+Missing character: There is no 有 ("6709) in font nullfont!
+Missing character: There is no 子 ("5B50) in font nullfont!
+Missing character: There is no 集 ("96C6) in font nullfont!
+Missing character: There is no 时 ("65F6) in font nullfont!
 Missing character: There is no ， ("FF0C) in font nullfont!
-Missing character: There is no 得 ("5F97) in font nullfont!
+Missing character: There is no 这 ("8FD9) in font nullfont!
+Missing character: There is no 就 ("5C31) in font nullfont!
+Missing character: There is no 是 ("662F) in font nullfont!
+Missing character: There is no 经 ("7ECF) in font nullfont!
+Missing character: There is no 典 ("5178) in font nullfont!
+Missing character: There is no 的 ("7684) in font nullfont!
+Missing character: There is no S ("53) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no p ("70) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no a ("61) in font nullfont!
+Missing character: There is no n ("6E) in font nullfont!
+Missing character: There is no - ("2D) in font nullfont!
+Missing character: There is no W ("57) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no f ("66) in font nullfont!
+Missing character: There is no 区 ("533A) in font nullfont!
+Missing character: There is no 域 ("57DF) in font nullfont!
 
 ! LaTeX Error: Environment align undefined.
 
@@ -2080,20 +2074,11 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.81 ^^I\sum
-            _{n\in\mathcal{T}}\eta_n>H($\tilde{\mathbf{g}}_1,\tilde{\mathbf{...
+l.81 ^^I^^I\sum
+               _{n\in\mathcal{T}}\eta_n>H(\tilde{\mathbf{g}}(\mathcal{T})|\t...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.81 ^^I\sum_{n\in\mathcal{T}}\eta_n>H($\tilde
-                                              {\mathbf{g}}_1,\tilde{\mathbf{...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-Missing character: There is no ) ("29) in font nullfont!
 
 ! LaTeX Error: \begin{document} ended by \end{align}.
 
@@ -2106,6 +2091,17 @@ l.82 \end{align}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.82 \end{align}
+                
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
 
 Overfull \hbox (70.92549pt too wide) in paragraph at lines 77--83
@@ -2121,13 +2117,8 @@ Overfull \hbox (107.55525pt too wide) in paragraph at lines 77--83
  []
 
 
-Overfull \hbox (18.54362pt too wide) in paragraph at lines 77--83
-\OMS/cmsy/m/n/10 T \OT1/cmr/m/n/10 =
- []
-
-
-Overfull \hbox (6.54169pt too wide) in paragraph at lines 77--83
-\OMS/cmsy/m/n/10 G$
+Overfull \hbox (7.98811pt too wide) in paragraph at lines 77--83
+\OMS/cmsy/m/n/10 T$
  []
 
 
@@ -2136,13 +2127,116 @@ Overfull \hbox (50.39499pt too wide) in paragraph at lines 77--83
  []
 
 
-Overfull \hbox (70.33076pt too wide) in paragraph at lines 77--83
-\OML/cmm/m/it/10 H\OT1/cmr/m/n/10 ($$[]\OML/cmm/m/it/10 ; []; [] ; []$
+Overfull \hbox (95.64914pt too wide) in paragraph at lines 77--83
+\OML/cmm/m/it/10 H\OT1/cmr/m/n/10 ([](\OMS/cmsy/m/n/10 T\OT1/cmr/m/n/10 )\OMS/c
+msy/m/n/10 j[]\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 T[]\OT1/cmr/m/n/10 ))\OML/cmm/m
+/it/10 ;  \OMS/cmsy/m/n/10 8T ^^R
+ []
+
+
+Overfull \hbox (9.31947pt too wide) in paragraph at lines 77--83
+\OMS/cmsy/m/n/10 G\OML/cmm/m/it/10 ;$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.84 取
+      $\mathcal{T}=\mathcal{G}$，和速率下界为
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 取 ("53D6) in font nullfont!
+Missing character: There is no ， ("FF0C) in font nullfont!
+Missing character: There is no 和 ("548C) in font nullfont!
+Missing character: There is no 速 ("901F) in font nullfont!
+Missing character: There is no 率 ("7387) in font nullfont!
+Missing character: There is no 下 ("4E0B) in font nullfont!
+Missing character: There is no 界 ("754C) in font nullfont!
+Missing character: There is no 为 ("4E3A) in font nullfont!
+
+! LaTeX Error: Environment align undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85 \begin{align}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.86 ^^I\sum
+            _{n\in\mathcal{T}}\eta_n>H(\tilde{\mathbf{g}}_1,\tilde{\mathbf{g...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: \begin{document} ended by \end{align}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.87 \end{align}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.87 \end{align}
+                
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no 记 ("8BB0) in font nullfont!
+Missing character: There is no 为 ("4E3A) in font nullfont!
+Missing character: There is no 区 ("533A) in font nullfont!
+Missing character: There is no 域 ("57DF) in font nullfont!
+Missing character: There is no 。 ("3002) in font nullfont!
+
+Overfull \hbox (38.54362pt too wide) in paragraph at lines 84--89
+[]$\OMS/cmsy/m/n/10 T \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (6.54169pt too wide) in paragraph at lines 84--89
+\OMS/cmsy/m/n/10 G$
+ []
+
+
+Overfull \hbox (50.39499pt too wide) in paragraph at lines 84--89
+[][] \OML/cmm/m/it/10 ^^Q[] >
+ []
+
+
+Overfull \hbox (74.21967pt too wide) in paragraph at lines 84--89
+\OML/cmm/m/it/10 H\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 ; []; [] ; []\OT1/cmr/m/n
+/10 )$
+ []
+
+
+Overfull \hbox (14.13663pt too wide) in paragraph at lines 84--89
+\OMS/cmsy/m/n/10 h[]$ 
  []
 
 ! Undefined control sequence.
-l.84 \section
-             {定理\ref{condition}的证明}\label{<condition>}
+l.90 \subsection
+                {线性恢复边界}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2156,18 +2250,74 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.84 \section{定
-               理\ref{condition}的证明}\label{<condition>}
+l.90 \subsection{线
+                  性恢复边界}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-Missing character: There is no 定 ("5B9A) in font nullfont!
-Missing character: There is no 理 ("7406) in font nullfont!
+Missing character: There is no 线 ("7EBF) in font nullfont!
+Missing character: There is no 性 ("6027) in font nullfont!
+Missing character: There is no 恢 ("6062) in font nullfont!
+Missing character: There is no 复 ("590D) in font nullfont!
+Missing character: There is no 边 ("8FB9) in font nullfont!
+Missing character: There is no 界 ("754C) in font nullfont!
+Missing character: There is no 取 ("53D6) in font nullfont!
+Missing character: There is no 辅 ("8F85) in font nullfont!
+Missing character: There is no 助 ("52A9) in font nullfont!
+Missing character: There is no 矩 ("77E9) in font nullfont!
+Missing character: There is no 阵 ("9635) in font nullfont!
+Missing character: There is no ， ("FF0C) in font nullfont!
+Missing character: There is no 即 ("5373) in font nullfont!
+Missing character: There is no 目 ("76EE) in font nullfont!
+Missing character: There is no 标 ("6807) in font nullfont!
+Missing character: There is no 全 ("5168) in font nullfont!
+Missing character: There is no 梯 ("68AF) in font nullfont!
+Missing character: There is no 度 ("5EA6) in font nullfont!
+Missing character: There is no 系 ("7CFB) in font nullfont!
+Missing character: There is no 数 ("6570) in font nullfont!
+Missing character: There is no 行 ("884C) in font nullfont!
+Missing character: There is no 向 ("5411) in font nullfont!
+Missing character: There is no 量 ("91CF) in font nullfont!
+Missing character: There is no ， ("FF0C) in font nullfont!
+Missing character: There is no 大 ("5927) in font nullfont!
+Missing character: There is no 小 ("5C0F) in font nullfont!
+Missing character: There is no 为 ("4E3A) in font nullfont!
+Missing character: There is no ， ("FF0C) in font nullfont!
+Missing character: There is no 这 ("8FD9) in font nullfont!
+Missing character: There is no 意 ("610F) in font nullfont!
+Missing character: There is no 味 ("5473) in font nullfont!
+Missing character: There is no 着 ("7740) in font nullfont!
+Missing character: There is no 解 ("89E3) in font nullfont!
+Missing character: There is no 码 ("7801) in font nullfont!
+Missing character: There is no 器 ("5668) in font nullfont!
+Missing character: There is no 的 ("7684) in font nullfont!
+Missing character: There is no 目 ("76EE) in font nullfont!
+Missing character: There is no 标 ("6807) in font nullfont!
+Missing character: There is no 直 ("76F4) in font nullfont!
+Missing character: There is no 接 ("63A5) in font nullfont!
+Missing character: There is no 为 ("4E3A) in font nullfont!
+Missing character: There is no 。 ("3002) in font nullfont!
+Missing character: There is no 因 ("56E0) in font nullfont!
+Missing character: There is no 此 ("6B64) in font nullfont!
+Missing character: There is no ， ("FF0C) in font nullfont!
+Missing character: There is no ， ("FF0C) in font nullfont!
+Missing character: There is no ， ("FF0C) in font nullfont!
+Missing character: There is no 集 ("96C6) in font nullfont!
+Missing character: There is no 合 ("5408) in font nullfont!
+Missing character: There is no 只 ("53EA) in font nullfont!
+Missing character: There is no 能 ("80FD) in font nullfont!
+Missing character: There is no 取 ("53D6) in font nullfont!
+Missing character: There is no 。 ("3002) in font nullfont!
+Missing character: There is no 根 ("6839) in font nullfont!
+Missing character: There is no 据 ("636E) in font nullfont!
+Missing character: There is no L ("4C) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no m ("6D) in font nullfont!
 ! Undefined control sequence.
-<write> ...Reference `condition' on page \thepage 
+<write> ...ence `lim2019towards' on page \thepage 
                                                   \space undefined\on@line .^^J
-l.84 \section{定理\ref{condition}
-                               的证明}\label{<condition>}
+l.92 ...al{S}$只能取$\{1\}$。根据Lim\ref{lim2019towards}
+                                                  的定理1中的约束条件d要求
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2175,24 +2325,955 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `condition' on page  undefined on input line 84.
+LaTeX Warning: Reference `lim2019towards' on page  undefined on input line 92.
 
 Missing character: There is no 的 ("7684) in font nullfont!
-Missing character: There is no 证 ("8BC1) in font nullfont!
-Missing character: There is no 明 ("660E) in font nullfont!
-)
-! Emergency stop.
-<*> appendix.tex
-                
-*** (job aborted, no legal \end found)
+Missing character: There is no 定 ("5B9A) in font nullfont!
+Missing character: There is no 理 ("7406) in font nullfont!
+Missing character: There is no 1 ("31) in font nullfont!
+Missing character: There is no 中 ("4E2D) in font nullfont!
+Missing character: There is no 的 ("7684) in font nullfont!
+Missing character: There is no 约 ("7EA6) in font nullfont!
+Missing character: There is no 束 ("675F) in font nullfont!
+Missing character: There is no 条 ("6761) in font nullfont!
+Missing character: There is no 件 ("4EF6) in font nullfont!
+Missing character: There is no d ("64) in font nullfont!
+Missing character: There is no 要 ("8981) in font nullfont!
+Missing character: There is no 求 ("6C42) in font nullfont!
 
- 
+Overfull \hbox (20.0pt too wide) in paragraph at lines 90--93
+[]
+ []
+
+
+Overfull \hbox (18.11102pt too wide) in paragraph at lines 90--93
+\OT1/cmr/bx/n/10 E \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (20.95833pt too wide) in paragraph at lines 90--93
+\OT1/cmr/bx/n/10 B$$\OT1/cmr/m/n/10 1 \OMS/cmsy/m/n/10 ^^B
+ []
+
+
+Overfull \hbox (30.93787pt too wide) in paragraph at lines 90--93
+\OML/cmm/m/it/10 r$$[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (58.77309pt too wide) in paragraph at lines 90--93
+[][] \OML/cmm/m/it/10 b[]g[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (15.68057pt too wide) in paragraph at lines 90--93
+\OT1/cmr/bx/n/10 g[]$
+ []
+
+
+Overfull \hbox (23.77219pt too wide) in paragraph at lines 90--93
+\OML/cmm/m/it/10 L[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (29.38054pt too wide) in paragraph at lines 90--93
+\OT1/cmr/m/n/10 1$$\OML/cmm/m/it/10 L[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (37.66557pt too wide) in paragraph at lines 90--93
+\OT1/cmr/m/n/10 0$$\OMS/cmsy/m/n/10 S$$f\OT1/cmr/m/n/10 1\OMS/cmsy/m/n/10 g$[] 
+
+ []
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+I'm guessing that you meant to end an alignment here.
+
+! Misplaced \cr.
+<inserted text> \cr 
+                    
+l.95 ^^I^^I\mathbf
+                  {E}(\mathcal{S})\\
+(That makes 100 errors; please try again.) 
 Here is how much of TeX's memory you used:
- 79 strings out of 474773
- 1512 string characters out of 5757725
+ 81 strings out of 474773
+ 1532 string characters out of 5757725
  1928839 words of memory out of 5000000
- 22318 multiletter control sequences out of 15000+600000
+ 22320 multiletter control sequences out of 15000+600000
  559315 words of font info for 42 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 28i,6n,35p,239b,134s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 28i,11n,31p,239b,134s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
 Output written on appendix.pdf (1 page).

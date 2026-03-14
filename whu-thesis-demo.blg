@@ -120,6 +120,10 @@ Repeated entry---line 1227 of file refs.bib
  : @article{1328091
  :                 ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 1238 of file refs.bib
+ : @article{1055356
+ :                 ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 1250 of file refs.bib
  : @article{8663353
  :                 ,
@@ -317,45 +321,45 @@ Name 1 in "Yang, An, and Yang, Bosong and Hui, Binyuan and others" has a comma a
 while executing---line 2377 of file data/gbt7714-2005-numerical.bst
 Name 1 in "Yang, An, and Yang, Bosong and Hui, Binyuan and others" has a comma at the end for entry qwen2
 while executing---line 2377 of file data/gbt7714-2005-numerical.bst
-You've used 112 entries,
+You've used 123 entries,
             5261 wiz_defined-function locations,
-            1617 strings with 26595 characters,
-and the built_in function-call counts, 908296 in all, are:
-= -- 18179
-> -- 105721
-< -- 133421
-+ -- 37059
-- -- 6849
-* -- 5489
-:= -- 125502
-add.period$ -- 339
-call.type$ -- 112
-change.case$ -- 219
-chr.to.int$ -- 33216
-cite$ -- 113
-duplicate$ -- 2629
-empty$ -- 7077
-format.name$ -- 3435
-if$ -- 236003
-int.to.chr$ -- 5
-int.to.str$ -- 113
+            1665 strings with 28021 characters,
+and the built_in function-call counts, 990059 in all, are:
+= -- 19860
+> -- 115238
+< -- 145348
++ -- 40339
+- -- 7450
+* -- 5996
+:= -- 136736
+add.period$ -- 372
+call.type$ -- 123
+change.case$ -- 241
+chr.to.int$ -- 36143
+cite$ -- 124
+duplicate$ -- 2888
+empty$ -- 7759
+format.name$ -- 3739
+if$ -- 257316
+int.to.chr$ -- 7
+int.to.str$ -- 124
 missing$ -- 0
-newline$ -- 602
-num.names$ -- 336
-pop$ -- 45670
+newline$ -- 660
+num.names$ -- 369
+pop$ -- 49854
 preamble$ -- 1
-purify$ -- 112
+purify$ -- 123
 quote$ -- 0
-skip$ -- 96375
+skip$ -- 105087
 stack$ -- 0
-substring$ -- 42300
-swap$ -- 122
-text.length$ -- 1905
+substring$ -- 46039
+swap$ -- 137
+text.length$ -- 2077
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1366
+type$ -- 1503
 warning$ -- 1
-while$ -- 2411
+while$ -- 2632
 width$ -- 0
-write$ -- 1614
-(There were 81 error messages)
+write$ -- 1773
+(There were 82 error messages)

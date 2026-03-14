@@ -5,7 +5,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\chapter{面向完整重构的DSC辅助编码计算结果传输方法研究}
+\chapter{面向独立恢复的DSC辅助编码计算结果传输方法研究}
 
 \section{定理\ref{proposition1}的证明} \label{<appendix-proposition1>}
 为了证明此命题，对于每个集合 $\Pi_i$，定义一个不带模运算的索引集如下
@@ -28,13 +28,13 @@
 
 
 \section{BP译码算法}\label{appendix-BP}
-该算法将从长度为 $m$ 的伴随式序列 $\{S_{X_v}^{(j)}\}_{j=1}^m$ \cite{1042242} 中解码出长度为 $n$ 的序列 $\{X_v^{(j)}\}_{j=1}^n$。
+该算法将从长度为 $m$ 的伴随式序列 $\{S_{X_v}^{(j)}\}_{j=1}^m$ \upcite{1042242} 中解码出长度为 $n$ 的序列 $\{X_v^{(j)}\}_{j=1}^n$。
 具体而言，在相应的 Tanner 图中，变量节点由 $\mathbf{X}_v^{1:n}$ 的元素组成，并在下文中为方便表示记为 $\{x_i\}_{i=1}^n$；
 同样，校验节点由 $\mathbf{S}_{X,v}^{1:m}$ 的元素组成，并记为 $\{s_j\}_{j=1}^m$。
 对于每个符号 $a \in GF(q)$，设 $M_{i \to j}(a)$ 为从变量节点 $x_i$ 发往校验节点 $s_j$ 的消息，$M_{j \to i}(a)$ 为从校验节点 $s_j$ 发往变量节点 $x_i$ 的消息。
-基于伴随式的 BP 解码算法涉及以下四个步骤\cite{1042242, 4697499, 4259766}：
+基于伴随式的 BP 解码算法涉及以下四个步骤\upcite{1042242, 4697499, 4259766}：
 
-\textbf{Initialization (初始化):} 根据 $\{X_v^{(j)}\}_{j=1}^n$ 的分布，设定
+初始化（Initialization）: 根据 $\{X_v^{(j)}\}_{j=1}^n$ 的分布，设定
 \begin{equation}
 	M_{i \to j}(a) = \text{Pr}\{x_i = a\}, \quad \forall a \in GF(q).
 	\label{eq:bp_init}
@@ -42,7 +42,7 @@
 
 初始化之后，以下两个步骤将交替执行。
 
-\textbf{Horizontal step (水平步骤):} 对于每个校验节点 $s_j$，计算发往每个连接的变量节点 $x_i$ 的消息如下
+水平步骤（Horizontal step）: 对于每个校验节点 $s_j$，计算发往每个连接的变量节点 $x_i$ 的消息如下
 \begin{align}
 	M_{j \to i}(a) = \sum_{\{a_k\}_{k \in N(j)}} &\delta(a_i = a \text{ and } \sum_{k \in N(j)} H_{jk} a_k = s_j) \nonumber \\
 	&\cdot \prod_{k \in N(j) \setminus i} M_{k \to j}(a_k), \quad \forall a \in GF(q),
@@ -50,14 +50,14 @@
 \end{align}
 其中当事件 $E$ 为真（假）时，$\delta(E)$ 等于一（零），$H_{jk}$ 是奇偶校验矩阵 $\mathbf{H}^{n \times m}$ 的元素，$N(j) \setminus i$ 表示除 $x_i$ 以外连接到 $s_j$ 的变量节点集合。
 
-\textbf{Vertical step (垂直步骤):} 对于每个变量节点 $x_i$，计算发往每个连接的校验节点 $s_j$ 的消息如下
+垂直步骤（Vertical Step）:  对于每个变量节点 $x_i$，计算发往每个连接的校验节点 $s_j$ 的消息如下
 \begin{equation}
 	M_{i \to j}(a) = \frac{1}{Z_{i \to j}} \text{Pr}\{x_i = a\} \prod_{k \in N(i) \setminus j} M_{k \to i}(a), \quad \forall a \in GF(q),
 	\label{eq:bp_vertical}
 \end{equation}
 其中 $Z_{i \to j}$ 是一个归一化因子，确保概率之和为一，$N(i) \setminus j$ 表示除 $s_j$ 以外连接到 $x_i$ 的校验节点集合。
 
-\textbf{Decision (判决):} 做出解码判决如下
+判决（Decision）: 做出解码判决如下
 \begin{equation}
 	\hat{X}_v^{(i)} = \arg \max_{a \in GF(q)} \text{Pr}\{x_i = a\} \prod_{j \in N(i)} M_{j \to i}(a), \quad \forall i \in [n].
 	\label{eq:bp_decision}
@@ -68,7 +68,7 @@
 \chapter{面向线性恢复的DSC辅助编码计算结果传输方法研究}
 
 \section{定理\ref{<linear>}的证明}\label{<linear-proof>}
-基于Lim\ref{lim2019towards}的定理1，在无损（$D=0, U=\mathbf{g}$且无边信息（$X=\emptyset$）的条件下进行推导。
+基于Lim\cite{lim2019towards}的定理1，在无损（$D=0, U=\mathbf{g}$且无边信息（$X=\emptyset$）的条件下进行推导。
 \subsection{完整恢复边界}
 取辅助矩阵$\mathbf{E}=\mathbf{I}$，即单位矩阵，大小为$r\times r$，这意味着解码器的目标是恢复$\tilde{\mathbf{Y}}_{\mathbf{I}}=[\mathbf{g}_{\pi(1)}^{(t)},\cdots,\mathbf{g}_{\pi(r)}^{(t)}]$，即恢复所有原始局部计算结果。
 因此，$L_{\mathbf{E}}=r$，由于需要恢复所有信息，干扰矩阵$\mathbf{C}$必须为空，即$L_{\mathbf{C}}=0$，否则无法区分具体信源。集合$\mathcal{S}=[1:r]$，代入定义1后可以得到
@@ -89,7 +89,7 @@
 
 \subsection{线性恢复边界}
 取辅助矩阵$\mathbf{E}=\mathbf{B}$，即目标全梯度系数行向量，大小为$1\times r$，这意味着解码器的目标直接为$\tilde{\mathbf{Y}}_{\mathbf{B}}=\sum_{n\in\mathcal{G}}b_n g_n=\mathbf{g}^{(t)}$。
-因此，$L_{\mathbf{E}}=1$，$L_{\mathbf{C}}=0$，集合$\mathcal{S}$只能取$\{1\}$。根据Lim\ref{lim2019towards}的定理1中的约束条件d要求
+因此，$L_{\mathbf{E}}=1$，$L_{\mathbf{C}}=0$，集合$\mathcal{S}$只能取$\{1\}$。根据Lim\cite{lim2019towards}的定理1中的约束条件d要求
 	\begin{equation}
 	\textrm{rank}\left(\left[\begin{matrix}
 		\mathbf{E}(\mathcal{S})\\
