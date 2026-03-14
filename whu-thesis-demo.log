@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.3)  14 MAR 2026 20:42
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.3)  14 MAR 2026 21:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2163,6 +2163,9 @@ eps)
 
 (./pages/chapter4.tex
 4
+
+LaTeX Warning: Reference `chapter-sum' on page 43 undefined on input line 7.
+
 [43
 
 
@@ -2291,16 +2294,25 @@ L3 programming layer <2022/07/14>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `whu-thesis-demo.out' has not changed.
-(rerunfilecheck)             Checksum: 59FC4F670B59A8F73DCF9E5379835A33;6523.
+
+Package rerunfilecheck Warning: File `whu-thesis-demo.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `whu-thesis-demo.out':
+(rerunfilecheck)             Before: 31012FC69C138AF9FC4B063C294AD40C;6553
+(rerunfilecheck)             After:  D75A54ECEDCDF873BF93594B3562A24E;6521.
  ) 
 Here is how much of TeX's memory you used:
- 52563 strings out of 474773
- 1262168 string characters out of 5757725
- 1977839 words of memory out of 5000000
- 73780 multiletter control sequences out of 15000+600000
+ 52564 strings out of 474773
+ 1262173 string characters out of 5757725
+ 1976839 words of memory out of 5000000
+ 73781 multiletter control sequences out of 15000+600000
  576607 words of font info for 197 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  117i,15n,121p,1536b,2936s stack positions out of 10000i,1000n,20000p,200000b,200000s
