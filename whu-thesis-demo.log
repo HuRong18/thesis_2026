@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.3)  14 MAR 2026 21:42
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.3)  16 MAR 2026 14:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2181,25 +2181,30 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [49] [50]
 File: figures/figs/real_channel_gain_Chinese.eps Graphic file (type eps)
 <figures/figs/real_channel_gain_Chinese.eps>
- [51]
 File: figures/figs/real_transmit_power_Chinese.eps Graphic file (type eps)
 <figures/figs/real_transmit_power_Chinese.eps>
+ [51]
 File: figures/figs/equal_channel_gain_Chinese.eps Graphic file (type eps)
 <figures/figs/equal_channel_gain_Chinese.eps>
- [52]
 File: figures/figs/equal_transmit_power_Chinese.eps Graphic file (type eps)
 <figures/figs/equal_transmit_power_Chinese.eps>
-) [53] [54]
+ [52]
+File: figures/figs/N_increase_Chinese.eps Graphic file (type eps)
+<figures/figs/N_increase_Chinese.eps>
+ [53]
+File: figures/figs/K_increase.eps Graphic file (type eps)
+<figures/figs/K_increase.eps>
+ [54]) [55]
 \openout2 = `pages/chapter5.aux'.
 
  (./pages/chapter5.tex
 5
-[55
+[56
 
 
 
 
-]) [56] (./whu-thesis-demo.bbl
+]) [57] (./whu-thesis-demo.bbl
 ! Misplaced alignment tab character &.
 l.54 \newblock IEEE Communications Surveys &
                                              Tutorials, 2021, 23\allowbreak ...
@@ -2240,7 +2245,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[57
+[58
 
 
 
@@ -2256,13 +2261,13 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[58] [59] [60] [61] [62] [63]
+[59] [60] [61] [62] [63] [64]
 Underfull \hbox (badness 2302) in paragraph at lines 787--790
 []\TU/TimesNewRoman(0)/m/n/12.045 Yang A, Yang B, Hui B, et al.  Qwen2 technica
 l report[J].  arXiv preprint
  []
 
-[64]) (./pages/appendix.tex [65]
+[65]) (./pages/appendix.tex [66]
 附录 A
 
 Overfull \hbox (7.95546pt too wide) in paragraph at lines 31--36
@@ -2270,18 +2275,18 @@ Overfull \hbox (7.95546pt too wide) in paragraph at lines 31--36
 ]$ 中 解 码 出 长 度 为 $[]$ 的 序 列 $[][][][][]$。|
  []
 
-[66
+[67
 
-] [67]
+] [68]
 附录 B
-[68
+[69
 
-] [69] [70]) [71] (./pages/achievements.tex) [72
+] [70]) [71] (./pages/achievements.tex) [72
 
-] (./pages/thanks.tex)
-[73
+] (./pages/thanks.tex) [73
 
-] [74
+]
+[74
 
 ] (./whu-thesis-demo.aux (./pages/chapter1.aux) (./pages/chapter2.aux)
 (./pages/chapter3.aux) (./pages/chapter4.aux) (./pages/chapter5.aux))
@@ -2305,14 +2310,14 @@ Package rerunfilecheck Warning: File `whu-thesis-demo.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `whu-thesis-demo.out':
-(rerunfilecheck)             Before: 31012FC69C138AF9FC4B063C294AD40C;6553
-(rerunfilecheck)             After:  D75A54ECEDCDF873BF93594B3562A24E;6521.
+(rerunfilecheck)             Before: A5637CBEA586BACFAA28D0659EC7854F;6301
+(rerunfilecheck)             After:  96C766C6307D917A81E6DC02C7DAE3EC;6301.
  ) 
 Here is how much of TeX's memory you used:
- 52564 strings out of 474773
- 1262173 string characters out of 5757725
+ 52581 strings out of 474773
+ 1262716 string characters out of 5757725
  1976839 words of memory out of 5000000
- 73781 multiletter control sequences out of 15000+600000
+ 73796 multiletter control sequences out of 15000+600000
  576607 words of font info for 197 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  117i,15n,121p,1536b,2936s stack positions out of 10000i,1000n,20000p,200000b,200000s

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.3)  14 MAR 2026 14:45
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.3)  16 MAR 2026 14:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8,7 +8,7 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 ! Undefined control sequence.
 l.8 \chapter
-            {面向完整重构的DSC辅助编码计算结果传输方法研究}
+            {面向完整恢复的DSC辅助编码计算结果传输方法研究}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -23,7 +23,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.8 \chapter{面
-              向完整重构的DSC辅助编码计算结果传输方法研究}
+              向完整恢复的DSC辅助编码计算结果传输方法研究}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -31,8 +31,8 @@ Missing character: There is no 面 ("9762) in font nullfont!
 Missing character: There is no 向 ("5411) in font nullfont!
 Missing character: There is no 完 ("5B8C) in font nullfont!
 Missing character: There is no 整 ("6574) in font nullfont!
-Missing character: There is no 重 ("91CD) in font nullfont!
-Missing character: There is no 构 ("6784) in font nullfont!
+Missing character: There is no 恢 ("6062) in font nullfont!
+Missing character: There is no 复 ("590D) in font nullfont!
 Missing character: There is no 的 ("7684) in font nullfont!
 Missing character: There is no D ("44) in font nullfont!
 Missing character: There is no S ("53) in font nullfont!
@@ -684,23 +684,22 @@ Missing character: There is no 随 ("968F) in font nullfont!
 Missing character: There is no 式 ("5F0F) in font nullfont!
 Missing character: There is no 序 ("5E8F) in font nullfont!
 Missing character: There is no 列 ("5217) in font nullfont!
-Missing character: There is no [ ("5B) in font nullfont!
-\citation{1042242}
 ! Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .^^J
-l.31 ...$\{S_{X_v}^{(j)}\}_{j=1}^m$ \cite{1042242}
-                                                   中解码出长度为 $n$ 的序列 $\{X_v^{(...
+l.31 ...的伴随式序列 $\{S_{X_v}^{(j)}\}_{j=1}^m$ \upcite
+                                                  {1042242} 中解码出长度为 $n$ 的序列 ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-
-LaTeX Warning: Citation `1042242' on page  undefined on input line 31.
-
-Missing character: There is no ] ("5D) in font nullfont!
+Missing character: There is no 1 ("31) in font nullfont!
+Missing character: There is no 0 ("30) in font nullfont!
+Missing character: There is no 4 ("34) in font nullfont!
+Missing character: There is no 2 ("32) in font nullfont!
+Missing character: There is no 2 ("32) in font nullfont!
+Missing character: There is no 4 ("34) in font nullfont!
+Missing character: There is no 2 ("32) in font nullfont!
 Missing character: There is no 中 ("4E2D) in font nullfont!
 Missing character: There is no 解 ("89E3) in font nullfont!
 Missing character: There is no 码 ("7801) in font nullfont!
@@ -881,11 +880,6 @@ Overfull \hbox (41.81912pt too wide) in paragraph at lines 30--36
  []
 
 
-Overfull \hbox (5.43pt too wide) in paragraph at lines 30--36
-[]
- []
-
-
 Overfull \hbox (6.00235pt too wide) in paragraph at lines 30--36
 \OML/cmm/m/it/10 n$
  []
@@ -962,17 +956,31 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.37 \textbf{Initialization (初始化):}
-                                    根据 $\{X_v^{(j)}\}_{j=1}^n$ 的分布，设定
+l.37 初
+      始化（Initialization）: 根据 $\{X_v^{(j)}\}_{j=1}^n$ 的分布，设定
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-Missing character: There is no 初 (U+521D) in font [lmroman10-bold]:mapping=tex-
-text;!
-Missing character: There is no 始 (U+59CB) in font [lmroman10-bold]:mapping=tex-
-text;!
-Missing character: There is no 化 (U+5316) in font [lmroman10-bold]:mapping=tex-
-text;!
+Missing character: There is no 初 ("521D) in font nullfont!
+Missing character: There is no 始 ("59CB) in font nullfont!
+Missing character: There is no 化 ("5316) in font nullfont!
+Missing character: There is no （ ("FF08) in font nullfont!
+Missing character: There is no I ("49) in font nullfont!
+Missing character: There is no n ("6E) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no a ("61) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no z ("7A) in font nullfont!
+Missing character: There is no a ("61) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no n ("6E) in font nullfont!
+Missing character: There is no ） ("FF09) in font nullfont!
+Missing character: There is no : ("3A) in font nullfont!
 Missing character: There is no 根 ("6839) in font nullfont!
 Missing character: There is no 据 ("636E) in font nullfont!
 Missing character: There is no 的 ("7684) in font nullfont!
@@ -982,13 +990,8 @@ Missing character: There is no ， ("FF0C) in font nullfont!
 Missing character: There is no 设 ("8BBE) in font nullfont!
 Missing character: There is no 定 ("5B9A) in font nullfont!
 
-Overfull \hbox (84.07pt too wide) in paragraph at lines 37--38
-[]\TU/lmr/bx/n/10 Initialization
- []
-
-
-Overfull \hbox (20.53pt too wide) in paragraph at lines 37--38
-\TU/lmr/bx/n/10 (初始化):
+Overfull \hbox (20.0pt too wide) in paragraph at lines 37--38
+[]
  []
 
 
@@ -1056,19 +1059,32 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.45 \textbf{Horizontal step (水平步骤):}
-                                      对于每个校验节点 $s_j$，计算发往每个连接的变量节点 $x_i$ 的消息如下
+l.45 水
+      平步骤（Horizontal step）: 对于每个校验节点 $s_j$，计算发往每个连接的变量节点 $x_i$ 的消息如下
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-Missing character: There is no 水 (U+6C34) in font [lmroman10-bold]:mapping=tex-
-text;!
-Missing character: There is no 平 (U+5E73) in font [lmroman10-bold]:mapping=tex-
-text;!
-Missing character: There is no 步 (U+6B65) in font [lmroman10-bold]:mapping=tex-
-text;!
-Missing character: There is no 骤 (U+9AA4) in font [lmroman10-bold]:mapping=tex-
-text;!
+Missing character: There is no 水 ("6C34) in font nullfont!
+Missing character: There is no 平 ("5E73) in font nullfont!
+Missing character: There is no 步 ("6B65) in font nullfont!
+Missing character: There is no 骤 ("9AA4) in font nullfont!
+Missing character: There is no （ ("FF08) in font nullfont!
+Missing character: There is no H ("48) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no r ("72) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no z ("7A) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no n ("6E) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no a ("61) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no p ("70) in font nullfont!
+Missing character: There is no ） ("FF09) in font nullfont!
+Missing character: There is no : ("3A) in font nullfont!
 Missing character: There is no 对 ("5BF9) in font nullfont!
 Missing character: There is no 于 ("4E8E) in font nullfont!
 Missing character: There is no 每 ("6BCF) in font nullfont!
@@ -1220,18 +1236,8 @@ Missing character: There is no 集 ("96C6) in font nullfont!
 Missing character: There is no 合 ("5408) in font nullfont!
 Missing character: There is no 。 ("3002) in font nullfont!
 
-Overfull \hbox (72.86pt too wide) in paragraph at lines 45--52
-[]\TU/lmr/bx/n/10 Horizontal
- []
-
-
-Overfull \hbox (20.67pt too wide) in paragraph at lines 45--52
-\TU/lmr/bx/n/10 step
- []
-
-
-Overfull \hbox (23.33pt too wide) in paragraph at lines 45--52
-\TU/lmr/bx/n/10 (水平步骤):
+Overfull \hbox (20.0pt too wide) in paragraph at lines 45--52
+[]
  []
 
 
@@ -1330,19 +1336,30 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.53 \textbf{Vertical step (垂直步骤):}
-                                    对于每个变量节点 $x_i$，计算发往每个连接的校验节点 $s_j$ 的消息如下
+l.53 垂
+      直步骤（Vertical Step）:  对于每个变量节点 $x_i$，计算发往每个连接的校验节点 $s_j$ 的消息如下
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-Missing character: There is no 垂 (U+5782) in font [lmroman10-bold]:mapping=tex-
-text;!
-Missing character: There is no 直 (U+76F4) in font [lmroman10-bold]:mapping=tex-
-text;!
-Missing character: There is no 步 (U+6B65) in font [lmroman10-bold]:mapping=tex-
-text;!
-Missing character: There is no 骤 (U+9AA4) in font [lmroman10-bold]:mapping=tex-
-text;!
+Missing character: There is no 垂 ("5782) in font nullfont!
+Missing character: There is no 直 ("76F4) in font nullfont!
+Missing character: There is no 步 ("6B65) in font nullfont!
+Missing character: There is no 骤 ("9AA4) in font nullfont!
+Missing character: There is no （ ("FF08) in font nullfont!
+Missing character: There is no V ("56) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no r ("72) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no a ("61) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no S ("53) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no p ("70) in font nullfont!
+Missing character: There is no ） ("FF09) in font nullfont!
+Missing character: There is no : ("3A) in font nullfont!
 Missing character: There is no 对 ("5BF9) in font nullfont!
 Missing character: There is no 于 ("4E8E) in font nullfont!
 Missing character: There is no 每 ("6BCF) in font nullfont!
@@ -1371,18 +1388,8 @@ Missing character: There is no 息 ("606F) in font nullfont!
 Missing character: There is no 如 ("5982) in font nullfont!
 Missing character: There is no 下 ("4E0B) in font nullfont!
 
-Overfull \hbox (59.29001pt too wide) in paragraph at lines 53--54
-[]\TU/lmr/bx/n/10 Vertical
- []
-
-
-Overfull \hbox (20.67pt too wide) in paragraph at lines 53--54
-\TU/lmr/bx/n/10 step
- []
-
-
-Overfull \hbox (23.33pt too wide) in paragraph at lines 53--54
-\TU/lmr/bx/n/10 (垂直步骤):
+Overfull \hbox (20.0pt too wide) in paragraph at lines 53--54
+[]
  []
 
 
@@ -1483,15 +1490,24 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.60 \textbf{Decision (判决):}
-                             做出解码判决如下
+l.60 判
+      决（Decision）: 做出解码判决如下
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-Missing character: There is no 判 (U+5224) in font [lmroman10-bold]:mapping=tex-
-text;!
-Missing character: There is no 决 (U+51B3) in font [lmroman10-bold]:mapping=tex-
-text;!
+Missing character: There is no 判 ("5224) in font nullfont!
+Missing character: There is no 决 ("51B3) in font nullfont!
+Missing character: There is no （ ("FF08) in font nullfont!
+Missing character: There is no D ("44) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no n ("6E) in font nullfont!
+Missing character: There is no ） ("FF09) in font nullfont!
+Missing character: There is no : ("3A) in font nullfont!
 Missing character: There is no 做 ("505A) in font nullfont!
 Missing character: There is no 出 ("51FA) in font nullfont!
 Missing character: There is no 解 ("89E3) in font nullfont!
@@ -1501,13 +1517,8 @@ Missing character: There is no 决 ("51B3) in font nullfont!
 Missing character: There is no 如 ("5982) in font nullfont!
 Missing character: There is no 下 ("4E0B) in font nullfont!
 
-Overfull \hbox (62.26pt too wide) in paragraph at lines 60--61
-[]\TU/lmr/bx/n/10 Decision
- []
-
-
-Overfull \hbox (17.73pt too wide) in paragraph at lines 60--61
-\TU/lmr/bx/n/10 (判决):
+Overfull \hbox (20.0pt too wide) in paragraph at lines 60--61
+[]
  []
 
 ! Undefined control sequence.
@@ -1668,11 +1679,13 @@ Missing character: There is no 于 ("4E8E) in font nullfont!
 Missing character: There is no L ("4C) in font nullfont!
 Missing character: There is no i ("69) in font nullfont!
 Missing character: There is no m ("6D) in font nullfont!
+Missing character: There is no [ ("5B) in font nullfont!
+\citation{lim2019towards}
 ! Undefined control sequence.
-<write> ...ence `lim2019towards' on page \thepage 
+<write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .^^J
-l.71 基于Lim\ref{lim2019towards}
-                              的定理1，在无损（$D=0, U=\mathbf{g}$且无边信息（$X=\emptyset...
+l.71 基于Lim\cite{lim2019towards}
+                               的定理1，在无损（$D=0, U=\mathbf{g}$且无边信息（$X=\emptyse...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1680,8 +1693,9 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `lim2019towards' on page  undefined on input line 71.
+LaTeX Warning: Citation `lim2019towards' on page  undefined on input line 71.
 
+Missing character: There is no ] ("5D) in font nullfont!
 Missing character: There is no 的 ("7684) in font nullfont!
 Missing character: There is no 定 ("5B9A) in font nullfont!
 Missing character: There is no 理 ("7406) in font nullfont!
@@ -1707,21 +1721,70 @@ Missing character: There is no 行 ("884C) in font nullfont!
 Missing character: There is no 推 ("63A8) in font nullfont!
 Missing character: There is no 导 ("5BFC) in font nullfont!
 Missing character: There is no 。 ("3002) in font nullfont!
-! Undefined control sequence.
-l.72 \subsection
-                {完整恢复边界}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
+Overfull \hbox (30.86pt too wide) in paragraph at lines 70--72
+[][][]
+ []
+
+
+Overfull \hbox (24.54245pt too wide) in paragraph at lines 70--72
+[]$\OML/cmm/m/it/10 D \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (27.91797pt too wide) in paragraph at lines 70--72
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; U \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (25.53464pt too wide) in paragraph at lines 70--72
+\OT1/cmr/bx/n/10 g$$\OML/cmm/m/it/10 X \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 70--72
+\OMS/cmsy/m/n/10 ;$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.73 （
+      1）完整恢复边界
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no （ ("FF08) in font nullfont!
+Missing character: There is no 1 ("31) in font nullfont!
+Missing character: There is no ） ("FF09) in font nullfont!
 Missing character: There is no 完 ("5B8C) in font nullfont!
 Missing character: There is no 整 ("6574) in font nullfont!
 Missing character: There is no 恢 ("6062) in font nullfont!
 Missing character: There is no 复 ("590D) in font nullfont!
 Missing character: There is no 边 ("8FB9) in font nullfont!
 Missing character: There is no 界 ("754C) in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 73--74
+[] 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.75 取
+      辅助矩阵$\mathbf{E}=\mathbf{I}$，即单位矩阵，大小为$r\times r$，这意味着解码器的目标是恢复$\tilde{...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 Missing character: There is no 取 ("53D6) in font nullfont!
 Missing character: There is no 辅 ("8F85) in font nullfont!
 Missing character: There is no 助 ("52A9) in font nullfont!
@@ -1817,201 +1880,53 @@ Missing character: There is no 以 ("4EE5) in font nullfont!
 Missing character: There is no 得 ("5F97) in font nullfont!
 Missing character: There is no 到 ("5230) in font nullfont!
 
-Overfull \hbox (30.86pt too wide) in paragraph at lines 70--75
-[][][]
+Overfull \hbox (38.11102pt too wide) in paragraph at lines 75--77
+[]$\OT1/cmr/bx/n/10 E \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (29.97246pt too wide) in paragraph at lines 70--75
-[]$\OML/cmm/m/it/10 D \OT1/cmr/m/n/10 =
- []
-
-
-Overfull \hbox (27.91797pt too wide) in paragraph at lines 70--75
-\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; U \OT1/cmr/m/n/10 =
- []
-
-
-Overfull \hbox (25.53464pt too wide) in paragraph at lines 70--75
-\OT1/cmr/bx/n/10 g$$\OML/cmm/m/it/10 X \OT1/cmr/m/n/10 =
- []
-
-
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 70--75
-\OMS/cmsy/m/n/10 ;$
- []
-
-
-Overfull \hbox (18.11102pt too wide) in paragraph at lines 70--75
-\OT1/cmr/bx/n/10 E \OT1/cmr/m/n/10 =
- []
-
-
-Overfull \hbox (16.92825pt too wide) in paragraph at lines 70--75
+Overfull \hbox (16.92825pt too wide) in paragraph at lines 75--77
 \OT1/cmr/bx/n/10 I$$\OML/cmm/m/it/10 r \OMS/cmsy/m/n/10 ^^B
  []
 
 
-Overfull \hbox (27.8948pt too wide) in paragraph at lines 70--75
+Overfull \hbox (27.8948pt too wide) in paragraph at lines 75--77
 \OML/cmm/m/it/10 r$$[] \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (70.54697pt too wide) in paragraph at lines 70--75
+Overfull \hbox (70.54697pt too wide) in paragraph at lines 75--77
 \OT1/cmr/m/n/10 [\OT1/cmr/bx/n/10 g[]\OML/cmm/m/it/10 ; [] ; \OT1/cmr/bx/n/10 g
 []\OT1/cmr/m/n/10 ]$
  []
 
 
-Overfull \hbox (23.77219pt too wide) in paragraph at lines 70--75
+Overfull \hbox (23.77219pt too wide) in paragraph at lines 75--77
 \OML/cmm/m/it/10 L[] \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (37.4754pt too wide) in paragraph at lines 70--75
+Overfull \hbox (37.4754pt too wide) in paragraph at lines 75--77
 \OML/cmm/m/it/10 r$$\OT1/cmr/bx/n/10 C$$\OML/cmm/m/it/10 L[] \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (22.36104pt too wide) in paragraph at lines 70--75
+Overfull \hbox (22.36104pt too wide) in paragraph at lines 75--77
 \OT1/cmr/m/n/10 0$$\OMS/cmsy/m/n/10 S \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (13.3333pt too wide) in paragraph at lines 70--75
+Overfull \hbox (13.3333pt too wide) in paragraph at lines 75--77
 \OT1/cmr/m/n/10 [1 :
  []
 
 
-Overfull \hbox (7.56715pt too wide) in paragraph at lines 70--75
+Overfull \hbox (7.56715pt too wide) in paragraph at lines 75--77
 \OML/cmm/m/it/10 r\OT1/cmr/m/n/10 ]$ 
  []
 
 
-! LaTeX Error: The font size command \normalsize is not defined:
-               there is probably something wrong with the class file.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.75 \begin{equation}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[1
-! Undefined control sequence.
-<write> ...l{<appendix-proposition1>}{{}{\thepage 
-                                                  }{}{}{}}
-l.75 \begin{equation}
-                     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-\newlabel{<appendix-proposition1>}{{}{}{}{}{}}
-! Undefined control sequence.
-<write> \newlabel{eq:hat_pi}{{1}{\thepage 
-                                          }{}{}{}}
-l.75 \begin{equation}
-                     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-\newlabel{eq:hat_pi}{{1}{}{}{}{}}
-! Undefined control sequence.
-<write> \newlabel{eq:subset_rel}{{}{\thepage 
-                                             }{}{}{}}
-l.75 \begin{equation}
-                     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-\newlabel{eq:subset_rel}{{}{}{}{}{}}
-! Undefined control sequence.
-<write> \newlabel{appendix-BP}{{}{\thepage 
-                                           }{}{}{}}
-l.75 \begin{equation}
-                     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-\newlabel{appendix-BP}{{}{}{}{}{}}
-! Undefined control sequence.
-<write> \newlabel{eq:bp_init}{{2}{\thepage 
-                                           }{}{}{}}
-l.75 \begin{equation}
-                     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-\newlabel{eq:bp_init}{{2}{}{}{}{}}
-! Undefined control sequence.
-<write> \newlabel{eq:bp_horizontal}{{}{\thepage 
-                                                }{}{}{}}
-l.75 \begin{equation}
-                     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-\newlabel{eq:bp_horizontal}{{}{}{}{}{}}
-! Undefined control sequence.
-<write> \newlabel{eq:bp_vertical}{{3}{\thepage 
-                                               }{}{}{}}
-l.75 \begin{equation}
-                     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-\newlabel{eq:bp_vertical}{{3}{}{}{}{}}
-! Undefined control sequence.
-<write> \newlabel{eq:bp_decision}{{4}{\thepage 
-                                               }{}{}{}}
-l.75 \begin{equation}
-                     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-\newlabel{eq:bp_decision}{{4}{}{}{}{}}
-! Undefined control sequence.
-<write> \newlabel{<linear-proof>}{{}{\thepage 
-                                              }{}{}{}}
-l.75 \begin{equation}
-                     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-\newlabel{<linear-proof>}{{}{}{}{}{}}
-]
-Overfull \hbox (138.04507pt too wide) detected at line 77
+Overfull \hbox (138.04507pt too wide) detected at line 79
 [] \OML/cmm/m/it/10 ^^Q[] > H\OT1/cmr/m/n/10 ([]) \OMS/cmsy/m/n/10 ^^@ \OML/cmm
 /m/it/10 H\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 U\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 
 T\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 g\OT1/cmr/m/n/10 (\OMS/cms
@@ -2065,7 +1980,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.80 \begin{align}
+l.82 \begin{align}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2074,7 +1989,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.81 ^^I^^I\sum
+l.83 ^^I^^I\sum
                _{n\in\mathcal{T}}\eta_n>H(\tilde{\mathbf{g}}(\mathcal{T})|\t...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2086,7 +2001,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.82 \end{align}
+l.84 \end{align}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2095,7 +2010,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.82 \end{align}
+l.84 \end{align}
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2104,40 +2019,164 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (70.92549pt too wide) in paragraph at lines 77--83
+Overfull \hbox (70.92549pt too wide) in paragraph at lines 79--85
 $\OML/cmm/m/it/10 H\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 U\OT1/cmr/m/n/10 (\OMS/cms
 y/m/n/10 T\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 g\OT1/cmr/m/n/10 
 (\OMS/cmsy/m/n/10 T\OT1/cmr/m/n/10 ) =
  []
 
 
-Overfull \hbox (107.55525pt too wide) in paragraph at lines 77--83
+Overfull \hbox (107.55525pt too wide) in paragraph at lines 79--85
 \OT1/cmr/m/n/10 0$$\OML/cmm/m/it/10 H\OT1/cmr/m/n/10 ([])$$[\OT1/cmr/bx/n/10 g[
 ]\OML/cmm/m/it/10 ; [] ; \OT1/cmr/bx/n/10 g[]\OT1/cmr/m/n/10 ]$
  []
 
 
-Overfull \hbox (7.98811pt too wide) in paragraph at lines 77--83
+Overfull \hbox (7.98811pt too wide) in paragraph at lines 79--85
 \OMS/cmsy/m/n/10 T$
  []
 
 
-Overfull \hbox (50.39499pt too wide) in paragraph at lines 77--83
+Overfull \hbox (50.39499pt too wide) in paragraph at lines 79--85
 [][] \OML/cmm/m/it/10 ^^Q[] >
  []
 
 
-Overfull \hbox (95.64914pt too wide) in paragraph at lines 77--83
+Overfull \hbox (95.64914pt too wide) in paragraph at lines 79--85
 \OML/cmm/m/it/10 H\OT1/cmr/m/n/10 ([](\OMS/cmsy/m/n/10 T\OT1/cmr/m/n/10 )\OMS/c
 msy/m/n/10 j[]\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 T[]\OT1/cmr/m/n/10 ))\OML/cmm/m
 /it/10 ;  \OMS/cmsy/m/n/10 8T ^^R
  []
 
 
-Overfull \hbox (9.31947pt too wide) in paragraph at lines 77--83
+Overfull \hbox (9.31947pt too wide) in paragraph at lines 79--85
 \OMS/cmsy/m/n/10 G\OML/cmm/m/it/10 ;$ 
  []
 
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85 
+     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1
+! Undefined control sequence.
+<write> ...l{<appendix-proposition1>}{{}{\thepage 
+                                                  }{}{}{}}
+l.85 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{<appendix-proposition1>}{{}{}{}{}{}}
+! Undefined control sequence.
+<write> \newlabel{eq:hat_pi}{{1}{\thepage 
+                                          }{}{}{}}
+l.85 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{eq:hat_pi}{{1}{}{}{}{}}
+! Undefined control sequence.
+<write> \newlabel{eq:subset_rel}{{}{\thepage 
+                                             }{}{}{}}
+l.85 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{eq:subset_rel}{{}{}{}{}{}}
+! Undefined control sequence.
+<write> \newlabel{appendix-BP}{{}{\thepage 
+                                           }{}{}{}}
+l.85 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{appendix-BP}{{}{}{}{}{}}
+! Undefined control sequence.
+<write> \newlabel{eq:bp_init}{{2}{\thepage 
+                                           }{}{}{}}
+l.85 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{eq:bp_init}{{2}{}{}{}{}}
+! Undefined control sequence.
+<write> \newlabel{eq:bp_horizontal}{{}{\thepage 
+                                                }{}{}{}}
+l.85 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{eq:bp_horizontal}{{}{}{}{}{}}
+! Undefined control sequence.
+<write> \newlabel{eq:bp_vertical}{{3}{\thepage 
+                                               }{}{}{}}
+l.85 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{eq:bp_vertical}{{3}{}{}{}{}}
+! Undefined control sequence.
+<write> \newlabel{eq:bp_decision}{{4}{\thepage 
+                                               }{}{}{}}
+l.85 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{eq:bp_decision}{{4}{}{}{}{}}
+! Undefined control sequence.
+<write> \newlabel{<linear-proof>}{{}{\thepage 
+                                              }{}{}{}}
+l.85 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{<linear-proof>}{{}{}{}{}{}}
+]
 
 ! LaTeX Error: Missing \begin{document}.
 
@@ -2145,7 +2184,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.84 取
+l.86 取
       $\mathcal{T}=\mathcal{G}$，和速率下界为
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2165,7 +2204,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.85 \begin{align}
+l.87 \begin{align}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2174,7 +2213,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.86 ^^I\sum
+l.88 ^^I\sum
             _{n\in\mathcal{T}}\eta_n>H(\tilde{\mathbf{g}}_1,\tilde{\mathbf{g...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2186,7 +2225,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.87 \end{align}
+l.89 \end{align}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2195,7 +2234,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.87 \end{align}
+l.89 \end{align}
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2209,39 +2248,30 @@ Missing character: There is no 区 ("533A) in font nullfont!
 Missing character: There is no 域 ("57DF) in font nullfont!
 Missing character: There is no 。 ("3002) in font nullfont!
 
-Overfull \hbox (38.54362pt too wide) in paragraph at lines 84--89
+Overfull \hbox (38.54362pt too wide) in paragraph at lines 86--91
 []$\OMS/cmsy/m/n/10 T \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (6.54169pt too wide) in paragraph at lines 84--89
+Overfull \hbox (6.54169pt too wide) in paragraph at lines 86--91
 \OMS/cmsy/m/n/10 G$
  []
 
 
-Overfull \hbox (50.39499pt too wide) in paragraph at lines 84--89
+Overfull \hbox (50.39499pt too wide) in paragraph at lines 86--91
 [][] \OML/cmm/m/it/10 ^^Q[] >
  []
 
 
-Overfull \hbox (74.21967pt too wide) in paragraph at lines 84--89
+Overfull \hbox (74.21967pt too wide) in paragraph at lines 86--91
 \OML/cmm/m/it/10 H\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 ; []; [] ; []\OT1/cmr/m/n
 /10 )$
  []
 
 
-Overfull \hbox (14.13663pt too wide) in paragraph at lines 84--89
+Overfull \hbox (14.13663pt too wide) in paragraph at lines 86--91
 \OMS/cmsy/m/n/10 h[]$ 
  []
-
-! Undefined control sequence.
-l.90 \subsection
-                {线性恢复边界}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
 
 ! LaTeX Error: Missing \begin{document}.
@@ -2250,17 +2280,38 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.90 \subsection{线
-                  性恢复边界}
+l.92 （
+      2）线性恢复边界
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
+Missing character: There is no （ ("FF08) in font nullfont!
+Missing character: There is no 2 ("32) in font nullfont!
+Missing character: There is no ） ("FF09) in font nullfont!
 Missing character: There is no 线 ("7EBF) in font nullfont!
 Missing character: There is no 性 ("6027) in font nullfont!
 Missing character: There is no 恢 ("6062) in font nullfont!
 Missing character: There is no 复 ("590D) in font nullfont!
 Missing character: There is no 边 ("8FB9) in font nullfont!
 Missing character: There is no 界 ("754C) in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 92--93
+[] 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.94 取
+      辅助矩阵$\mathbf{E}=\mathbf{B}$，即目标全梯度系数行向量，大小为$1\times r$，这意味着解码器的目标直接为$\...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 Missing character: There is no 取 ("53D6) in font nullfont!
 Missing character: There is no 辅 ("8F85) in font nullfont!
 Missing character: There is no 助 ("52A9) in font nullfont!
@@ -2313,10 +2364,12 @@ Missing character: There is no 据 ("636E) in font nullfont!
 Missing character: There is no L ("4C) in font nullfont!
 Missing character: There is no i ("69) in font nullfont!
 Missing character: There is no m ("6D) in font nullfont!
+Missing character: There is no [ ("5B) in font nullfont!
+\citation{lim2019towards}
 ! Undefined control sequence.
-<write> ...ence `lim2019towards' on page \thepage 
+<write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .^^J
-l.92 ...al{S}$只能取$\{1\}$。根据Lim\ref{lim2019towards}
+l.95 ...l{S}$只能取$\{1\}$。根据Lim\cite{lim2019towards}
                                                   的定理1中的约束条件d要求
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2325,8 +2378,9 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `lim2019towards' on page  undefined on input line 92.
+LaTeX Warning: Citation `lim2019towards' on page  undefined on input line 95.
 
+Missing character: There is no ] ("5D) in font nullfont!
 Missing character: There is no 的 ("7684) in font nullfont!
 Missing character: There is no 定 ("5B9A) in font nullfont!
 Missing character: There is no 理 ("7406) in font nullfont!
@@ -2341,47 +2395,42 @@ Missing character: There is no d ("64) in font nullfont!
 Missing character: There is no 要 ("8981) in font nullfont!
 Missing character: There is no 求 ("6C42) in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 90--93
-[]
+Overfull \hbox (38.11102pt too wide) in paragraph at lines 94--96
+[]$\OT1/cmr/bx/n/10 E \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (18.11102pt too wide) in paragraph at lines 90--93
-\OT1/cmr/bx/n/10 E \OT1/cmr/m/n/10 =
- []
-
-
-Overfull \hbox (20.95833pt too wide) in paragraph at lines 90--93
+Overfull \hbox (20.95833pt too wide) in paragraph at lines 94--96
 \OT1/cmr/bx/n/10 B$$\OT1/cmr/m/n/10 1 \OMS/cmsy/m/n/10 ^^B
  []
 
 
-Overfull \hbox (30.93787pt too wide) in paragraph at lines 90--93
+Overfull \hbox (30.93787pt too wide) in paragraph at lines 94--96
 \OML/cmm/m/it/10 r$$[] \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (58.77309pt too wide) in paragraph at lines 90--93
+Overfull \hbox (58.77309pt too wide) in paragraph at lines 94--96
 [][] \OML/cmm/m/it/10 b[]g[] \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (15.68057pt too wide) in paragraph at lines 90--93
+Overfull \hbox (15.68057pt too wide) in paragraph at lines 94--96
 \OT1/cmr/bx/n/10 g[]$
  []
 
 
-Overfull \hbox (23.77219pt too wide) in paragraph at lines 90--93
+Overfull \hbox (23.77219pt too wide) in paragraph at lines 94--96
 \OML/cmm/m/it/10 L[] \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (29.38054pt too wide) in paragraph at lines 90--93
+Overfull \hbox (29.38054pt too wide) in paragraph at lines 94--96
 \OT1/cmr/m/n/10 1$$\OML/cmm/m/it/10 L[] \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (37.66557pt too wide) in paragraph at lines 90--93
+Overfull \hbox (32.23557pt too wide) in paragraph at lines 94--96
 \OT1/cmr/m/n/10 0$$\OMS/cmsy/m/n/10 S$$f\OT1/cmr/m/n/10 1\OMS/cmsy/m/n/10 g$[] 
 
  []
@@ -2389,7 +2438,7 @@ Overfull \hbox (37.66557pt too wide) in paragraph at lines 90--93
 ! Missing } inserted.
 <inserted text> 
                 }
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2400,7 +2449,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2411,14 +2460,14 @@ my insertion and my current dilemma will both disappear.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2429,14 +2478,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2447,14 +2496,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2465,14 +2514,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2483,14 +2532,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2501,14 +2550,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2519,14 +2568,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2537,14 +2586,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2555,14 +2604,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2573,14 +2622,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2591,14 +2640,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2609,14 +2658,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2627,14 +2676,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2645,14 +2694,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2663,14 +2712,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2681,14 +2730,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2699,14 +2748,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2717,14 +2766,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2735,14 +2784,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2753,14 +2802,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2771,14 +2820,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2789,14 +2838,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2807,14 +2856,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2825,14 +2874,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2843,14 +2892,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2861,14 +2910,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2879,14 +2928,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2897,14 +2946,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2915,14 +2964,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2933,14 +2982,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2951,14 +3000,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2969,14 +3018,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2987,14 +3036,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -3005,14 +3054,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -3023,14 +3072,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -3041,14 +3090,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -3059,14 +3108,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -3077,14 +3126,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -3095,14 +3144,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -3113,14 +3162,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -3131,14 +3180,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -3149,14 +3198,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -3167,14 +3216,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -3185,14 +3234,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -3203,14 +3252,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -3221,14 +3270,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -3239,14 +3288,14 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -3257,21 +3306,21 @@ might try typing `S' now just to see what is salvageable.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 I'm guessing that you meant to end an alignment here.
 
 ! Misplaced \cr.
 <inserted text> \cr 
                     
-l.95 ^^I^^I\mathbf
+l.98 ^^I^^I\mathbf
                   {E}(\mathcal{S})\\
 (That makes 100 errors; please try again.) 
 Here is how much of TeX's memory you used:
- 81 strings out of 474773
- 1532 string characters out of 5757725
+ 80 strings out of 474773
+ 1516 string characters out of 5757725
  1928839 words of memory out of 5000000
- 22320 multiletter control sequences out of 15000+600000
+ 22319 multiletter control sequences out of 15000+600000
  559315 words of font info for 42 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  28i,11n,31p,239b,134s stack positions out of 10000i,1000n,20000p,200000b,200000s
