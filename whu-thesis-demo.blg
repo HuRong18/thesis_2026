@@ -5,6 +5,10 @@ The style file: data/gbt7714-2005-numerical.bst
 A level-1 auxiliary file: pages/chapter1.aux
 A level-1 auxiliary file: pages/chapter2.aux
 A level-1 auxiliary file: pages/chapter3.aux
+White space in argument---line 5 of file pages/chapter3.aux
+ : \citation{ng2021comprehensive,915
+ :                                   5226}
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: pages/chapter4.aux
 A level-1 auxiliary file: pages/chapter5.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -362,4 +366,4 @@ warning$ -- 1
 while$ -- 2632
 width$ -- 0
 write$ -- 1773
-(There were 82 error messages)
+(There were 83 error messages)

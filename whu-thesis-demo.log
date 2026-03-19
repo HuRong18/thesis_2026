@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.3)  16 MAR 2026 14:44
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.3)  19 MAR 2026 14:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1984,20 +1984,14 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 24.09pt
 (hyperref)                replaced by space on input line 72.
 
-(./pages/abstract.tex)
+(./pages/abstract.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [1
 
 
-]
+])
 [2] (./pages/enabstract.tex
-Overfull \hbox (1.70998pt too wide) in paragraph at lines 3--4
-[]\TU/TimesNewRoman(0)/m/n/12.045 With the rapid development of IoT and AI tech
-nologies, computation-intensive and latency-
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3
@@ -2047,45 +2041,53 @@ File: figures/边缘计算示例图.png Graphic file (type bmp)
 
 
 
-] [2] [3] [4] [5] [6] [7]
+] [2] [3] [4] [5] [6]
 File: 研究内容与结构.png Graphic file (type bmp)
 <研究内容与结构.png>
- [8]) [9]
+ [7]) [8]
 \openout2 = `pages/chapter2.aux'.
 
  (./pages/chapter2.tex
 2
 File: figures/figs/SW.pdf Graphic file (type pdf)
 <use figures/figs/SW.pdf>
-[10
+[9
 
 
 
 
-] [11] [12]
+] [10] [11]
 File: figures/figs/gradient coding.pdf Graphic file (type pdf)
 <use figures/figs/gradient coding.pdf>
- [13] [14]
+ [12] [13]
 File: figures/figs/example.pdf Graphic file (type pdf)
 <use figures/figs/example.pdf>
 File: figures/figs/achievable.pdf Graphic file (type pdf)
 <use figures/figs/achievable.pdf>
- [15] [16]
+ [14] [15]
 File: linearcoding.png Graphic file (type bmp)
 <linearcoding.png>
- [17]
+ [16]
 File: nlc.png Graphic file (type bmp)
 <nlc.png>
- [18]
+ [17]
 File: NOMA.png Graphic file (type bmp)
 <NOMA.png>
- [19] [20]) [21] [22]
+ [18] [19]) [20]
 \openout2 = `pages/chapter3.aux'.
 
 
 (./pages/chapter3.tex
 3
-[23
+
+Overfull \hbox (1.01567pt too wide) in paragraph at lines 16--19
+[]\TU/TimesNewRoman(0)/m/n/12.045 DSC \TU/simsun.ttc(0)/m/n/12.045 的 理 论 研 究 始 
+于 \TU/TimesNewRoman(0)/m/n/12.045 Slepian \TU/simsun.ttc(0)/m/n/12.045 和 \TU/Ti
+mesNewRoman(0)/m/n/12.045 Wolf \TU/simsun.ttc(0)/m/n/12.045 的 开 创 性 工 作$[]$，|  
+随 后 在 多 信 源 扩 展$[]$、|
+ []
+
+[21
 
 
 
@@ -2112,61 +2114,73 @@ Package fontspec Info: Font family 'simhei.ttf(1)' created for font
 (fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular.otf(2)/m/n' will be
-(Font)              scaled to size 7.00075pt on input line 24.
+(Font)              scaled to size 7.00075pt on input line 32.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular.otf(2)/m/n' will be
-(Font)              scaled to size 5.00053pt on input line 24.
+(Font)              scaled to size 5.00053pt on input line 32.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 24.
+(Font)              scaled to size 6.99925pt on input line 32.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 24.
+(Font)              scaled to size 4.99947pt on input line 32.
+ [22]
 File: figures/codededgecomputing.pdf Graphic file (type pdf)
 <use figures/codededgecomputing.pdf>
- [24] [25] [26] [27]
+ [23] [24] [25]
 File: figures/figs/syn.pdf Graphic file (type pdf)
 <use figures/figs/syn.pdf>
 
-Overfull \hbox (13.65675pt too wide) in paragraph at lines 118--120
+Overfull \hbox (13.65675pt too wide) in paragraph at lines 148--150
  [][] 
  []
 
-[28] [29]
+[26]
+Overfull \hbox (2.36195pt too wide) in paragraph at lines 204--206
+\TU/simsun.ttc(0)/m/n/12.045 当 所 有 伴 随 式 $[][][][][]$\TU/TimesNewRoman(0)/m/n/1
+2.045 ($[][] [] [][][]$) \TU/simsun.ttc(0)/m/n/12.045 均 被 恢 复 后，|  即 可 采 用 基 于 
+伴 随 式 的 \TU/TimesNewRoman(0)/m/n/12.045 BP \TU/simsun.ttc(0)/m/n/12.045 译 码 算 法
+$[]$
+ []
+
 File: figures/figs/fig5.eps Graphic file (type eps)
 <figures/figs/fig5.eps>
+[27]
 File: figures/figs/SW_region_example.eps Graphic file (type eps)
 <figures/figs/SW_region_example.eps>
- [30] [31] [32] [33] [34] [35]
+ [28] [29] [30] [31] [32] [33]
 File: figures/figs/sic_rho_noerror_Chinese.eps Graphic file (type eps)
 <figures/figs/sic_rho_noerror_Chinese.eps>
 File: figures/figs/sic_pi_noerror_Chinese.eps Graphic file (type eps)
 <figures/figs/sic_pi_noerror_Chinese.eps>
- [36] [37]
+ [34]
 File: figures/figs/rate_reallocation1_Chinese.eps Graphic file (type eps)
 <figures/figs/rate_reallocation1_Chinese.eps>
 File: figures/figs/J_increase_ms_revision3_Chinese.eps Graphic file (type eps)
 <figures/figs/J_increase_ms_revision3_Chinese.eps>
 File: figures/figs/rate_reallocation_en7_Chinese.eps Graphic file (type eps)
 <figures/figs/rate_reallocation_en7_Chinese.eps>
- [38]
 File: figures/figs/revision_r_45_3_Chinese.eps Graphic file (type eps)
 <figures/figs/revision_r_45_3_Chinese.eps>
 File: figures/figs/revision_dimensions_Chinese.eps Graphic file (type eps)
 <figures/figs/revision_dimensions_Chinese.eps>
+ [35]
 File: figures/figs/ldpc_implement_channel_29696_3_Chinese.eps Graphic file (typ
 e eps)
 <figures/figs/ldpc_implement_channel_29696_3_Chinese.eps>
 File: figures/figs/ldpc_implement_power_29696_3_Chinese.eps Graphic file (type 
 eps)
 <figures/figs/ldpc_implement_power_29696_3_Chinese.eps>
- [39] [40] [41]) [42]
+ [36] [37]
+Overfull \hbox (5.0469pt too wide) in paragraph at lines 530--531
+[]\TU/simsun.ttc(0)/m/n/12.045 不 同 平 均 信 道 增 益 $[]$ 和 最 大 发 射 功 率 $[][]$ 下 的 平 
+均 下 行 传 输 时 延 $[][]$ 分 别 如 图[]\TU/TimesNewRoman(0)/m/n/12.045 3.12[]\TU/simsun.
+ttc(0)/m/n/12.045 和
+ []
+
+[38] [39]) [40]
 \openout2 = `pages/chapter4.aux'.
 
-
-(./pages/chapter4.tex
+ (./pages/chapter4.tex
 4
-
-LaTeX Warning: Reference `chapter-sum' on page 43 undefined on input line 7.
-
-[43
+[41
 
 
 
@@ -2174,37 +2188,41 @@ LaTeX Warning: Reference `chapter-sum' on page 43 undefined on input line 7.
 ]
 File: gradient_coding.pdf Graphic file (type pdf)
 <use gradient_coding.pdf>
- [44] [45] [46] [47] [48]
+
+Overfull \hbox (10.02951pt too wide) in paragraph at lines 54--56
+[]\TU/simsun.ttc(0)/m/n/12.045 为 缓 解 分 布 式 同 步 训 练 中 由 迟 滞 节 点 引 发 的 延 迟 问 题，| 
+ 系 统 采 用 梯 度 编 码 技 术$[]$。|
+ []
+
+[42] [43] [44] [45] [46] [47]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[49] [50]
+[48]
 File: figures/figs/real_channel_gain_Chinese.eps Graphic file (type eps)
 <figures/figs/real_channel_gain_Chinese.eps>
 File: figures/figs/real_transmit_power_Chinese.eps Graphic file (type eps)
 <figures/figs/real_transmit_power_Chinese.eps>
- [51]
+ [49] [50]
 File: figures/figs/equal_channel_gain_Chinese.eps Graphic file (type eps)
 <figures/figs/equal_channel_gain_Chinese.eps>
 File: figures/figs/equal_transmit_power_Chinese.eps Graphic file (type eps)
 <figures/figs/equal_transmit_power_Chinese.eps>
- [52]
 File: figures/figs/N_increase_Chinese.eps Graphic file (type eps)
 <figures/figs/N_increase_Chinese.eps>
- [53]
 File: figures/figs/K_increase.eps Graphic file (type eps)
 <figures/figs/K_increase.eps>
- [54]) [55]
+ [51]) [52] [53]
 \openout2 = `pages/chapter5.aux'.
 
  (./pages/chapter5.tex
 5
-[56
+[54
 
 
 
 
-]) [57] (./whu-thesis-demo.bbl
+]) [55] (./whu-thesis-demo.bbl
 ! Misplaced alignment tab character &.
 l.54 \newblock IEEE Communications Surveys &
                                              Tutorials, 2021, 23\allowbreak ...
@@ -2245,7 +2263,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[58
+[56
 
 
 
@@ -2261,32 +2279,32 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[59] [60] [61] [62] [63] [64]
+[57] [58] [59] [60] [61] [62]
 Underfull \hbox (badness 2302) in paragraph at lines 787--790
 []\TU/TimesNewRoman(0)/m/n/12.045 Yang A, Yang B, Hui B, et al.  Qwen2 technica
 l report[J].  arXiv preprint
  []
 
-[65]) (./pages/appendix.tex [66]
+[63]) (./pages/appendix.tex [64]
 附录 A
 
-Overfull \hbox (7.95546pt too wide) in paragraph at lines 31--36
+Overfull \hbox (7.62302pt too wide) in paragraph at lines 31--36
 []\TU/simsun.ttc(0)/m/n/12.045 该 算 法 将 从 长 度 为 $[]$ 的 伴 随 式 序 列 $[][][][][]$ $[
 ]$ 中 解 码 出 长 度 为 $[]$ 的 序 列 $[][][][][]$。|
  []
 
+[65
+
+] [66]
+附录 B
 [67
 
-] [68]
-附录 B
-[69
+] [68]) [69] (./pages/achievements.tex) [70
 
-] [70]) [71] (./pages/achievements.tex) [72
-
-] (./pages/thanks.tex) [73
+] (./pages/thanks.tex) [71
 
 ]
-[74
+[72
 
 ] (./whu-thesis-demo.aux (./pages/chapter1.aux) (./pages/chapter2.aux)
 (./pages/chapter3.aux) (./pages/chapter4.aux) (./pages/chapter5.aux))
@@ -2299,27 +2317,18 @@ L3 programming layer <2022/07/14>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package rerunfilecheck Warning: File `whu-thesis-demo.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `whu-thesis-demo.out':
-(rerunfilecheck)             Before: A5637CBEA586BACFAA28D0659EC7854F;6301
-(rerunfilecheck)             After:  96C766C6307D917A81E6DC02C7DAE3EC;6301.
+Package rerunfilecheck Info: File `whu-thesis-demo.out' has not changed.
+(rerunfilecheck)             Checksum: 6C137841AFC5C8D53735B4C96B9A3884;6451.
  ) 
 Here is how much of TeX's memory you used:
- 52581 strings out of 474773
- 1262716 string characters out of 5757725
- 1976839 words of memory out of 5000000
- 73796 multiletter control sequences out of 15000+600000
- 576607 words of font info for 197 fonts, out of 8000000 for 9000
+ 52638 strings out of 474773
+ 1266052 string characters out of 5757725
+ 1978839 words of memory out of 5000000
+ 73852 multiletter control sequences out of 15000+600000
+ 576615 words of font info for 198 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 117i,15n,121p,1536b,2936s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,13n,121p,2370b,2936s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on whu-thesis-demo.pdf (86 pages).
+Output written on whu-thesis-demo.pdf (84 pages).
