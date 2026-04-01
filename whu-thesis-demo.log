@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.3)  19 MAR 2026 14:09
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.3)  1 APR 2026 20:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2080,7 +2080,7 @@ File: NOMA.png Graphic file (type bmp)
 (./pages/chapter3.tex
 3
 
-Overfull \hbox (1.01567pt too wide) in paragraph at lines 16--19
+Overfull \hbox (1.01567pt too wide) in paragraph at lines 9--10
 []\TU/TimesNewRoman(0)/m/n/12.045 DSC \TU/simsun.ttc(0)/m/n/12.045 的 理 论 研 究 始 
 于 \TU/TimesNewRoman(0)/m/n/12.045 Slepian \TU/simsun.ttc(0)/m/n/12.045 和 \TU/Ti
 mesNewRoman(0)/m/n/12.045 Wolf \TU/simsun.ttc(0)/m/n/12.045 的 开 创 性 工 作$[]$，|  
@@ -2114,13 +2114,13 @@ Package fontspec Info: Font family 'simhei.ttf(1)' created for font
 (fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular.otf(2)/m/n' will be
-(Font)              scaled to size 7.00075pt on input line 32.
+(Font)              scaled to size 7.00075pt on input line 23.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular.otf(2)/m/n' will be
-(Font)              scaled to size 5.00053pt on input line 32.
+(Font)              scaled to size 5.00053pt on input line 23.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 32.
+(Font)              scaled to size 6.99925pt on input line 23.
 LaTeX Font Info:    Font shape `TU/XITSMath-Regular.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 32.
+(Font)              scaled to size 4.99947pt on input line 23.
  [22]
 File: figures/codededgecomputing.pdf Graphic file (type pdf)
 <use figures/codededgecomputing.pdf>
@@ -2128,12 +2128,12 @@ File: figures/codededgecomputing.pdf Graphic file (type pdf)
 File: figures/figs/syn.pdf Graphic file (type pdf)
 <use figures/figs/syn.pdf>
 
-Overfull \hbox (13.65675pt too wide) in paragraph at lines 148--150
+Overfull \hbox (13.65675pt too wide) in paragraph at lines 126--128
  [][] 
  []
 
 [26]
-Overfull \hbox (2.36195pt too wide) in paragraph at lines 204--206
+Overfull \hbox (2.36195pt too wide) in paragraph at lines 181--183
 \TU/simsun.ttc(0)/m/n/12.045 当 所 有 伴 随 式 $[][][][][]$\TU/TimesNewRoman(0)/m/n/1
 2.045 ($[][] [] [][][]$) \TU/simsun.ttc(0)/m/n/12.045 均 被 恢 复 后，|  即 可 采 用 基 于 
 伴 随 式 的 \TU/TimesNewRoman(0)/m/n/12.045 BP \TU/simsun.ttc(0)/m/n/12.045 译 码 算 法
@@ -2169,7 +2169,7 @@ File: figures/figs/ldpc_implement_power_29696_3_Chinese.eps Graphic file (type
 eps)
 <figures/figs/ldpc_implement_power_29696_3_Chinese.eps>
  [36] [37]
-Overfull \hbox (5.0469pt too wide) in paragraph at lines 530--531
+Overfull \hbox (5.0469pt too wide) in paragraph at lines 500--501
 []\TU/simsun.ttc(0)/m/n/12.045 不 同 平 均 信 道 增 益 $[]$ 和 最 大 发 射 功 率 $[][]$ 下 的 平 
 均 下 行 传 输 时 延 $[][]$ 分 别 如 图[]\TU/TimesNewRoman(0)/m/n/12.045 3.12[]\TU/simsun.
 ttc(0)/m/n/12.045 和
@@ -2180,16 +2180,15 @@ ttc(0)/m/n/12.045 和
 
  (./pages/chapter4.tex
 4
+File: figures/figs/梯度编码示例图.png Graphic file (type bmp)
+<figures/figs/梯度编码示例图.png>
 [41
 
 
 
 
 ]
-File: gradient_coding.pdf Graphic file (type pdf)
-<use gradient_coding.pdf>
-
-Overfull \hbox (10.02951pt too wide) in paragraph at lines 54--56
+Overfull \hbox (10.02951pt too wide) in paragraph at lines 53--55
 []\TU/simsun.ttc(0)/m/n/12.045 为 缓 解 分 布 式 同 步 训 练 中 由 迟 滞 节 点 引 发 的 延 迟 问 题，| 
  系 统 采 用 梯 度 编 码 技 术$[]$。|
  []
@@ -2203,16 +2202,18 @@ File: figures/figs/real_channel_gain_Chinese.eps Graphic file (type eps)
 <figures/figs/real_channel_gain_Chinese.eps>
 File: figures/figs/real_transmit_power_Chinese.eps Graphic file (type eps)
 <figures/figs/real_transmit_power_Chinese.eps>
- [49] [50]
+ [49]
 File: figures/figs/equal_channel_gain_Chinese.eps Graphic file (type eps)
 <figures/figs/equal_channel_gain_Chinese.eps>
+ [50]
 File: figures/figs/equal_transmit_power_Chinese.eps Graphic file (type eps)
 <figures/figs/equal_transmit_power_Chinese.eps>
-File: figures/figs/N_increase_Chinese.eps Graphic file (type eps)
-<figures/figs/N_increase_Chinese.eps>
-File: figures/figs/K_increase.eps Graphic file (type eps)
-<figures/figs/K_increase.eps>
- [51]) [52] [53]
+File: figures/figs/n_increase_revision.eps Graphic file (type eps)
+<figures/figs/n_increase_revision.eps>
+ [51]
+File: figures/figs/k_increase_revision.eps Graphic file (type eps)
+<figures/figs/k_increase_revision.eps>
+ [52]) [53]
 \openout2 = `pages/chapter5.aux'.
 
  (./pages/chapter5.tex
@@ -2320,15 +2321,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `whu-thesis-demo.out' has not changed.
-(rerunfilecheck)             Checksum: 6C137841AFC5C8D53735B4C96B9A3884;6451.
+(rerunfilecheck)             Checksum: 1F7AADF7524859CAB1B3268090DD052F;6451.
  ) 
 Here is how much of TeX's memory you used:
- 52638 strings out of 474773
- 1266052 string characters out of 5757725
- 1978839 words of memory out of 5000000
- 73852 multiletter control sequences out of 15000+600000
+ 52631 strings out of 474773
+ 1265549 string characters out of 5757725
+ 1979839 words of memory out of 5000000
+ 73845 multiletter control sequences out of 15000+600000
  576615 words of font info for 198 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 117i,13n,121p,2370b,2936s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,13n,121p,2339b,2936s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on whu-thesis-demo.pdf (84 pages).

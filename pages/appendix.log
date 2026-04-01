@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.3)  18 MAR 2026 17:30
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.3)  1 APR 2026 17:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -943,7 +943,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.37 初
-      始化（Initialization）: 根据 $\{X_v^{(j)}\}_{j=1}^n$ 的分布，设定
+      始化（Initialization）: 根据 $\{X_\upsilon^{(j)}\}_{j=1}^n$ 的分布，设定
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1126,7 +1126,7 @@ and I'll forget about whatever was undefined.
 <recently read> &
                  
 l.47 ^^I&
-         \cdot \prod_{k \in N(j) \setminus i} M_{k \to j}(a_k), \quad \foral...
+         \cdot \prod_{k \in N(j) \backslash i} M_{k \to j}(a_k), \quad \fora...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -1278,14 +1278,9 @@ Overfull \hbox (27.78941pt too wide) in paragraph at lines 44--51
  []
 
 
-Overfull \hbox (26.59328pt too wide) in paragraph at lines 44--51
-\OML/cmm/m/it/10 N\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 j\OT1/cmr/m/n/10 ) \OMS/cms
-y/m/n/10 n
- []
-
-
-Overfull \hbox (3.44513pt too wide) in paragraph at lines 44--51
-\OML/cmm/m/it/10 i$
+Overfull \hbox (30.0384pt too wide) in paragraph at lines 44--51
+\OML/cmm/m/it/10 N\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 j\OT1/cmr/m/n/10 )\OMS/cmsy
+/m/n/10 n\OML/cmm/m/it/10 i$
  []
 
 
@@ -1432,14 +1427,9 @@ Overfull \hbox (21.84149pt too wide) in paragraph at lines 56--58
  []
 
 
-Overfull \hbox (25.34792pt too wide) in paragraph at lines 56--58
-\OML/cmm/m/it/10 N\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i\OT1/cmr/m/n/10 ) \OMS/cms
-y/m/n/10 n
- []
-
-
-Overfull \hbox (4.69049pt too wide) in paragraph at lines 56--58
-\OML/cmm/m/it/10 j$
+Overfull \hbox (30.0384pt too wide) in paragraph at lines 56--58
+\OML/cmm/m/it/10 N\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i\OT1/cmr/m/n/10 )\OMS/cmsy
+/m/n/10 n\OML/cmm/m/it/10 j$
  []
 
 
@@ -1491,7 +1481,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 59--60
  []
 
 ! Undefined control sequence.
-l.61 ...X}_v^{(i)} = \arg \max_{a \in GF(q)} \text
+l.61 ...ilon^{(i)} = \arg \max_{a \in GF(q)} \text
                                                   {Pr}\{x_i = a\} \prod_{j \...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1817,7 +1807,7 @@ Missing character: There is no 理 ("7406) in font nullfont!
 ! Undefined control sequence.
 <write> ...ing: Reference `bcst' on page \thepage 
                                                   \space undefined\on@line .^^J
-l.74 ...分具体信源。集合$\mathcal{S}=[1:M]$，代入定理\ref{bcst}
+l.74 ...分具体信源。集合$\mathcal{S}=[1:K]$，代入定理\ref{bcst}
                                                   中的可达速率区域定义可得
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1851,17 +1841,17 @@ Overfull \hbox (18.11102pt too wide) in paragraph at lines 72--75
  []
 
 
-Overfull \hbox (31.80695pt too wide) in paragraph at lines 72--75
-\OT1/cmr/bx/n/10 I[]$$\OML/cmm/m/it/10 M \OMS/cmsy/m/n/10 ^^B
+Overfull \hbox (29.05698pt too wide) in paragraph at lines 72--75
+\OT1/cmr/bx/n/10 I[]$$\OML/cmm/m/it/10 K \OMS/cmsy/m/n/10 ^^B
  []
 
 
-Overfull \hbox (38.418pt too wide) in paragraph at lines 72--75
-\OML/cmm/m/it/10 M$$[] \OT1/cmr/m/n/10 =
+Overfull \hbox (35.90413pt too wide) in paragraph at lines 72--75
+\OML/cmm/m/it/10 K$$[] \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (74.99512pt too wide) in paragraph at lines 72--75
+Overfull \hbox (73.82848pt too wide) in paragraph at lines 72--75
 \OT1/cmr/m/n/10 [[]\OML/cmm/m/it/10 ; [] ; []\OT1/cmr/m/n/10 ]$
  []
 
@@ -1871,8 +1861,8 @@ Overfull \hbox (23.77219pt too wide) in paragraph at lines 72--75
  []
 
 
-Overfull \hbox (43.47769pt too wide) in paragraph at lines 72--75
-\OML/cmm/m/it/10 M$$\OT1/cmr/bx/n/10 C$$\OML/cmm/m/it/10 L[] \OT1/cmr/m/n/10 =
+Overfull \hbox (41.89436pt too wide) in paragraph at lines 72--75
+\OML/cmm/m/it/10 K$$\OT1/cmr/bx/n/10 C$$\OML/cmm/m/it/10 L[] \OT1/cmr/m/n/10 =
  []
 
 
@@ -1886,8 +1876,8 @@ Overfull \hbox (13.3333pt too wide) in paragraph at lines 72--75
  []
 
 
-Overfull \hbox (24.42944pt too wide) in paragraph at lines 72--75
-\OML/cmm/m/it/10 M\OT1/cmr/m/n/10 ]$[] 
+Overfull \hbox (22.84612pt too wide) in paragraph at lines 72--75
+\OML/cmm/m/it/10 K\OT1/cmr/m/n/10 ]$[] 
  []
 
 
@@ -2310,8 +2300,8 @@ Overfull \hbox (19.16667pt too wide) in paragraph at lines 88--91
  []
 
 
-Overfull \hbox (37.02774pt too wide) in paragraph at lines 88--91
-\OML/cmm/m/it/10 M$$[] \OT1/cmr/m/n/10 =
+Overfull \hbox (35.44441pt too wide) in paragraph at lines 88--91
+\OML/cmm/m/it/10 K$$[] \OT1/cmr/m/n/10 =
  []
 
 
@@ -2361,14 +2351,14 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.95 ^^I\end{bmatrix}
-                     \right)=M.\label{full rank}
+                     \right)=K.\label{full rank}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (128.03107pt too wide) detected at line 96
-[] [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 M:[]
+Overfull \hbox (123.69777pt too wide) detected at line 96
+[] [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 K:[]
  []
 
 Missing character: There is no 由 ("7531) in font nullfont!
@@ -2521,7 +2511,7 @@ or  <return>  to continue without it.
 <inserted text> 
                 $
 l.103 ^^I\sum
-             _{k\in\mathcal{K}}\tilde{R}_{c,k}\geq M\cdot H(\mathbf{g}^{(t)}),
+             _{k\in\mathcal{K}}\tilde{R}_{c,k}\geq K\cdot H(\mathbf{g}^{(t)}),
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -2561,7 +2551,7 @@ $\OT1/cmr/bx/n/10 E \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (53.4397pt too wide) in paragraph at lines 96--106
+Overfull \hbox (52.27306pt too wide) in paragraph at lines 96--106
 \OT1/cmr/bx/n/10 b$[]$\OMS/cmsy/m/n/10 T$$\OT1/cmr/bx/n/10 I[]$$\OML/cmm/m/it/1
 0 k \OMS/cmsy/m/n/10 2
  []
@@ -2603,8 +2593,8 @@ Overfull \hbox (57.65979pt too wide) in paragraph at lines 96--106
  []
 
 
-Overfull \hbox (13.56944pt too wide) in paragraph at lines 96--106
-\OML/cmm/m/it/10 M \OMS/cmsy/m/n/10 ^^A
+Overfull \hbox (11.98611pt too wide) in paragraph at lines 96--106
+\OML/cmm/m/it/10 K \OMS/cmsy/m/n/10 ^^A
  []
 
 
@@ -2989,11 +2979,11 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-Missing character: There is no M ("4D) in font nullfont!
+Missing character: There is no K ("4B) in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.123 ^^IM\cdot
+l.123 ^^IK\cdot
                 H(\mathbf{g}^{(t)})<H\left(\{\tilde{\mathbf{g}}_k^{(t)}\}_{k...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -3060,8 +3050,8 @@ Overfull \hbox (71.78133pt too wide) in paragraph at lines 117--126
  []
 
 
-Overfull \hbox (13.56944pt too wide) in paragraph at lines 117--126
-\OML/cmm/m/it/10 M \OMS/cmsy/m/n/10 ^^A
+Overfull \hbox (11.98611pt too wide) in paragraph at lines 117--126
+\OML/cmm/m/it/10 K \OMS/cmsy/m/n/10 ^^A
  []
 
 
@@ -3151,7 +3141,7 @@ Missing character: There is no 义 ("4E49) in font nullfont!
 ! Undefined control sequence.
 <recently read> \text 
                       
-l.128 ...R}_{c,1},\cdots,\hat{R}_{c,M}\}$。定义$\text
+l.128 ...R}_{c,1},\cdots,\hat{R}_{c,K}\}$。定义$\text
                                                   {m}_k(m_k),m_k\in[2^{n\til...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3293,13 +3283,13 @@ Overfull \hbox (75.277pt too wide) in paragraph at lines 127--129
  []
 
 
-Overfull \hbox (134.62251pt too wide) in paragraph at lines 127--129
+Overfull \hbox (133.45587pt too wide) in paragraph at lines 127--129
 []\OMS/cmsy/m/n/10 f[]\OML/cmm/m/it/10 ; [] ; []\OMS/cmsy/m/n/10 g$$[] \OT1/cmr
 /m/n/10 :=
  []
 
 
-Overfull \hbox (154.0466pt too wide) in paragraph at lines 127--129
+Overfull \hbox (152.87996pt too wide) in paragraph at lines 127--129
 []\OMS/cmsy/m/n/10 f[]\OML/cmm/m/it/10 ; [] ; []\OMS/cmsy/m/n/10 g$$\OML/cmm/m/
 it/10 m[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 m[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10
  ; m[] \OMS/cmsy/m/n/10 2
@@ -3311,11 +3301,11 @@ Overfull \hbox (79.47409pt too wide) in paragraph at lines 127--129
  []
 
 
-Overfull \hbox (434.29408pt too wide) in paragraph at lines 127--129
+Overfull \hbox (430.84967pt too wide) in paragraph at lines 127--129
 []$$\OMS/cmsy/m/n/10 d\OML/cmm/m/it/10 n[]= []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10
  q\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 e$$[]$$[]$$\OT1/cmr/bx/n/10 m[]$$\OML/cmm/m
 /it/10 m[]$$m[]$$q$$\OT1/cmr/bx/n/10 m[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 m[]\O
-T1/cmr/m/n/10 )$$\OML/cmm/m/it/10 M$$\OT1/cmr/m/n/10 (2[]\OML/cmm/m/it/10 ; [] 
+T1/cmr/m/n/10 )$$\OML/cmm/m/it/10 K$$\OT1/cmr/m/n/10 (2[]\OML/cmm/m/it/10 ; [] 
 ; \OT1/cmr/m/n/10 2[]\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 2[]\OML/cmm/m/it/10 ; [
 ] ; \OT1/cmr/m/n/10 2[]\OML/cmm/m/it/10 ; q; n\OT1/cmr/m/n/10 )$ 
  []
@@ -3328,7 +3318,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.130 固
-       定一个分布$\Pi_{k=1}^M p(u_k|x_k)$和重构函数$\hat{\mathbf{w}}_{\mathbf{A}_j}=\m...
+       定一个分布$\Pi_{k=1}^K p(u_k|x_k)$和重构函数$\hat{\mathbf{w}}_{\mathbf{A}_j}=\m...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3370,7 +3360,7 @@ Overfull \hbox (109.28412pt too wide) in paragraph at lines 130--131
  []
 
 
-Overfull \hbox (155.83461pt too wide) in paragraph at lines 130--131
+Overfull \hbox (154.66797pt too wide) in paragraph at lines 130--131
 \OT1/cmr/bx/n/10 A[]\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 u[]; [] ; u[]\OT1/cmr/m/n
 /10 ][]$$\OML/cmm/m/it/10 E\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 d[]\OT1/cmr/m/n/10
  (\OT1/cmr/bx/n/10 W[]\OML/cmm/m/it/10 ; []\OT1/cmr/m/n/10 )] \OMS/cmsy/m/n/10 
@@ -3456,7 +3446,7 @@ Missing character: There is no 向 ("5411) in font nullfont!
 Missing character: There is no 量 ("91CF) in font nullfont!
 ! Undefined control sequence.
 l.132 ...\kappa\times n}$，以及抖动向量$d_k^n \in \mathbb
-                                                  {F}_q^n,\forall k\in[M]$，其...
+                                                  {F}_q^n,\forall k\in[K]$，其...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3533,8 +3523,8 @@ Overfull \hbox (38.22801pt too wide) in paragraph at lines 132--133
  []
 
 
-Overfull \hbox (32.66432pt too wide) in paragraph at lines 132--133
-\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 M\OT1/cmr/m/n/10 ]$$\OML/cmm/m/it/10 ^^T \OT1
+Overfull \hbox (31.081pt too wide) in paragraph at lines 132--133
+\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 K\OT1/cmr/m/n/10 ]$$\OML/cmm/m/it/10 ^^T \OT1
 /cmr/m/n/10 =
  []
 
@@ -3860,7 +3850,7 @@ Missing character: There is no 矩 ("77E9) in font nullfont!
 Missing character: There is no 阵 ("9635) in font nullfont!
 ! Undefined control sequence.
 l.146 ^^I给定一个系数矩阵$\mathbf{A}\in \mathbb
-                                       {F}_q^{J\times M}$，定义索引的线性组合为$\text{m...
+                                       {F}_q^{J\times K}$，定义索引的线性组合为$\text{m...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3881,7 +3871,7 @@ Missing character: There is no 为 ("4E3A) in font nullfont!
 ! Undefined control sequence.
 <recently read> \text 
                       
-l.146 ...mathbb{F}_q^{J\times M}$，定义索引的线性组合为$\text
+l.146 ...mathbb{F}_q^{J\times K}$，定义索引的线性组合为$\text
                                                   {m}_\mathbf{A}(\text{m}_1,...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3890,8 +3880,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.146 ... M}$，定义索引的线性组合为$\text{m}_\mathbf{A}(\text
-                                                  {m}_1,\cdots,\text{m}_M)=\...
+l.146 ... K}$，定义索引的线性组合为$\text{m}_\mathbf{A}(\text
+                                                  {m}_1,\cdots,\text{m}_K)=\...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3900,7 +3890,7 @@ and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
 l.146 ...ext{m}_\mathbf{A}(\text{m}_1,\cdots,\text
-                                                  {m}_M)=\mathbf{A}\begin{bm...
+                                                  {m}_K)=\mathbf{A}\begin{bm...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3914,7 +3904,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.146 ...ots,\text{m}_M)=\mathbf{A}\begin{bmatrix}
+l.146 ...ots,\text{m}_K)=\mathbf{A}\begin{bmatrix}
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3922,7 +3912,7 @@ or  <return>  to continue without it.
 
 ! Undefined control sequence.
 l.147 ^^I^^I^^I\text
-                    {m}_1\\\vdots \\\text{m}_M
+                    {m}_1\\\vdots \\\text{m}_K
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3936,7 +3926,7 @@ Missing character: There is no . ("2E) in font nullfont!
 <recently read> \text 
                       
 l.147 ^^I^^I^^I\text{m}_1\\\vdots \\\text
-                                         {m}_M
+                                         {m}_K
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4002,7 +3992,7 @@ or  <return>  to continue without it.
 
 ! Undefined control sequence.
 l.149 ^^I\text
-              {l}_1\\\vdots\\\text{l}_M
+              {l}_1\\\vdots\\\text{l}_K
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4016,7 +4006,7 @@ Missing character: There is no . ("2E) in font nullfont!
 <recently read> \text 
                       
 l.149 ^^I\text{l}_1\\\vdots\\\text
-                                  {l}_M
+                                  {l}_K
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4082,7 +4072,7 @@ and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
 l.150 ...}_\mathbf{A}$代替$\text{m}_\mathbf{A}(\text
-                                                  {m}_1,\cdots,$ $\text{m}_M...
+                                                  {m}_1,\cdots,$ $\text{m}_K...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4093,7 +4083,7 @@ and I'll forget about whatever was undefined.
 <recently read> \text 
                       
 l.150 ...{m}_\mathbf{A}(\text{m}_1,\cdots,$ $\text
-                                                  {m}_M)$和$\text{l}_\mathbf{...
+                                                  {m}_K)$和$\text{l}_\mathbf{...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4104,7 +4094,7 @@ Missing character: There is no 和 ("548C) in font nullfont!
 ! Undefined control sequence.
 <recently read> \text 
                       
-l.150 ...(\text{m}_1,\cdots,$ $\text{m}_M)$和$\text
+l.150 ...(\text{m}_1,\cdots,$ $\text{m}_K)$和$\text
                                                   {l}_\mathbf{A}(\text{l}_1,...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4113,8 +4103,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.150 ... $\text{m}_M)$和$\text{l}_\mathbf{A}(\text
-                                                  {l}_1,\\\cdots,\text{l}_M)...
+l.150 ... $\text{m}_K)$和$\text{l}_\mathbf{A}(\text
+                                                  {l}_1,\\\cdots,\text{l}_K)...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4123,7 +4113,7 @@ and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
 l.150 ...t{l}_\mathbf{A}(\text{l}_1,\\\cdots,\text
-                                                  {l}_M)$。进一步可以得到，$m_{\mathb...
+                                                  {l}_K)$。进一步可以得到，$m_{\mathb...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4158,7 +4148,7 @@ Overfull \hbox (18.1388pt too wide) in paragraph at lines 146--151
  []
 
 
-Overfull \hbox (115.5639pt too wide) in paragraph at lines 146--151
+Overfull \hbox (113.23062pt too wide) in paragraph at lines 146--151
 \OML/cmm/m/it/10 F[]$$m[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 m[]; [] ; m[]\OT1/cm
 r/m/n/10 ) =
  []
@@ -4169,7 +4159,7 @@ Overfull \hbox (21.96066pt too wide) in paragraph at lines 146--151
  []
 
 
-Overfull \hbox (87.80083pt too wide) in paragraph at lines 146--151
+Overfull \hbox (86.63419pt too wide) in paragraph at lines 146--151
 \OML/cmm/m/it/10 m[]$$l[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 l[]; [] ; l[]\OT1/cm
 r/m/n/10 ) =
  []
@@ -4180,19 +4170,19 @@ Overfull \hbox (16.16432pt too wide) in paragraph at lines 146--151
  []
 
 
-Overfull \hbox (91.93985pt too wide) in paragraph at lines 146--151
+Overfull \hbox (90.77321pt too wide) in paragraph at lines 146--151
 \OML/cmm/m/it/10 l[]$$m[]$$l[]$$m[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 m[]; [] ;$
 
  []
 
 
-Overfull \hbox (47.60747pt too wide) in paragraph at lines 146--151
+Overfull \hbox (46.44083pt too wide) in paragraph at lines 146--151
 \OML/cmm/m/it/10 m[]\OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 l[]\OT1/cmr/m/n/10 (\OM
 L/cmm/m/it/10 l[]; [] 
  []
 
 
-Overfull \hbox (63.87325pt too wide) in paragraph at lines 146--151
+Overfull \hbox (62.7066pt too wide) in paragraph at lines 146--151
 [] \OML/cmm/m/it/10 ; l[]\OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 m[] \OT1/cmr/m/n/1
 0 =
  []
@@ -4234,7 +4224,7 @@ Missing character: There is no 索 ("7D22) in font nullfont!
 Missing character: There is no 引 ("5F15) in font nullfont!
 ! Undefined control sequence.
 l.152 ...psilon^{'}<\epsilon$，中心节点在接收到发送的索引$(\text
-                                                  {m}_1,\cdots,\text{m}_M)$和...
+                                                  {m}_1,\cdots,\text{m}_K)$和...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4243,7 +4233,7 @@ and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
 l.152 ...n$，中心节点在接收到发送的索引$(\text{m}_1,\cdots,\text
-                                                  {m}_M)$和侧信息$y^n$后，译码器将搜索一个...
+                                                  {m}_K)$和侧信息$y^n$后，译码器将搜索一个...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4299,14 +4289,14 @@ Overfull \hbox (17.81943pt too wide) in paragraph at lines 152--153
  []
 
 
-Overfull \hbox (111.51851pt too wide) in paragraph at lines 152--153
+Overfull \hbox (110.35187pt too wide) in paragraph at lines 152--153
 \OML/cmm/m/it/10 ^^O$$\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 m[]; [] ; m[]\OT1/cmr/m
 /n/10 )$$\OML/cmm/m/it/10 y[]$$[]$$u[]$$y[]$$^^O$ 
  []
 
 ! Undefined control sequence.
 l.154 ^^I\left(u_1^n(\text
-                          {m}_1, \hat{\text{l}}_1),\cdots,u_M^n(\text{m}_M, ...
+                          {m}_1, \hat{\text{l}}_1),\cdots,u_K^n(\text{m}_K, ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4315,7 +4305,7 @@ and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
 l.154 ^^I\left(u_1^n(\text{m}_1, \hat{\text
-                                           {l}}_1),\cdots,u_M^n(\text{m}_M, ...
+                                           {l}}_1),\cdots,u_K^n(\text{m}_K, ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4323,8 +4313,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.154 ...}_1, \hat{\text{l}}_1),\cdots,u_M^n(\text
-                                                  {m}_M, \hat{\text{l}}_M)\r...
+l.154 ...}_1, \hat{\text{l}}_1),\cdots,u_K^n(\text
+                                                  {m}_K, \hat{\text{l}}_K)\r...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4332,8 +4322,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.154 ...}}_1),\cdots,u_M^n(\text{m}_M, \hat{\text
-                                                  {l}}_M)\right)\in \mathcal...
+l.154 ...}}_1),\cdots,u_K^n(\text{m}_K, \hat{\text
+                                                  {l}}_K)\right)\in \mathcal...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4341,7 +4331,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (169.31413pt too wide) detected at line 155
+Overfull \hbox (165.81421pt too wide) detected at line 155
 [] \OMS/cmsy/m/n/10 2 T[]\OML/cmm/m/it/10 ;
  []
 

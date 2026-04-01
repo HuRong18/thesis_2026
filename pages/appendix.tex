@@ -70,8 +70,8 @@
 基于定理\ref{bcst}，在无损（$D=0$）且无边信息（$X=\emptyset$）的条件下进行推导。
 
 （1）完整恢复边界$\mathcal{R}_{sw}$：
-取辅助矩阵$\mathbf{E}=\mathbf{I}_M$，即$M\times M$单位矩阵，这意味着解码器的目标是恢复$\hat{\mathbf{g}}_{\mathbf{I}_M}^{(t)}=[\tilde{\mathbf{g}}_{\pi(1)}^{(t)},\cdots,\tilde{\mathbf{g}}_{\pi(M)}^{(t)}]$，即完整恢复所有参与传输节点的编码梯度。
-因此，$L_{\mathbf{E}}=M$。由于需要恢复所有信息，干扰矩阵$\mathbf{C}$必须为空，即$L_{\mathbf{C}}=0$，否则无法区分具体信源。集合$\mathcal{S}=[1:M]$，代入定理\ref{bcst}中的可达速率区域定义可得
+取辅助矩阵$\mathbf{E}=\mathbf{I}_K$，即$K\times K$单位矩阵，这意味着解码器的目标是恢复$\hat{\mathbf{g}}_{\mathbf{I}_K}^{(t)}=[\tilde{\mathbf{g}}_{\pi(1)}^{(t)},\cdots,\tilde{\mathbf{g}}_{\pi(K)}^{(t)}]$，即完整恢复所有参与传输节点的编码梯度。
+因此，$L_{\mathbf{E}}=K$。由于需要恢复所有信息，干扰矩阵$\mathbf{C}$必须为空，即$L_{\mathbf{C}}=0$，否则无法区分具体信源。集合$\mathcal{S}=[1:K]$，代入定理\ref{bcst}中的可达速率区域定义可得
 \begin{equation}
 	\sum_{k\in\mathcal{T}}\tilde{R}_{c,k}>H(\hat{\mathbf{g}}_{\mathbf{E}}^{(t)})-H(U(\mathcal{T})|\hat{\mathbf{g}}_{\mathbf{E}}^{(t)}).
 \end{equation}
@@ -86,21 +86,21 @@
 记该区域为$\mathcal{R}_{sw}$。
 
 （2）线性恢复边界$\mathcal{R}_{linear}$：
-取辅助矩阵$\mathbf{E}=\mathbf{b}$，即解码系数行向量，大小为$1\times M$，这意味着解码器的目标直接为$\hat{\mathbf{g}}_{\mathbf{b}}^{(t)}=\sum_{k\in\mathcal{K}}b_k\tilde{\mathbf{g}}_k^{(t)}=\mathbf{g}^{(t)}$。
+取辅助矩阵$\mathbf{E}=\mathbf{b}$，即解码系数行向量，大小为$1\times K$，这意味着解码器的目标直接为$\hat{\mathbf{g}}_{\mathbf{b}}^{(t)}=\sum_{k\in\mathcal{K}}b_k\tilde{\mathbf{g}}_k^{(t)}=\mathbf{g}^{(t)}$。
 因此，$L_{\mathbf{E}}=1$，$L_{\mathbf{C}}=0$，集合$\mathcal{S}$只能取$\{1\}$。根据定理\ref{bcst}中的约束条件(d)要求
 \begin{equation}
 	\mathrm{rank}\left(\begin{bmatrix}
 		\mathbf{E}(\mathcal{S})\\
-		\mathbf{I}_M([M]\backslash\mathcal{T})
-	\end{bmatrix}\right)=M.\label{full rank}
+		\mathbf{I}_K([K]\backslash\mathcal{T})
+	\end{bmatrix}\right)=K.\label{full rank}
 \end{equation}
-由于$\mathbf{E}=\mathbf{b}$是一个非零行向量，要使式(\ref{full rank})满秩，每一个节点都必须包含在$\mathcal{T}$中或被$\mathbf{I}_M$覆盖。这意味着对于每一个独立的节点$k\in\mathcal{K}$（令$\mathcal{T}=\{k\}$），为满足秩约束，不等式退化为
+由于$\mathbf{E}=\mathbf{b}$是一个非零行向量，要使式(\ref{full rank})满秩，每一个节点都必须包含在$\mathcal{T}$中或被$\mathbf{I}_K$覆盖。这意味着对于每一个独立的节点$k\in\mathcal{K}$（令$\mathcal{T}=\{k\}$），为满足秩约束，不等式退化为
 \begin{align}
 	\tilde{R}_{c,k}>H(\hat{\mathbf{g}}_{\mathbf{b}}^{(t)})=H(\mathbf{g}^{(t)}),\quad\forall k\in \mathcal{K}.
 \end{align}
 其和速率下界为
 \begin{align}
-	\sum_{k\in\mathcal{K}}\tilde{R}_{c,k}\geq M\cdot H(\mathbf{g}^{(t)}),
+	\sum_{k\in\mathcal{K}}\tilde{R}_{c,k}\geq K\cdot H(\mathbf{g}^{(t)}),
 \end{align}
 记该区域为$\mathcal{R}_{linear}$。
 
@@ -116,20 +116,20 @@
 
 根据$\mathcal{R}_{linear}$的定义，每个节点必须独立发送足够恢复目标函数$\mathbf{g}^{(t)}$的信息量，因此，其最小和速率为
 \begin{align}
-	\tilde{R}_{linear}^{sum}=\sum_{k\in\mathcal{K}}H(\mathbf{g}^{(t)})=M\cdot H(\mathbf{g}^{(t)}).
+	\tilde{R}_{linear}^{sum}=\sum_{k\in\mathcal{K}}H(\mathbf{g}^{(t)})=K\cdot H(\mathbf{g}^{(t)}).
 \end{align}
 当寻求$\tilde{R}_{linear}^{sum}<\tilde{R}_{sw}^{sum}$的条件，即
 \begin{align}
-	M\cdot H(\mathbf{g}^{(t)})<H\left(\{\tilde{\mathbf{g}}_k^{(t)}\}_{k\in\mathcal{K}}\right)
+	K\cdot H(\mathbf{g}^{(t)})<H\left(\{\tilde{\mathbf{g}}_k^{(t)}\}_{k\in\mathcal{K}}\right)
 \end{align}
 时，线性恢复策略具有更低的传输时延。证毕。
 
 \section{嵌套线性码编码方案}\label{<nested linear coding>}
-考虑节点$k\in \mathcal{K}$分别以编码速率$\tilde{R}_{c,k}$和$\hat{R}_{c,k}$并使用两个索引$m_k\in[2^{n\tilde{R}_{c,k}}]$和$l_k\in[2^{n\hat{R}_{c,k}}]$。定义$\tilde{R}_{c,max}:=\max\{\tilde{R}_{c,1},\cdots,\tilde{R}_{c,M}\}$，$\hat{R}_{c,max}:=\max\{\hat{R}_{c,1},\cdots,\hat{R}_{c,M}\}$。定义$\text{m}_k(m_k),m_k\in[2^{n\tilde{R}_{c,k}}]$为$m_k$的$q$进制展开，每当$\tilde{R}_{c,k}<\tilde{R}_{c,max}$时，将补零至长度为$\lceil n\tilde{R}_{c,max}/\log(q)\rceil$。为了便于理解，本文后续假设对于所有速率，$\frac{n\tilde{R}_{c,k}}{\log(q)}$和$\frac{n\hat{R}_{c,k}}{\log(q)}$均为整数。由于矢量形式的$\mathbf{m}_k$和标量形式的$m_k$一一映射，因此后文中$m_k$将被用来表示其$q$进制展开向量$\mathbf{m}_k(m_k)$。定义由下面的步骤生成的$M$个码本的集合为一个$(2^{n\tilde{R}_{c,1}},\cdots,2^{n\tilde{R}_{c,M}}, 2^{n\hat{R}_{c,1}},\cdots,2^{n\hat{R}_{c,M}},q,n)$嵌套线性码。
+考虑节点$k\in \mathcal{K}$分别以编码速率$\tilde{R}_{c,k}$和$\hat{R}_{c,k}$并使用两个索引$m_k\in[2^{n\tilde{R}_{c,k}}]$和$l_k\in[2^{n\hat{R}_{c,k}}]$。定义$\tilde{R}_{c,max}:=\max\{\tilde{R}_{c,1},\cdots,\tilde{R}_{c,K}\}$，$\hat{R}_{c,max}:=\max\{\hat{R}_{c,1},\cdots,\hat{R}_{c,K}\}$。定义$\text{m}_k(m_k),m_k\in[2^{n\tilde{R}_{c,k}}]$为$m_k$的$q$进制展开，每当$\tilde{R}_{c,k}<\tilde{R}_{c,max}$时，将补零至长度为$\lceil n\tilde{R}_{c,max}/\log(q)\rceil$。为了便于理解，本文后续假设对于所有速率，$\frac{n\tilde{R}_{c,k}}{\log(q)}$和$\frac{n\hat{R}_{c,k}}{\log(q)}$均为整数。由于矢量形式的$\mathbf{m}_k$和标量形式的$m_k$一一映射，因此后文中$m_k$将被用来表示其$q$进制展开向量$\mathbf{m}_k(m_k)$。定义由下面的步骤生成的$K$个码本的集合为一个$(2^{n\tilde{R}_{c,1}},\cdots,2^{n\tilde{R}_{c,K}}, 2^{n\hat{R}_{c,1}},\cdots,2^{n\hat{R}_{c,K}},q,n)$嵌套线性码。
 
-固定一个分布$\Pi_{k=1}^M p(u_k|x_k)$和重构函数$\hat{\mathbf{w}}_{\mathbf{A}_j}=\mathbf{A}_j[u_1,\cdots,u_M]^T$，使得期望失真函数满足$E[d_j(\mathbf{W}_{\mathbf{A}},\hat{\mathbf{W}}_{\mathbf{A}})]\leq \frac{D_j}{1+\epsilon^{''}},\forall j\in[J]$，假设参数满足$\epsilon^{''}>\epsilon^{'}>\epsilon$。
+固定一个分布$\Pi_{k=1}^K p(u_k|x_k)$和重构函数$\hat{\mathbf{w}}_{\mathbf{A}_j}=\mathbf{A}_j[u_1,\cdots,u_K]^T$，使得期望失真函数满足$E[d_j(\mathbf{W}_{\mathbf{A}},\hat{\mathbf{W}}_{\mathbf{A}})]\leq \frac{D_j}{1+\epsilon^{''}},\forall j\in[J]$，假设参数满足$\epsilon^{''}>\epsilon^{'}>\epsilon$。
 \begin{itemize}
-	\item[(1)] 码本生成：固定一个有限域$\mathbb{F}_q$和一个参数$\epsilon^{'}\in(0,1)$。随机生成一个$\kappa\times n$的矩阵$\mathbf{G}\in \mathbb{F}_q^{\kappa\times n}$，以及抖动向量$d_k^n \in \mathbb{F}_q^n,\forall k\in[M]$，其中$\kappa=\frac{n(\tilde{R}_{c,max}+\hat{R}_{c,max})}{\log (q)}$，且$\mathbf{G}$和$d_k^n$的每个元素都是根据有限域$\mathbb{F}_q$上的均匀分布独立随机生成的。
+	\item[(1)] 码本生成：固定一个有限域$\mathbb{F}_q$和一个参数$\epsilon^{'}\in(0,1)$。随机生成一个$\kappa\times n$的矩阵$\mathbf{G}\in \mathbb{F}_q^{\kappa\times n}$，以及抖动向量$d_k^n \in \mathbb{F}_q^n,\forall k\in[K]$，其中$\kappa=\frac{n(\tilde{R}_{c,max}+\hat{R}_{c,max})}{\log (q)}$，且$\mathbf{G}$和$d_k^n$的每个元素都是根据有限域$\mathbb{F}_q$上的均匀分布独立随机生成的。
 
 	对于每一个信源$k\in\mathcal{K}$，通过下式生成一个线性码$\mathcal{C}_k$，即
 	\begin{equation}
@@ -143,15 +143,15 @@
 	\end{equation}
 	如果存在多个这样的索引对，则从中随机挑选一个。如果不存在这样的索引对，则从所有可能的索引对$[2^{n\tilde{R}_{c,k}}]\times [2^{n\hat{R}_{c,k}}]$中随机选择一个。节点$k$将发送索引$m_k$至中心节点。
 
-	给定一个系数矩阵$\mathbf{A}\in \mathbb{F}_q^{J\times M}$，定义索引的线性组合为$\text{m}_\mathbf{A}(\text{m}_1,\cdots,\text{m}_M)=\mathbf{A}\begin{bmatrix}
-			\text{m}_1\\\vdots \\\text{m}_M
-	\end{bmatrix}$和$\text{l}_\mathbf{A}(\text{l}_1,\cdots,\text{l}_M)=\mathbf{A}\begin{bmatrix}
-	\text{l}_1\\\vdots\\\text{l}_M
-\end{bmatrix}$。本文后续将用$\text{m}_\mathbf{A}$和$\text{l}_\mathbf{A}$代替$\text{m}_\mathbf{A}(\text{m}_1,\cdots,$ $\text{m}_M)$和$\text{l}_\mathbf{A}(\text{l}_1,\\\cdots,\text{l}_M)$。进一步可以得到，$m_{\mathbf{A}_j}=\oplus_{k=1}^M A_{jk}m_k$以及$l_{\mathbf{A}_j}=\oplus_{k=1}^M A_{jk}l_k$，其中$\mathbf{A}_j$表示矩阵$\mathbf{A}$的第$j$行。
+	给定一个系数矩阵$\mathbf{A}\in \mathbb{F}_q^{J\times K}$，定义索引的线性组合为$\text{m}_\mathbf{A}(\text{m}_1,\cdots,\text{m}_K)=\mathbf{A}\begin{bmatrix}
+			\text{m}_1\\\vdots \\\text{m}_K
+	\end{bmatrix}$和$\text{l}_\mathbf{A}(\text{l}_1,\cdots,\text{l}_K)=\mathbf{A}\begin{bmatrix}
+	\text{l}_1\\\vdots\\\text{l}_K
+\end{bmatrix}$。本文后续将用$\text{m}_\mathbf{A}$和$\text{l}_\mathbf{A}$代替$\text{m}_\mathbf{A}(\text{m}_1,\cdots,$ $\text{m}_K)$和$\text{l}_\mathbf{A}(\text{l}_1,\\\cdots,\text{l}_K)$。进一步可以得到，$m_{\mathbf{A}_j}=\oplus_{k=1}^K A_{jk}m_k$以及$l_{\mathbf{A}_j}=\oplus_{k=1}^K A_{jk}l_k$，其中$\mathbf{A}_j$表示矩阵$\mathbf{A}$的第$j$行。
 
-\item[(3)]译码：设定参数$\epsilon^{'}<\epsilon$，中心节点在接收到发送的索引$(\text{m}_1,\cdots,\text{m}_M)$和侧信息$y^n$后，译码器将搜索一个唯一的索引元组$\hat{l}_{\mathbf{A}}$，使得所有的码字$u_k^n$与侧信息$y_n$满足$\epsilon$-联合典型性，即
+\item[(3)]译码：设定参数$\epsilon^{'}<\epsilon$，中心节点在接收到发送的索引$(\text{m}_1,\cdots,\text{m}_K)$和侧信息$y^n$后，译码器将搜索一个唯一的索引元组$\hat{l}_{\mathbf{A}}$，使得所有的码字$u_k^n$与侧信息$y_n$满足$\epsilon$-联合典型性，即
 \begin{equation}
-	\left(u_1^n(\text{m}_1, \hat{\text{l}}_1),\cdots,u_M^n(\text{m}_M, \hat{\text{l}}_M)\right)\in \mathcal{T}_{\epsilon}^{(n)},
+	\left(u_1^n(\text{m}_1, \hat{\text{l}}_1),\cdots,u_K^n(\text{m}_K, \hat{\text{l}}_K)\right)\in \mathcal{T}_{\epsilon}^{(n)},
 \end{equation}
 	其中，$\hat{\text{l}}_k\in [2^{n\tilde{R}_{c,k}}], \forall k\in \mathcal{K}$。如果译码器找到了唯一的索引元组，则将$\hat{w}_\mathbf{A}^n(m_\mathbf{A},\hat{l}_\mathbf{A})=[m_{\mathbf{A}},\hat{l}_\mathbf{A}]\mathbf{G}\oplus d_{\mathbf{A}^m}$作为其估计值，其中$m_{\mathbf{A}}$是接收到的索引的线性组合。
 	否则，如果不存在这样的索引元组，或者存在多个这样的元组，则译码失败。
