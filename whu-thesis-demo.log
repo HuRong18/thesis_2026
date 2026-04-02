@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.3)  1 APR 2026 20:02
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.3)  2 APR 2026 15:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2142,10 +2142,9 @@ $[]$
 
 File: figures/figs/fig5.eps Graphic file (type eps)
 <figures/figs/fig5.eps>
-[27]
 File: figures/figs/SW_region_example.eps Graphic file (type eps)
 <figures/figs/SW_region_example.eps>
- [28] [29] [30] [31] [32] [33]
+[27] [28] [29] [30] [31] [32] [33]
 File: figures/figs/sic_rho_noerror_Chinese.eps Graphic file (type eps)
 <figures/figs/sic_rho_noerror_Chinese.eps>
 File: figures/figs/sic_pi_noerror_Chinese.eps Graphic file (type eps)
@@ -2169,10 +2168,10 @@ File: figures/figs/ldpc_implement_power_29696_3_Chinese.eps Graphic file (type
 eps)
 <figures/figs/ldpc_implement_power_29696_3_Chinese.eps>
  [36] [37]
-Overfull \hbox (5.0469pt too wide) in paragraph at lines 500--501
+Overfull \hbox (7.05441pt too wide) in paragraph at lines 499--500
 []\TU/simsun.ttc(0)/m/n/12.045 不 同 平 均 信 道 增 益 $[]$ 和 最 大 发 射 功 率 $[][]$ 下 的 平 
-均 下 行 传 输 时 延 $[][]$ 分 别 如 图[]\TU/TimesNewRoman(0)/m/n/12.045 3.12[]\TU/simsun.
-ttc(0)/m/n/12.045 和
+均 下 行 传 输 时 延 $[][]$ 分 别 如 图 []\TU/TimesNewRoman(0)/m/n/12.045 3.12[]\TU/simsun
+.ttc(0)/m/n/12.045 和
  []
 
 [38] [39]) [40]
@@ -2189,7 +2188,7 @@ File: figures/figs/梯度编码示例图.png Graphic file (type bmp)
 
 ]
 Overfull \hbox (10.02951pt too wide) in paragraph at lines 53--55
-[]\TU/simsun.ttc(0)/m/n/12.045 为 缓 解 分 布 式 同 步 训 练 中 由 迟 滞 节 点 引 发 的 延 迟 问 题，| 
+[]\TU/simsun.ttc(0)/m/n/12.045 为 缓 解 分 布 式 同 步 训 练 中 由 迟 滞 节 点 引 发 的 时 延 问 题，| 
  系 统 采 用 梯 度 编 码 技 术$[]$。|
  []
 
@@ -2202,15 +2201,14 @@ File: figures/figs/real_channel_gain_Chinese.eps Graphic file (type eps)
 <figures/figs/real_channel_gain_Chinese.eps>
 File: figures/figs/real_transmit_power_Chinese.eps Graphic file (type eps)
 <figures/figs/real_transmit_power_Chinese.eps>
- [49]
 File: figures/figs/equal_channel_gain_Chinese.eps Graphic file (type eps)
 <figures/figs/equal_channel_gain_Chinese.eps>
- [50]
+ [49] [50]
 File: figures/figs/equal_transmit_power_Chinese.eps Graphic file (type eps)
 <figures/figs/equal_transmit_power_Chinese.eps>
+ [51]
 File: figures/figs/n_increase_revision.eps Graphic file (type eps)
 <figures/figs/n_increase_revision.eps>
- [51]
 File: figures/figs/k_increase_revision.eps Graphic file (type eps)
 <figures/figs/k_increase_revision.eps>
  [52]) [53]
@@ -2326,10 +2324,10 @@ Package rerunfilecheck Info: File `whu-thesis-demo.out' has not changed.
 Here is how much of TeX's memory you used:
  52631 strings out of 474773
  1265549 string characters out of 5757725
- 1979839 words of memory out of 5000000
+ 1977839 words of memory out of 5000000
  73845 multiletter control sequences out of 15000+600000
  576615 words of font info for 198 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 117i,13n,121p,2339b,2936s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,13n,121p,2353b,2936s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on whu-thesis-demo.pdf (84 pages).
