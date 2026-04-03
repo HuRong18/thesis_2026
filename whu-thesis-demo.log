@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.3)  2 APR 2026 15:50
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.3)  3 APR 2026 21:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2142,9 +2142,10 @@ $[]$
 
 File: figures/figs/fig5.eps Graphic file (type eps)
 <figures/figs/fig5.eps>
+[27]
 File: figures/figs/SW_region_example.eps Graphic file (type eps)
 <figures/figs/SW_region_example.eps>
-[27] [28] [29] [30] [31] [32] [33]
+ [28] [29] [30] [31] [32] [33]
 File: figures/figs/sic_rho_noerror_Chinese.eps Graphic file (type eps)
 <figures/figs/sic_rho_noerror_Chinese.eps>
 File: figures/figs/sic_pi_noerror_Chinese.eps Graphic file (type eps)
@@ -2167,21 +2168,21 @@ e eps)
 File: figures/figs/ldpc_implement_power_29696_3_Chinese.eps Graphic file (type 
 eps)
 <figures/figs/ldpc_implement_power_29696_3_Chinese.eps>
- [36] [37]
-Overfull \hbox (7.05441pt too wide) in paragraph at lines 499--500
+ [36]
+Overfull \hbox (7.05441pt too wide) in paragraph at lines 498--499
 []\TU/simsun.ttc(0)/m/n/12.045 不 同 平 均 信 道 增 益 $[]$ 和 最 大 发 射 功 率 $[][]$ 下 的 平 
 均 下 行 传 输 时 延 $[][]$ 分 别 如 图 []\TU/TimesNewRoman(0)/m/n/12.045 3.12[]\TU/simsun
 .ttc(0)/m/n/12.045 和
  []
 
-[38] [39]) [40]
+[37] [38]) [39]
 \openout2 = `pages/chapter4.aux'.
 
  (./pages/chapter4.tex
 4
 File: figures/figs/梯度编码示例图.png Graphic file (type bmp)
 <figures/figs/梯度编码示例图.png>
-[41
+[40
 
 
 
@@ -2192,36 +2193,43 @@ Overfull \hbox (10.02951pt too wide) in paragraph at lines 53--55
  系 统 采 用 梯 度 编 码 技 术$[]$。|
  []
 
-[42] [43] [44] [45] [46] [47]
+[41] [42] [43] [44] [45]
+Overfull \hbox (8.95027pt too wide) in paragraph at lines 191--193
+\TU/simsun.ttc(0)/m/n/12.045 进 一 步，|  可 以 将 信 源 压 缩 区 域 拆 分 为 两 个 子 区 域 分 别 优 化
+。|  问 题 $[][]$ 等 价 于 $[][][][][] [][][]$，|
+ []
+
+[46]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[48]
+[47]
 File: figures/figs/real_channel_gain_Chinese.eps Graphic file (type eps)
 <figures/figs/real_channel_gain_Chinese.eps>
+ [48]
 File: figures/figs/real_transmit_power_Chinese.eps Graphic file (type eps)
 <figures/figs/real_transmit_power_Chinese.eps>
 File: figures/figs/equal_channel_gain_Chinese.eps Graphic file (type eps)
 <figures/figs/equal_channel_gain_Chinese.eps>
- [49] [50]
+ [49]
 File: figures/figs/equal_transmit_power_Chinese.eps Graphic file (type eps)
 <figures/figs/equal_transmit_power_Chinese.eps>
- [51]
 File: figures/figs/n_increase_revision.eps Graphic file (type eps)
 <figures/figs/n_increase_revision.eps>
+ [50]
 File: figures/figs/k_increase_revision.eps Graphic file (type eps)
 <figures/figs/k_increase_revision.eps>
- [52]) [53]
+ [51]) [52]
 \openout2 = `pages/chapter5.aux'.
 
  (./pages/chapter5.tex
 5
-[54
+[53
 
 
 
 
-]) [55] (./whu-thesis-demo.bbl
+]) [54] (./whu-thesis-demo.bbl
 ! Misplaced alignment tab character &.
 l.54 \newblock IEEE Communications Surveys &
                                              Tutorials, 2021, 23\allowbreak ...
@@ -2262,7 +2270,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[56
+[55
 
 
 
@@ -2278,13 +2286,13 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[57] [58] [59] [60] [61] [62]
+[56] [57] [58] [59] [60] [61]
 Underfull \hbox (badness 2302) in paragraph at lines 787--790
 []\TU/TimesNewRoman(0)/m/n/12.045 Yang A, Yang B, Hui B, et al.  Qwen2 technica
 l report[J].  arXiv preprint
  []
 
-[63]) (./pages/appendix.tex [64]
+[62]) (./pages/appendix.tex [63]
 附录 A
 
 Overfull \hbox (7.62302pt too wide) in paragraph at lines 31--36
@@ -2292,20 +2300,28 @@ Overfull \hbox (7.62302pt too wide) in paragraph at lines 31--36
 ]$ 中 解 码 出 长 度 为 $[]$ 的 序 列 $[][][][][]$。|
  []
 
-[65
+[64
 
-] [66]
+] [65]
 附录 B
-[67
+[66
 
-] [68]) [69] (./pages/achievements.tex) [70
+] [67]
+Overfull \hbox (25.12675pt too wide) in paragraph at lines 143--144
+[]|\TU/simsun.ttc(0)/m/n/12.045 （\TU/TimesNewRoman(0)/m/n/12.045 1\TU/simsun.tt
+c(0)/m/n/12.045 ）|  对 于 $[][]$ 区 域，|  将 等 速 率 $[] [] []$ 代 入 \TU/TimesNewRoman(
+0)/m/n/12.045 SW \TU/simsun.ttc(0)/m/n/12.045 约 束 $[][] [] [] [][][][][][][][][
+][][][]$，|
+ []
+
+[68]) [69] (./pages/achievements.tex) [70
 
 ] (./pages/thanks.tex) [71
 
-]
-[72
+] [72
 
-] (./whu-thesis-demo.aux (./pages/chapter1.aux) (./pages/chapter2.aux)
+]
+(./whu-thesis-demo.aux (./pages/chapter1.aux) (./pages/chapter2.aux)
 (./pages/chapter3.aux) (./pages/chapter4.aux) (./pages/chapter5.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -2319,15 +2335,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `whu-thesis-demo.out' has not changed.
-(rerunfilecheck)             Checksum: 1F7AADF7524859CAB1B3268090DD052F;6451.
+(rerunfilecheck)             Checksum: 4588338682D407398FA113C9FD96F944;6451.
  ) 
 Here is how much of TeX's memory you used:
  52631 strings out of 474773
  1265549 string characters out of 5757725
- 1977839 words of memory out of 5000000
+ 1979839 words of memory out of 5000000
  73845 multiletter control sequences out of 15000+600000
  576615 words of font info for 198 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 117i,13n,121p,2353b,2936s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,13n,121p,2619b,2936s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on whu-thesis-demo.pdf (84 pages).
