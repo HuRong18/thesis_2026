@@ -5,10 +5,6 @@ The style file: data/gbt7714-2005-numerical.bst
 A level-1 auxiliary file: pages/chapter1.aux
 A level-1 auxiliary file: pages/chapter2.aux
 A level-1 auxiliary file: pages/chapter3.aux
-White space in argument---line 5 of file pages/chapter3.aux
- : \citation{ng2021comprehensive,915
- :                                   5226}
-I'm skipping whatever remains of this command
 A level-1 auxiliary file: pages/chapter4.aux
 A level-1 auxiliary file: pages/chapter5.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -23,347 +19,79 @@ Repeated entry---line 161 of file refs.bib
  : %@inproceedings{1281474
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 360 of file refs.bib
- : @article{9820783
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 371 of file refs.bib
- : @article{9046826
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 408 of file refs.bib
- : @article{9829189
- :                 ,
-I'm skipping whatever remains of this entry
-Warning--I'm ignoring 1661834's extra "year" field
---line 585 of file refs.bib
-Repeated entry---line 707 of file refs.bib
- : @article{1413577
- :                 ,
-I'm skipping whatever remains of this entry
-You're missing a field name---line 803 of file refs.bib
+You're missing a field name---line 751 of file refs.bib
  : 
  : % author={Nayak, Jayanth and Tuncel, Ertem},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 947 of file refs.bib
+Repeated entry---line 894 of file refs.bib
  : %@inproceedings{vaswani2017attention
  :                                     ,
 I'm skipping whatever remains of this entry
-You're missing a field name---line 967 of file refs.bib
+You're missing a field name---line 914 of file refs.bib
  : 
  : % title={Dynamic Optimal Coding and Scheduling for Distributed Learning over Wireless Edge Networks},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 1010 of file refs.bib
+You're missing a field name---line 956 of file refs.bib
  : 
  : % title={{RIS}-Aided Cooperative Mobile Edge Computing: Computation Efficiency Maximization via Joint Uplink and Downlink Resource Allocation},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 1022 of file refs.bib
+You're missing a field name---line 968 of file refs.bib
  : 
  : % author={Yan, Junkun and Dai, Jinhui and Pu, Wenqiang and Liu, Hongwei and Greco, Maria},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 1033 of file refs.bib
+You're missing a field name---line 979 of file refs.bib
  : 
  : % title={UAV-assisted intelligent reflecting surface symbiotic radio system},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 1045 of file refs.bib
+You're missing a field name---line 991 of file refs.bib
  : 
  : % author={Ren, Jinke and Yu, Guanding and Cai, Yunlong and He, Yinghui and Qu, Fengzhong},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1082 of file refs.bib
- :  
- :  organization={PMLR}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Repeated entry---line 1119 of file refs.bib
- : @inproceedings{gong2020delay
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1128 of file refs.bib
- : @article{ng2021comprehensive
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1139 of file refs.bib
- : @inproceedings{9155226
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1150 of file refs.bib
- : @article{8002642
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1161 of file refs.bib
- : @inproceedings{peng2020diversity
- :                                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1171 of file refs.bib
- : @article{9046826
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1182 of file refs.bib
- : @article{9829189
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1193 of file refs.bib
- : @article{9328810
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1205 of file refs.bib
- : @article{9820783
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1216 of file refs.bib
- : @article{1055037
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1227 of file refs.bib
- : @article{1328091
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1238 of file refs.bib
- : @article{1055356
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1250 of file refs.bib
- : @article{8663353
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1262 of file refs.bib
- : @article{10633712
- :                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1273 of file refs.bib
- : @article{8663353
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1285 of file refs.bib
- : @article{9641837
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1296 of file refs.bib
- : @article{9606237
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1308 of file refs.bib
- : @article{7935426
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1319 of file refs.bib
- : @article{8051074
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1330 of file refs.bib
- : @article{8691770
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1342 of file refs.bib
- : @article{9062599
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1354 of file refs.bib
- : @inproceedings{9562193
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1363 of file refs.bib
- : @article{1542403
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1375 of file refs.bib
- : @article{761254
- :                ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1386 of file refs.bib
- : @inproceedings{10620735
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1395 of file refs.bib
- : @article{4567562
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1406 of file refs.bib
- : @inproceedings{4313115
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1415 of file refs.bib
- : @article{1184140
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1427 of file refs.bib
- : @article{1512420
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1439 of file refs.bib
- : @inproceedings{1281525
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1451 of file refs.bib
- : @article{1413577
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1463 of file refs.bib
- : @article{10557705
- :                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1471 of file refs.bib
- : @inproceedings{1281474
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1480 of file refs.bib
- : @article{1661834
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1492 of file refs.bib
- : @article{1614079
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1503 of file refs.bib
- : @article{6241374
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1515 of file refs.bib
- : @article{9229375
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1527 of file refs.bib
- : @book{doi:https://doi.org/10.1002/047174882X.ch15
- :                                                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1536 of file refs.bib
- : @article{8357810
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1548 of file refs.bib
- : @article{1057683
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1559 of file refs.bib
- : @article{1042242
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1571 of file refs.bib
- : @inproceedings{4697499
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1582 of file refs.bib
- : @article{5208477
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1593 of file refs.bib
- : @article{4215156
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1604 of file refs.bib
- : @phdthesis{coleman2006low
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1611 of file refs.bib
- : @article{7547360
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1622 of file refs.bib
- : @book{boyd2004convex
- :                     ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1629 of file refs.bib
- : @inproceedings{tandon2017gradient
- :                                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1743 of file refs.bib
- : @article{1056022
- :                 ,
-I'm skipping whatever remains of this entry
-You're missing a field name---line 1761 of file refs.bib
- :  urldate   = {2026-01-23}, 
- :                            % 访问日期
-I'm skipping whatever remains of this entry
-Repeated entry---line 2039 of file refs.bib
- : @article{1055508
- :                 ,
-I'm skipping whatever remains of this entry
-Warning--entry type for "161197" isn't style-file defined
---line 2209 of file refs.bib
-Warning--entry type for "170618" isn't style-file defined
---line 2219 of file refs.bib
-Too many commas in name 1 of "唐伦,文明艳,单贞贞,陈前斌" for entry autodriving
-while executing---line 2361 of file data/gbt7714-2005-numerical.bst
-Too many commas in name 1 of "唐伦,文明艳,单贞贞,陈前斌" for entry autodriving
-while executing---line 2361 of file data/gbt7714-2005-numerical.bst
-Too many commas in name 1 of "唐伦,文明艳,单贞贞,陈前斌" for entry autodriving
-while executing---line 2361 of file data/gbt7714-2005-numerical.bst
-Too many commas in name 1 of "李钊,戴晓琴,陈柯宇,肖丽媛" for entry 161197
-while executing---line 2361 of file data/gbt7714-2005-numerical.bst
-Too many commas in name 1 of "李钊,戴晓琴,陈柯宇,肖丽媛" for entry 161197
-while executing---line 2361 of file data/gbt7714-2005-numerical.bst
-Too many commas in name 1 of "李钊,戴晓琴,陈柯宇,肖丽媛" for entry 161197
-while executing---line 2361 of file data/gbt7714-2005-numerical.bst
-Name 1 in "Yang, An, and Yang, Bosong and Hui, Binyuan and others" has a comma at the end for entry qwen2
-while executing---line 2361 of file data/gbt7714-2005-numerical.bst
-Name 1 in "Yang, An, and Yang, Bosong and Hui, Binyuan and others" has a comma at the end for entry qwen2
-while executing---line 2361 of file data/gbt7714-2005-numerical.bst
-Name 1 in "Yang, An, and Yang, Bosong and Hui, Binyuan and others" has a comma at the end for entry qwen2
-while executing---line 2361 of file data/gbt7714-2005-numerical.bst
-Too many commas in name 1 of "唐伦,文明艳,单贞贞,陈前斌" for entry autodriving
-while executing---line 2377 of file data/gbt7714-2005-numerical.bst
-Too many commas in name 1 of "唐伦,文明艳,单贞贞,陈前斌" for entry autodriving
-while executing---line 2377 of file data/gbt7714-2005-numerical.bst
-Too many commas in name 1 of "唐伦,文明艳,单贞贞,陈前斌" for entry autodriving
-while executing---line 2377 of file data/gbt7714-2005-numerical.bst
-Warning--empty booktitle in Tberger
-Too many commas in name 1 of "李钊,戴晓琴,陈柯宇,肖丽媛" for entry 161197
-while executing---line 2377 of file data/gbt7714-2005-numerical.bst
-Too many commas in name 1 of "李钊,戴晓琴,陈柯宇,肖丽媛" for entry 161197
-while executing---line 2377 of file data/gbt7714-2005-numerical.bst
-Too many commas in name 1 of "李钊,戴晓琴,陈柯宇,肖丽媛" for entry 161197
-while executing---line 2377 of file data/gbt7714-2005-numerical.bst
-Name 1 in "Yang, An, and Yang, Bosong and Hui, Binyuan and others" has a comma at the end for entry qwen2
-while executing---line 2377 of file data/gbt7714-2005-numerical.bst
-Name 1 in "Yang, An, and Yang, Bosong and Hui, Binyuan and others" has a comma at the end for entry qwen2
-while executing---line 2377 of file data/gbt7714-2005-numerical.bst
-Name 1 in "Yang, An, and Yang, Bosong and Hui, Binyuan and others" has a comma at the end for entry qwen2
-while executing---line 2377 of file data/gbt7714-2005-numerical.bst
-You've used 123 entries,
+You've used 117 entries,
             5261 wiz_defined-function locations,
-            1665 strings with 28021 characters,
-and the built_in function-call counts, 990059 in all, are:
-= -- 19860
-> -- 115238
-< -- 145348
-+ -- 40339
-- -- 7450
-* -- 5996
-:= -- 136736
-add.period$ -- 372
-call.type$ -- 123
-change.case$ -- 241
-chr.to.int$ -- 36143
-cite$ -- 124
-duplicate$ -- 2888
-empty$ -- 7759
-format.name$ -- 3739
-if$ -- 257316
-int.to.chr$ -- 7
-int.to.str$ -- 124
+            1627 strings with 27020 characters,
+and the built_in function-call counts, 947054 in all, are:
+= -- 19174
+> -- 110309
+< -- 138718
++ -- 38493
+- -- 7273
+* -- 5779
+:= -- 130891
+add.period$ -- 355
+call.type$ -- 117
+change.case$ -- 229
+chr.to.int$ -- 34438
+cite$ -- 117
+duplicate$ -- 2762
+empty$ -- 7430
+format.name$ -- 3636
+if$ -- 246107
+int.to.chr$ -- 6
+int.to.str$ -- 118
 missing$ -- 0
-newline$ -- 660
-num.names$ -- 369
-pop$ -- 49854
+newline$ -- 631
+num.names$ -- 351
+pop$ -- 47915
 preamble$ -- 1
-purify$ -- 123
+purify$ -- 117
 quote$ -- 0
-skip$ -- 105087
+skip$ -- 100264
 stack$ -- 0
-substring$ -- 46039
-swap$ -- 137
-text.length$ -- 2077
+substring$ -- 44006
+swap$ -- 131
+text.length$ -- 2020
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1503
-warning$ -- 1
-while$ -- 2632
+type$ -- 1429
+warning$ -- 0
+while$ -- 2547
 width$ -- 0
-write$ -- 1773
-(There were 83 error messages)
+write$ -- 1690
+(There were 8 error messages)

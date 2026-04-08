@@ -5,14 +5,14 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces 编码计算示例}}{10}{figure.caption.7}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces 梯度编码计算}}{13}{figure.caption.8}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces 两个信源$Y_1$和$Y_2$的DSC示例}}{14}{figure.caption.9}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces 两个信源$Y_1$和$Y_2$的SW可达速率区域示例}}{15}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces 两个信源$Y_1$和$Y_2$的SW可达速率区域示例}}{14}{figure.caption.10}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces 恢复线性函数计算的DSC示例}}{16}{figure.caption.11}%
 \contentsline {figure}{\numberline {2.6}{\ignorespaces 两个信源基于嵌套线性码联合典型性译码的可达编码速率区域示例}}{17}{figure.caption.12}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces 功率域NOMA示意图}}{18}{figure.caption.13}%
 \addvspace {10.0pt}
 \contentsline {figure}{\numberline {3.1}{\ignorespaces 编码计算系统模型}}{23}{figure.caption.15}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces 所提DSC方案图示}}{26}{figure.caption.16}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces 伴随式穿刺图示，其中$\mitPi _1=\{1,\cdots ,\mitalpha _1\},~ \mitPi _2=\{\mitalpha _1\oplus _m 0+1,\cdots ,\mitalpha _2\}, ~\mitPi _3=\{\mitalpha _2\oplus _m 0+1,\cdots ,\mitalpha _3\}$, $ \mitPi _4=\{\mitalpha _3\oplus _m 0+1,\cdots ,\mitalpha _4\}$}}{27}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces 伴随式穿刺图示，其中$\mitPi _1=\{1,\cdots ,\mitalpha _1\},~ \mitPi _2=\{\mitalpha _1\oplus _m 0+1,\cdots ,\mitalpha _2\},~\mitPi _3=\{\mitalpha _2\oplus _m 0+1,\cdots ,\mitalpha _3\}$，$\mitPi _4=\{\mitalpha _3\oplus _m 0+1,\cdots ,\mitalpha _4\}$。}}{27}{figure.caption.17}%
 \contentsline {figure}{\numberline {3.4}{\ignorespaces DSC可行区域的比较示例（$\miteta _c=0.5$，$q=64$，$\frac {H(X)}{\log _2q}=0.5$，$\frac {H(Y_i)}{\log _2q}=0.6~(\forall i\in \symcal {J})$，$|\symcal {J}|=3$，$r=2$）。}}{28}{figure.caption.18}%
 \contentsline {figure}{\numberline {3.5}{\ignorespaces 不同平均信道增益$\mitrho $下的下行传输时延$T_d$比较（$P_{\max }=0.2$（W），$k=11$）。}}{34}{figure.caption.20}%
 \contentsline {figure}{\numberline {3.6}{\ignorespaces 不同最大发射功率$P_{\max }$下的下行传输时延$T_d$比较（$\mitrho =-105$（dB），$k=11$）。}}{34}{figure.caption.21}%
@@ -24,13 +24,13 @@
 \contentsline {figure}{\numberline {3.12}{\ignorespaces 不同平均信道增益$\mitrho $下的下行传输时延$T_d$比较（$P_{\max }=0.2$（W），$k=11$）。}}{38}{figure.caption.27}%
 \contentsline {figure}{\numberline {3.13}{\ignorespaces 不同最大发射功率$P_{\max }$下的下行传输时延$T_d$比较（$\mitrho =-105$（dB），$k=11$）。}}{39}{figure.caption.28}%
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces 梯度编码计算}}{41}{figure.caption.30}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces 不同平均信道增益$\mitrho $下的下行传输时延$T_d$比较（$P_{\max }=0.2$（W））。}}{49}{figure.caption.32}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces 不同最大发射功率$P_{\max }$下的下行传输时延$T_d$比较（平均信道增益为$\mitrho =-110$（dB））。}}{49}{figure.caption.33}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces 边缘节点信道条件相同，不同平均信道增益$\mitrho $下的下行传输时延$T_d$比较（$P_{\max }=0.2$（W））。}}{50}{figure.caption.34}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces 边缘节点信道条件相同，不同最大发射功率$P_{\max }$下的下行传输时延$T_d$比较（平均信道增益为$\mitrho =-110$（dB））。}}{50}{figure.caption.35}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces 不同参与计算的边缘节点数目$N$下的下行传输时延$T_d$比较。}}{51}{figure.caption.36}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces 不同参与下行传输的边缘节点数目$K$下的下行传输时延$T_d$比较。}}{52}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces 梯度编码计算}}{42}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces 不同平均信道增益$\mitrho $下的下行传输时延$T_d$比较（$P_{\max }=0.2$（W））。}}{50}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces 不同最大发射功率$P_{\max }$下的下行传输时延$T_d$比较（平均信道增益为$\mitrho =-110$（dB））。}}{51}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces 边缘节点信道条件相同，不同平均信道增益$\mitrho $下的下行传输时延$T_d$比较（$P_{\max }=0.2$（W））。}}{51}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces 边缘节点信道条件相同，不同最大发射功率$P_{\max }$下的下行传输时延$T_d$比较（平均信道增益为$\mitrho =-110$（dB））。}}{52}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces 不同参与计算的边缘节点数目$N$下的下行传输时延$T_d$比较（$P_{\max }=0.1$（W），$\mitrho =-115$（dB））。}}{52}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces 不同参与下行传输的边缘节点数目$K$下的下行传输时延$T_d$比较（$P_{\max }=0.1$（W），$\mitrho =-115$（dB））。}}{53}{figure.caption.37}%
 \addvspace {10.0pt}
 \addvspace {10.0pt}
 \addvspace {10.0pt}

@@ -5,30 +5,30 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\chapter{面向完整恢复的DSC辅助编码计算结果传输方法研究}
+\chapter{第三章相关证明与算法}
 
-\section{定理\ref{proposition1}的证明} \label{<appendix-proposition1>}
+\section{定理~\ref{proposition1}的证明} \label{<appendix-proposition1>}
 为了证明此定理，对于每个集合 $\Pi_i$，定义一个不带模运算的索引集如下
 \begin{equation}
 	\hat{\Pi}_i = \{ \alpha_{i-1} + 1, \cdots, \alpha_{i-1} + \lceil \eta_i n \rceil \}, \quad \forall i \in \mathcal{J}.
 	\label{eq:hat_pi}
 \end{equation}
 不难验证集合 $\Pi_i$ 和集合 $\hat{\Pi}_i$ 之间的映射是一一对应的。
-因此，要证明定理\ref{proposition1}，只需证明对于每个 $1 \leq j \leq m$，这 $r$ 个索引 $\{j, j+m, \cdots, j+(r-1)m\}$ 被包含在由(\ref{eq:hat_pi})定义的 $r$ 个不同的集合 $\hat{\Pi}_i$ 中；原因是，经过模$m$运算，这些索引中的每一个都将被映射为索引 $j$。
+因此，要证明定理~\ref{proposition1}，只需证明对于每个 $1 \leq j \leq m$，这 $r$ 个索引 $\{j, j+m, \cdots, j+(r-1)m\}$ 被包含在由\eqref{eq:hat_pi}定义的 $r$ 个不同的集合 $\hat{\Pi}_i$ 中；原因是，经过模$m$运算，这些索引中的每一个都将被映射为索引 $j$。
 为此，观察到
 \begin{align}
 	\{j, j+m, \cdots, j+(r-1)m\} &\subset \{1, \cdots, rm\} 
 	\subset \bigcup_{i=1}^{|\mathcal{J}|} \hat{\Pi}_i, \quad \forall j \in [m], \label{eq:subset_rel} 
 \end{align}
-其中最后一个包含关系归因于条件(\ref{eq:prop_cond1})和(\ref{eq:prop_cond2})。
-由于集合 $\hat{\Pi}_i$ 是互斥的，且每个集合 $\hat{\Pi}_i$ 最多包含 $m$ 个元素（因为 $\eta_i \leq \frac{H(X)}{\log_2 q} = \frac{m}{n}$），(\ref{eq:subset_rel})表明这 $r$ 个索引确实被包含在至少$r$ 个不同的集合 $\hat{\Pi}_i$ 中。证毕。
+其中最后一个包含关系归因于条件\eqref{eq:prop_cond1}和\eqref{eq:prop_cond2}。
+由于集合 $\hat{\Pi}_i$ 是互斥的，且每个集合 $\hat{\Pi}_i$ 最多包含 $m$ 个元素（因为 $\eta_i \leq \frac{H(X)}{\log_2 q} = \frac{m}{n}$），\eqref{eq:subset_rel}表明这 $r$ 个索引确实被包含在至少$r$ 个不同的集合 $\hat{\Pi}_i$ 中。证毕。
 
 
 
 
 
 \section{BP译码算法}\label{appendix-BP}
-该算法将从长度为 $m$ 的伴随式序列 $\{S_{X_\upsilon}^{(j)}\}_{j=1}^m$ \upcite{1042242} 中解码出长度为 $n$ 的序列 $\{X_\upsilon^{(j)}\}_{j=1}^n$。
+该算法将从长度为 $m$ 的伴随式序列 $\{S_{X_\upsilon}^{(j)}\}_{j=1}^m$\upcite{1042242}中解码出长度为 $n$ 的序列 $\{X_\upsilon^{(j)}\}_{j=1}^n$。
 具体而言，在相应的 Tanner 图中，变量节点由 $\mathbf{X}_\upsilon^{1:n}$ 的元素组成，并在下文中为方便表示记为 $\{x_i\}_{i=1}^n$；
 同样，校验节点由 $\mathbf{S}_{X_\upsilon}^{1:m}$ 的元素组成，并记为 $\{s_j\}_{j=1}^m$。
 对于每个符号 $a \in GF(q)$，设 $M_{i \to j}(a)$ 为从变量节点 $x_i$ 发往校验节点 $s_j$ 的消息，$M_{j \to i}(a)$ 为从校验节点 $s_j$ 发往变量节点 $x_i$ 的消息。
@@ -49,7 +49,7 @@
 \end{align}
 其中当事件 $E$ 为真（假）时，$\delta(E)$ 等于一（零），$H_{jk}$ 是奇偶校验矩阵 $\mathbf{H}^{n \times m}$ 的元素，$N(j) \backslash i$ 表示除 $x_i$ 以外连接到 $s_j$ 的变量节点集合。
 
-垂直步骤（Vertical Step）:  对于每个变量节点 $x_i$，计算发往每个连接的校验节点 $s_j$ 的消息如下
+垂直步骤（Vertical Step）：对于每个变量节点 $x_i$，计算发往每个连接的校验节点 $s_j$ 的消息如下
 \begin{equation}
 	M_{i \to j}(a) = \frac{1}{Z_{i \to j}} \text{Pr}\{x_i = a\} \prod_{k \in N(i) \backslash j} M_{k \to i}(a), \quad \forall a \in GF(q),
 	\label{eq:bp_vertical}
@@ -61,60 +61,123 @@
 	\hat{X}_\upsilon^{(i)} = \arg \max_{a \in GF(q)} \text{Pr}\{x_i = a\} \prod_{j \in N(i)} M_{j \to i}(a), \quad \forall i \in [n].
 	\label{eq:bp_decision}
 \end{equation}
-解码过程将重复进行，直到满足 (\ref{sx}) 或达到最大迭代次数。
+解码过程将重复进行，直到满足 \eqref{sx} 或达到最大迭代次数。
 
 
-\chapter{面向线性恢复的DSC辅助编码计算结果传输方法研究}
+\chapter{第四章相关证明}
 
-\section{嵌套线性码编码方案}\label{<nested linear coding>}
-本节介绍文献\cite{lim2019towards}中提出的嵌套线性码编码方案在无损且无边信息条件下的特化形式，该方案是推论\ref{bcst}的编码实现基础。
+%\section{嵌套线性码编码方案}\label{<nested linear coding>}
+%本节将文献\cite{lim2019towards}中提出的嵌套线性码编码方案特化到无损且无边信息条件下，给出适用于本文梯度编码场景的具体编码流程，该方案是推论~\ref{bcst}的编码实现基础。
+%
+%考虑节点$k\in \mathcal{K}$分别以速率$\tilde{R}_{c,k}$和$\hat{R}_{c,k}$进行编码，使用两个索引$m_k\in[2^{n\tilde{R}_{c,k}}]$和$l_k\in[2^{n\hat{R}_{c,k}}]$。定义$\tilde{R}_{c,\max}:=\max\{\tilde{R}_{c,1},\cdots,\tilde{R}_{c,K}\}$，$\hat{R}_{c,\max}:=\max\{\hat{R}_{c,1},\cdots,\hat{R}_{c,K}\}$。定义$\text{m}_k(m_k),m_k\in[2^{n\tilde{R}_{c,k}}]$为$m_k$的$q$进制展开，每当$\tilde{R}_{c,k}<\tilde{R}_{c,\max}$时，将补零至长度为$\lceil n\tilde{R}_{c,\max}/\log(q)\rceil$。为了便于理解，本文后续假设对于所有速率，$\frac{n\tilde{R}_{c,k}}{\log(q)}$和$\frac{n\hat{R}_{c,k}}{\log(q)}$均为整数。由于矢量形式的$\mathbf{m}_k$和标量形式的$m_k$一一映射，因此后文中$m_k$将被用来表示其$q$进制展开向量$\mathbf{m}_k(m_k)$。定义由下面的步骤生成的$K$个码本的集合为一个$(2^{n\tilde{R}_{c,1}},\cdots,2^{n\tilde{R}_{c,K}}, 2^{n\hat{R}_{c,1}},\cdots,2^{n\hat{R}_{c,K}},q,n)$嵌套线性码。
+%设参数满足$\epsilon^{''}>\epsilon^{'}>\epsilon$。
+%\begin{itemize}
+%	\item[(1)] 码本生成：固定一个有限域$\mathbb{F}_q$和一个参数$\epsilon^{'}\in(0,1)$。随机生成一个$\kappa\times n$的矩阵$\mathbf{G}\in \mathbb{F}_q^{\kappa\times n}$，以及抖动向量$d_k^n \in \mathbb{F}_q^n,\forall k\in[K]$，其中$\kappa=\frac{n(\tilde{R}_{c,\max}+\hat{R}_{c,\max})}{\log (q)}$，且$\mathbf{G}$和$d_k^n$的每个元素都是根据有限域$\mathbb{F}_q$上的均匀分布独立随机生成的。
+%
+%	对于每一个信源$k\in\mathcal{K}$，通过下式生成一个线性码$\mathcal{C}_k$，即
+%	\begin{equation}
+%		u_k^n(m_k,l_k):=u_k^n(\text{m}_k,\text{l}_k)=[\text{m}_k,\text{l}_k]\mathbf{G}\oplus d_k^n,
+%	\end{equation}
+%	其中，索引$m_k$的范围是$[2^{n\tilde{R}_{c,k}}]$，索引$l_k$的范围是$[2^{n\hat{R}_{c,k}}]$。根据这种构造方式，每个码字都是独立同分布且均匀分布的，即每个符号都服从有限域上的均匀分布，并且码字之间是相互独立的。
+%
+%	\item [(2)] 编码：由于采用恒等映射$U_k=X_k$，对于每个信源$k\in \mathcal{K}$，编码器寻找一个索引对$(m_k,l_k)\in [2^{n\tilde{R}_{c,k}}]\times [2^{n\hat{R}_{c,k}}]$，使得生成的码字$u_k^n(m_k,l_k)$与信源序列$x_k^n$满足$\epsilon^{'}$-联合典型性，即
+%	\begin{equation}
+%		(u_k^n(m_k,l_k),x_k^n)\in \mathcal{T}_{\epsilon^{'}}^{(n)}.
+%	\end{equation}
+%	如果存在多个这样的索引对，则从中随机挑选一个。如果不存在这样的索引对，则从所有可能的索引对$[2^{n\tilde{R}_{c,k}}]\times [2^{n\hat{R}_{c,k}}]$中随机选择一个。节点$k$将发送索引$m_k$至移动设备。
+%
+%	给定一个系数矩阵$\mathbf{A}\in \mathbb{F}_q^{J\times K}$，定义索引的线性组合为$\text{m}_\mathbf{A}(\text{m}_1,\cdots,\text{m}_K)=\mathbf{A}\begin{bmatrix}
+%			\text{m}_1\\\vdots \\\text{m}_K
+%	\end{bmatrix}$和$\text{l}_\mathbf{A}(\text{l}_1,\cdots,\text{l}_K)=\mathbf{A}\begin{bmatrix}
+%	\text{l}_1\\\vdots\\\text{l}_K
+%\end{bmatrix}$。本文后续将用$\text{m}_\mathbf{A}$和$\text{l}_\mathbf{A}$代替$\text{m}_\mathbf{A}(\text{m}_1,\cdots,$ $\text{m}_K)$和$\text{l}_\mathbf{A}(\text{l}_1,\\\cdots,\text{l}_K)$。进一步可以得到，$m_{\mathbf{A}_j}=\oplus_{k=1}^K A_{jk}m_k$以及$l_{\mathbf{A}_j}=\oplus_{k=1}^K A_{jk}l_k$，其中$\mathbf{A}_j$表示矩阵$\mathbf{A}$的第$j$行。
+%
+%\item[(3)]译码：移动设备在接收到发送的索引$(\text{m}_1,\cdots,\text{m}_K)$后，译码器搜索一个唯一的索引元组$\hat{\text{l}}_{\mathbf{A}}$，使得所有的码字满足$\epsilon$-联合典型性（其中$\epsilon^{'}<\epsilon$），即
+%\begin{equation}
+%	\left(u_1^n(\text{m}_1, \hat{\text{l}}_1),\cdots,u_K^n(\text{m}_K, \hat{\text{l}}_K)\right)\in \mathcal{T}_{\epsilon}^{(n)},
+%\end{equation}
+%	其中，$\hat{\text{l}}_k\in [2^{n\hat{R}_{c,k}}], \forall k\in \mathcal{K}$。如果译码器找到了唯一的索引元组，则将$\hat{w}_\mathbf{A}^n(m_\mathbf{A},\hat{l}_\mathbf{A})=[m_{\mathbf{A}},\hat{l}_\mathbf{A}]\mathbf{G}\oplus d_{\mathbf{A}}^n$作为目标线性函数的无损重构值，其中$m_{\mathbf{A}}$是接收到的索引的线性组合，$d_{\mathbf{A}}^n=\mathbf{A}[d_1^n,\cdots,d_K^n]^T$为各节点抖动向量的线性组合。否则，如果不存在这样的索引元组，或者存在多个这样的元组，则译码失败。
+%%%\end{itemize}
 
-考虑节点$k\in \mathcal{K}$分别以编码速率$\tilde{R}_{c,k}$和$\hat{R}_{c,k}$并使用两个索引$m_k\in[2^{n\tilde{R}_{c,k}}]$和$l_k\in[2^{n\hat{R}_{c,k}}]$。定义$\tilde{R}_{c,\max}:=\max\{\tilde{R}_{c,1},\cdots,\tilde{R}_{c,K}\}$，$\hat{R}_{c,\max}:=\max\{\hat{R}_{c,1},\cdots,\hat{R}_{c,K}\}$。定义$\text{m}_k(m_k),m_k\in[2^{n\tilde{R}_{c,k}}]$为$m_k$的$q$进制展开，每当$\tilde{R}_{c,k}<\tilde{R}_{c,\max}$时，将补零至长度为$\lceil n\tilde{R}_{c,\max}/\log(q)\rceil$。为了便于理解，本文后续假设对于所有速率，$\frac{n\tilde{R}_{c,k}}{\log(q)}$和$\frac{n\hat{R}_{c,k}}{\log(q)}$均为整数。由于矢量形式的$\mathbf{m}_k$和标量形式的$m_k$一一映射，因此后文中$m_k$将被用来表示其$q$进制展开向量$\mathbf{m}_k(m_k)$。定义由下面的步骤生成的$K$个码本的集合为一个$(2^{n\tilde{R}_{c,1}},\cdots,2^{n\tilde{R}_{c,K}}, 2^{n\hat{R}_{c,1}},\cdots,2^{n\hat{R}_{c,K}},q,n)$嵌套线性码。
-设参数满足$\epsilon^{''}>\epsilon^{'}>\epsilon$。
-\begin{itemize}
-	\item[(1)] 码本生成：固定一个有限域$\mathbb{F}_q$和一个参数$\epsilon^{'}\in(0,1)$。随机生成一个$\kappa\times n$的矩阵$\mathbf{G}\in \mathbb{F}_q^{\kappa\times n}$，以及抖动向量$d_k^n \in \mathbb{F}_q^n,\forall k\in[K]$，其中$\kappa=\frac{n(\tilde{R}_{c,\max}+\hat{R}_{c,\max})}{\log (q)}$，且$\mathbf{G}$和$d_k^n$的每个元素都是根据有限域$\mathbb{F}_q$上的均匀分布独立随机生成的。
+\section{推论~\ref{bcst}的推导}\label{<corollary-derivation>}
+本节说明推论~\ref{bcst}如何由定理~\ref{<theorem-chapter-2>}在无损且无边信息条件下特化得到。
 
-	对于每一个信源$k\in\mathcal{K}$，通过下式生成一个线性码$\mathcal{C}_k$，即
-	\begin{equation}
-		u_k^n(m_k,l_k):=u_k^n(\text{m}_k,\text{l}_k)=[\text{m}_k,\text{l}_k]\mathbf{G}\oplus d_k^n,
-	\end{equation}
-	其中，索引$m_k$的范围是$[2^{n\tilde{R}_{c,k}}]$，索引$l_k$的范围是$[2^{n\hat{R}_{c,k}}]$。根据这种构造方式，每个码字都是独立同分布且均匀分布的，即每个符号都服从有限域上的均匀分布，并且码字之间是相互独立的。
-
-	\item [(2)] 编码：由于采用恒等映射$U_k=X_k$，对于每个信源$k\in \mathcal{K}$，编码器寻找一个索引对$(m_k,l_k)\in [2^{n\tilde{R}_{c,k}}]\times [2^{n\hat{R}_{c,k}}]$，使得生成的码字$u_k^n(m_k,l_k)$与信源序列$x_k^n$满足$\epsilon^{'}$-联合典型性，即
-	\begin{equation}
-		(u_k^n(m_k,l_k),x_k^n)\in \mathcal{T}_{\epsilon^{'}}^{(n)}.
-	\end{equation}
-	如果存在多个这样的索引对，则从中随机挑选一个。如果不存在这样的索引对，则从所有可能的索引对$[2^{n\tilde{R}_{c,k}}]\times [2^{n\hat{R}_{c,k}}]$中随机选择一个。节点$k$将发送索引$m_k$至移动设备。
-
-	给定一个系数矩阵$\mathbf{A}\in \mathbb{F}_q^{J\times K}$，定义索引的线性组合为$\text{m}_\mathbf{A}(\text{m}_1,\cdots,\text{m}_K)=\mathbf{A}\begin{bmatrix}
-			\text{m}_1\\\vdots \\\text{m}_K
-	\end{bmatrix}$和$\text{l}_\mathbf{A}(\text{l}_1,\cdots,\text{l}_K)=\mathbf{A}\begin{bmatrix}
-	\text{l}_1\\\vdots\\\text{l}_K
-\end{bmatrix}$。本文后续将用$\text{m}_\mathbf{A}$和$\text{l}_\mathbf{A}$代替$\text{m}_\mathbf{A}(\text{m}_1,\cdots,$ $\text{m}_K)$和$\text{l}_\mathbf{A}(\text{l}_1,\\\cdots,\text{l}_K)$。进一步可以得到，$m_{\mathbf{A}_j}=\oplus_{k=1}^K A_{jk}m_k$以及$l_{\mathbf{A}_j}=\oplus_{k=1}^K A_{jk}l_k$，其中$\mathbf{A}_j$表示矩阵$\mathbf{A}$的第$j$行。
-
-\item[(3)]译码：移动设备在接收到发送的索引$(\text{m}_1,\cdots,\text{m}_K)$后，译码器搜索一个唯一的索引元组$\hat{\text{l}}_{\mathbf{A}}$，使得所有的码字满足$\epsilon$-联合典型性（其中$\epsilon^{'}<\epsilon$），即
+定理~\ref{<theorem-chapter-2>}给出了在有损、有边信息条件下，恢复信源线性函数的可达速率区域。其速率约束为
 \begin{equation}
-	\left(u_1^n(\text{m}_1, \hat{\text{l}}_1),\cdots,u_K^n(\text{m}_K, \hat{\text{l}}_K)\right)\in \mathcal{T}_{\epsilon}^{(n)},
+	\sum_{i\in\mathcal{T}}R_i>H(\hat{\mathbf{Y}}_{\mathbf{E}}|X,\hat{\mathbf{Y}}_{\mathbf{C}\mathbf{E}})-H(U(\mathcal{T})|Y(\mathcal{T})),\label{general-rate}
 \end{equation}
-	其中，$\hat{\text{l}}_k\in [2^{n\tilde{R}_{c,k}}], \forall k\in \mathcal{K}$。如果译码器找到了唯一的索引元组，则将$\hat{w}_\mathbf{A}^n(m_\mathbf{A},\hat{l}_\mathbf{A})=[m_{\mathbf{A}},\hat{l}_\mathbf{A}]\mathbf{G}\oplus d_{\mathbf{A}}^n$作为目标线性函数的无损重构值，其中$m_{\mathbf{A}}$是接收到的索引的线性组合。否则，如果不存在这样的索引元组，或者存在多个这样的元组，则译码失败。
-\end{itemize}
+其中$U_k$为定理~\ref{<theorem-chapter-2>}中测试信道$p(u_k|y_k)$的输出，$U(\mathcal{T})=\{U_k\}_{k\in\mathcal{T}}$，$Y(\mathcal{T})=\{Y_k\}_{k\in\mathcal{T}}$。下面逐步将其特化到本文的梯度编码场景。
 
-\section{定理\ref{<linear>}的证明}\label{<linear-proof>}
-推论\ref{bcst}中的可达速率区域$\mathcal{R}_{lossless}$对辅助矩阵$\mathbf{E}$取并集，因此选取特定的$\mathbf{E}$可以得到$\mathcal{R}_{lossless}$的可达内界。以下分别取$\mathbf{E}=\mathbf{I}_K$和$\mathbf{E}=\mathbf{a}$两个特殊值，推导出两个可达边界。
+首先，由于本文场景中解码端（移动设备）不具备额外的边信息，令$X=\emptyset$，此时式\eqref{general-rate}中的条件熵退化为
+\begin{equation}
+	H(\hat{\mathbf{Y}}_{\mathbf{E}}|X,\hat{\mathbf{Y}}_{\mathbf{C}\mathbf{E}})=H(\hat{\mathbf{Y}}_{\mathbf{E}}|\hat{\mathbf{Y}}_{\mathbf{C}\mathbf{E}}).
+\end{equation}
+其次，在无损恢复条件下，要求失真$d_j=0$（$\forall j$）。为满足该零失真约束，令测试信道为恒等映射，即$U_k=Y_k$（$\forall k\in\mathcal{K}$），此时
+\begin{equation}
+	H(U(\mathcal{T})|Y(\mathcal{T}))=H(Y(\mathcal{T})|Y(\mathcal{T}))=0,
+\end{equation}
+因此式\eqref{general-rate}简化为
+\begin{equation}
+	\sum_{i\in\mathcal{T}}R_i>H(\hat{\mathbf{Y}}_{\mathbf{E}}|\hat{\mathbf{Y}}_{\mathbf{C}\mathbf{E}}).\label{simplified-rate}
+\end{equation}
+进一步，将定理~\ref{<theorem-chapter-2>}中的信源$Y_k$对应为参与传输的第$k$个边缘节点的编码梯度元素$\tilde{g}_{\pi(k),\cdot}^{(t)}$，速率$R_k$对应为信源编码速率$\tilde{R}_{c,\pi(k)}$，恢复系数矩阵$\mathbf{A}$对应为解码系数向量$\mathbf{a}=[a_{\pi(1)},\cdots,a_{\pi(K)}]$。代入式\eqref{simplified-rate}后，定义
+\begin{equation}
+	\hat{g}_{\mathbf{E}}^{(t)}=\mathbf{E}[\tilde{g}_{\pi(1),\cdot}^{(t)},\cdots,\tilde{g}_{\pi(K),\cdot}^{(t)}]^T,\quad \hat{g}_{\mathbf{C}\mathbf{E}}^{(t)}=\mathbf{C}\mathbf{E}[\tilde{g}_{\pi(1),\cdot}^{(t)},\cdots,\tilde{g}_{\pi(K),\cdot}^{(t)}]^T,
+\end{equation}
+即可得到推论~\ref{bcst}中的速率区域
+\begin{equation}
+	\mathcal{R}_{lossless}=\bigcup_{\mathbf{E}}\bigcap_{\mathbf{C}}\bigcup_{\mathcal{S}}\bigcap_{\mathcal{T}}\left\{(\tilde{R}_{c,\pi(1)},\cdots,\tilde{R}_{c,\pi(K)})\in\mathbb{R}_+^K: \sum_{i\in\mathcal{T}}\tilde{R}_{c,\pi(i)}> H(\hat{g}_{\mathbf{E}}^{(t)}|\hat{g}_{\mathbf{C}\mathbf{E}}^{(t)})\right\},
+\end{equation}
+其中集合运算的约束条件(a)--(d)与定理~\ref{<theorem-chapter-2>}一致，仅将span($\mathbf{A}$)替换为span($\mathbf{a}$)。
+
+\section{定理~\ref{<linear>}的证明}\label{<linear-proof>}
+推论~\ref{bcst}中的可达速率区域$\mathcal{R}_{lossless}$对辅助矩阵$\mathbf{E}$取并集，因此选取特定的$\mathbf{E}$可以得到$\mathcal{R}_{lossless}$的可达内界。以下分别取$\mathbf{E}=\mathbf{I}_K$和$\mathbf{E}=\mathbf{a}$两个特殊值，推导出两个可达边界。
 
 （1）完整恢复边界$\mathcal{R}_{sw}$：
-取辅助矩阵$\mathbf{E}=\mathbf{I}_K$，即$K\times K$单位矩阵，此时$\hat{\mathbf{g}}_{\mathbf{E}}^{(t)}=\mathbf{I}_K\tilde{\mathbf{g}}_{\mathcal{K}}^{(t)}=[\tilde{\mathbf{g}}_{\pi(1)}^{(t)},\cdots,\tilde{\mathbf{g}}_{\pi(K)}^{(t)}]$，即解码器的目标是完整恢复所有参与传输节点的编码梯度。此时$L_{\mathbf{E}}=K$，推论\ref{bcst}中的约束要求对所有满足$0\leq L_{\mathbf{C}}<K$的矩阵$\mathbf{C}$取交集。根据文献\cite{lim2019towards}，当$\mathbf{E}$为单位矩阵时，推论\ref{bcst}的可达速率区域退化为经典的SW区域。其直观解释如下：当$\mathbf{E}=\mathbf{I}_K$时，对于每一个行满秩矩阵$\mathbf{C}\in\mathbb{F}_q^{L_{\mathbf{C}}\times K}$（$L_{\mathbf{C}}$从$0$到$K-1$取遍所有值），条件熵$H(\hat{g}_{\mathbf{E}}^{(t)}|\hat{g}_{\mathbf{C}\mathbf{E}}^{(t)})=H(\tilde{g}_{\mathcal{K}}^{(t)}|\mathbf{C}\tilde{g}_{\mathcal{K}}^{(t)})$，且$|\mathcal{T}|=K-L_{\mathbf{C}}$。遍历所有$\mathbf{C}$和$\mathcal{T}$所产生的约束等价于对所有子集$\mathcal{T}\subseteq\mathcal{K}$的经典SW约束\upcite{lim2019towards}
+取辅助矩阵$\mathbf{E}=\mathbf{I}_K$，即$K\times K$单位矩阵，此时$L_{\mathbf{E}}=K$，且
+\begin{equation}
+	\hat{g}_{\mathbf{E}}^{(t)}=\mathbf{I}_K[\tilde{g}_{\pi(1),\cdot}^{(t)},\cdots,\tilde{g}_{\pi(K),\cdot}^{(t)}]^T=\tilde{g}_{\mathcal{K},\cdot}^{(t)},
+\end{equation}
+即解码器的目标是完整恢复所有参与传输节点的编码梯度元素。
+
+由推论~\ref{bcst}的约束条件(b)，$\mathbf{C}\in\mathbb{F}_q^{L_{\mathbf{C}}\times K}$为行满秩矩阵，$L_{\mathbf{C}}$从$0$到$K-1$取遍所有值。当$\mathbf{E}=\mathbf{I}_K$时，$\hat{g}_{\mathbf{C}\mathbf{E}}^{(t)}=\mathbf{C}\mathbf{I}_K\tilde{g}_{\mathcal{K},\cdot}^{(t)}=\mathbf{C}\tilde{g}_{\mathcal{K},\cdot}^{(t)}$，因此推论~\ref{bcst}中的条件熵为
+\begin{equation}
+	H(\hat{g}_{\mathbf{E}}^{(t)}|\hat{g}_{\mathbf{C}\mathbf{E}}^{(t)})=H(\tilde{g}_{\mathcal{K},\cdot}^{(t)}|\mathbf{C}\tilde{g}_{\mathcal{K},\cdot}^{(t)}).
+\end{equation}
+
+由约束条件(c)和(d)，$|\mathcal{S}|=|\mathcal{T}|=L_{\mathbf{E}}-L_{\mathbf{C}}=K-L_{\mathbf{C}}$。由于$\mathbf{E}=\mathbf{I}_K$，约束条件(d)中$\mathbf{E}(\mathcal{S})=\mathbf{I}_K(\mathcal{S})$，即单位矩阵中由$\mathcal{S}$索引的行。此时秩条件为
+\begin{equation}
+	\mathrm{rank}\left(\begin{bmatrix}
+		\mathbf{I}_K(\mathcal{S})\\
+		\mathbf{I}_K(\{1,\cdots,K\}\backslash\mathcal{T})
+	\end{bmatrix}\right)=K,
+\end{equation}
+即$\mathcal{S}\cup(\{1,\cdots,K\}\backslash\mathcal{T})=\{1,\cdots,K\}$，等价于$\mathcal{T}\subseteq\mathcal{S}$。又因为$|\mathcal{S}|=|\mathcal{T}|=K-L_{\mathbf{C}}$，故$\mathcal{T}=\mathcal{S}$。
+
+下面对$L_{\mathbf{C}}$的不同取值分别讨论：
+
+当$L_{\mathbf{C}}=0$时，$\mathbf{C}$为空矩阵，$|\mathcal{T}|=K$，即$\mathcal{T}=\mathcal{K}$。条件熵退化为$H(\tilde{g}_{\mathcal{K},\cdot}^{(t)})$，对应的速率约束为
+\begin{equation}
+	\sum_{k\in\mathcal{K}}\tilde{R}_{c,k}>H(\tilde{g}_{\mathcal{K},\cdot}^{(t)}).
+\end{equation}
+
+当$L_{\mathbf{C}}=K-1$时，$\mathbf{C}\in\mathbb{F}_q^{(K-1)\times K}$为行满秩矩阵，$|\mathcal{T}|=1$，即$\mathcal{T}=\{k\}$（$k\in\{1,\cdots,K\}$）。此时$\mathbf{C}\tilde{g}_{\mathcal{K},\cdot}^{(t)}$为$K-1$个线性无关组合，条件熵$H(\tilde{g}_{\mathcal{K},\cdot}^{(t)}|\mathbf{C}\tilde{g}_{\mathcal{K},\cdot}^{(t)})$表示已知$K-1$个线性无关组合后的剩余不确定性。对所有满足约束条件(c)的$\mathbf{C}$取交集，对应的速率约束为
+\begin{equation}
+	\tilde{R}_{c,k}>H(\tilde{g}_{\pi(k),\cdot}^{(t)}|\{\tilde{g}_{n,\cdot}^{(t)}\}_{n\in\mathcal{K}\backslash\{k\}}),\quad\forall k\in\{1,\cdots,K\}.
+\end{equation}
+
+对于一般的$L_{\mathbf{C}}\in\{0,\cdots,K-1\}$，$|\mathcal{T}|=K-L_{\mathbf{C}}$。对于给定的$\mathcal{T}$，遍历所有满足约束条件(c)的行满秩矩阵$\mathbf{C}\in\mathbb{F}_q^{L_{\mathbf{C}}\times K}$取交集后，$\mathbf{C}\tilde{g}_{\mathcal{K},\cdot}^{(t)}$能够表达$\mathcal{T}$的补集$\mathcal{K}\backslash\mathcal{T}$中各分量的全部信息。因此条件熵等价为
+\begin{equation}
+	H(\tilde{g}_{\mathcal{K},\cdot}^{(t)}|\mathbf{C}\tilde{g}_{\mathcal{K},\cdot}^{(t)})=H(\{\tilde{g}_{k,\cdot}^{(t)}\}_{k\in\mathcal{T}}|\{\tilde{g}_{n,\cdot}^{(t)}\}_{n\in\mathcal{K}\backslash\mathcal{T}}).
+\end{equation}
+当$L_{\mathbf{C}}$从$0$到$K-1$取遍所有值，$\mathcal{T}$遍历$\mathcal{K}$的所有非空子集，所产生的速率约束与经典SW约束具有相同形式\upcite{lim2019towards}
 \begin{align}
-		\sum_{k\in\mathcal{T}}\tilde{R}_{c,k}>H\left(\{\tilde{g}_k^{(t)}\}_{k\in\mathcal{T}}|\{\tilde{g}_n^{(t)}\}_{n\notin\mathcal{T}}\right),\quad\forall \mathcal{T}\subseteq \mathcal{K}.
-\end{align}
-取$\mathcal{T}=\mathcal{K}$，和速率下界为
-\begin{align}
-	\sum_{k\in\mathcal{K}}\tilde{R}_{c,k}>H\left(\{\tilde{g}_k^{(t)}\}_{k\in\mathcal{K}}\right),
+		\sum_{k\in\mathcal{T}}\tilde{R}_{c,k}>H\left(\{\tilde{g}_{k,\cdot}^{(t)}\}_{k\in\mathcal{T}}|\{\tilde{g}_{n,\cdot}^{(t)}\}_{n\in\mathcal{K}\backslash\mathcal{T}}\right),\quad\forall \mathcal{T}\subseteq \mathcal{K}.\label{sw-constraint}
 \end{align}
 记该区域为$\mathcal{R}_{sw}$。
 
 （2）线性恢复边界$\mathcal{R}_{linear}$：
-取辅助矩阵$\mathbf{E}=\mathbf{a}$，即解码系数行向量，大小为$1\times K$，此时解码器的目标直接为$\hat{\mathbf{g}}_{\mathbf{a}}^{(t)}=\sum_{k\in\mathcal{K}}a_k\tilde{\mathbf{g}}_k^{(t)}=\mathbf{g}^{(t)}$。因此$L_{\mathbf{E}}=1$。由于推论\ref{bcst}中的约束条件(b)要求$0\leq L_{\mathbf{C}}<L_{\mathbf{E}}=1$，故$L_{\mathbf{C}}$只能取$0$，即$\mathbf{C}$为空矩阵。此时$|\mathcal{S}|=|\mathcal{T}|=L_{\mathbf{E}}-L_{\mathbf{C}}=1$。
+取辅助矩阵$\mathbf{E}=\mathbf{a}$，即解码系数行向量，大小为$1\times K$，此时解码器的目标直接为$\hat{\mathbf{g}}_{\mathbf{a}}^{(t)}=\sum_{k\in\mathcal{K}}a_k\tilde{\mathbf{g}}_k^{(t)}=\mathbf{g}^{(t)}$。因此$L_{\mathbf{E}}=1$。由于推论~\ref{bcst}中的约束条件(b)要求$0\leq L_{\mathbf{C}}<L_{\mathbf{E}}=1$，故$L_{\mathbf{C}}$只能取$0$，即$\mathbf{C}$为空矩阵。此时$|\mathcal{S}|=|\mathcal{T}|=L_{\mathbf{E}}-L_{\mathbf{C}}=1$。
 
 由于$\mathcal{S}\subseteq\{1,\cdots,L_{\mathbf{E}}\}=\{1\}$，故$\mathcal{S}=\{1\}$。对于$\mathcal{T}$，由约束条件(d)要求
 \begin{equation}
@@ -123,40 +186,44 @@
 		\mathbf{I}_K(\{1,\cdots,K\}\backslash\mathcal{T})
 	\end{bmatrix}\right)=K.\label{full rank}
 \end{equation}
-其中$\mathbf{E}(\mathcal{S})=\mathbf{a}$为$1\times K$的非零行向量，$\mathbf{I}_K(\{1,\cdots,K\}\backslash\mathcal{T})$为$\mathbf{I}_K$中去掉$\mathcal{T}$对应行后的$(K-1)\times K$子矩阵。设$\mathcal{T}=\{k\}$，则$\mathbf{I}_K(\{1,\cdots,K\}\backslash\{k\})$张成除第$k$维外的所有维度。要使式(\ref{full rank})满秩，需要$\mathbf{a}$的第$k$个分量$a_k\neq 0$。由于梯度编码方案保证解码系数均为非零元素，故上述秩条件对所有$k\in\mathcal{K}$均成立。
+其中$\mathbf{E}(\mathcal{S})=\mathbf{a}$为$1\times K$的非零行向量，$\mathbf{I}_K(\{1,\cdots,K\}\backslash\mathcal{T})$为$\mathbf{I}_K$中去掉$\mathcal{T}$对应行后的$(K-1)\times K$子矩阵。设$\mathcal{T}=\{k\}$，则$\mathbf{I}_K(\{1,\cdots,K\}\backslash\{k\})$张成除第$k$维外的所有维度。要使式\eqref{full rank}满秩，需要$\mathbf{a}$的第$k$个分量$a_{\pi(k)}\neq 0$。若某个$a_{\pi(k)}=0$，则节点$\pi(k)$不参与全梯度的恢复，可将其从参与传输的节点集合$\mathcal{K}$中移除。因此不失一般性，假设所有参与传输节点的解码系数均满足$a_{\pi(k)}\neq 0$，故上述秩条件对所有$k\in\{1,\cdots,K\}$均成立。
 
-由于$\mathbf{C}$为空，条件熵退化为无条件熵，对每个$\mathcal{T}=\{k\}$，代入推论\ref{bcst}的速率约束可得
+由于$\mathbf{C}$为空，条件熵退化为无条件熵。考虑单个符号位置，对每个$\mathcal{T}=\{k\}$，代入推论~\ref{bcst}的速率约束可得
 \begin{align}
-	\tilde{R}_{c,k}>H(\hat{g}_{\mathbf{a}}^{(t)})=H\left(\sum_{j\in\mathcal{K}}a_j\tilde{g}_j^{(t)}\right)=H(g^{(t)}),\quad\forall k\in \mathcal{K}.
-\end{align}
-其和速率下界为
-\begin{align}
-	\sum_{k\in\mathcal{K}}\tilde{R}_{c,k}\geq K\cdot H(g^{(t)}),
+	\tilde{R}_{c,k}>H(\hat{g}_{\mathbf{a}}^{(t)})=H\left(\sum_{j\in\mathcal{K}}a_j\tilde{g}_{j,\cdot}^{(t)}\right)=H(g^{(t)}),\quad\forall k\in \mathcal{K}.
 \end{align}
 记该区域为$\mathcal{R}_{linear}$。
 
-综上所述，$\mathcal{R}_{sw}$和$\mathcal{R}_{linear}$分别对应推论\ref{bcst}中$\mathbf{E}$取$\mathbf{I}_K$和$\mathbf{a}$时的可达内界。由于$\mathcal{R}_{lossless}$对$\mathbf{E}$取并集，两个特殊取值对应的区域之并$\mathcal{R}_{sub}=\mathcal{R}_{sw}\cup\mathcal{R}_{linear}$亦为$\mathcal{R}_{lossless}$的可达内界。证毕。
+综上所述，$\mathcal{R}_{sw}$和$\mathcal{R}_{linear}$分别对应推论~\ref{bcst}中$\mathbf{E}$取$\mathbf{I}_K$和$\mathbf{a}$时的可达内界。由于$\mathcal{R}_{lossless}$对$\mathbf{E}$取并集，两个特殊取值对应的区域之并$\mathcal{R}_{sub}=\mathcal{R}_{sw}\cup\mathcal{R}_{linear}$亦为$\mathcal{R}_{lossless}$的可达内界。证毕。
 
-\section{推论\ref{condition}的证明}\label{<condition>}
+\section{推论~\ref{condition}的证明}\label{<condition>}
 考虑所有参与传输节点的信道条件相同的情况，即$h_{\pi(1)}=h_{\pi(2)}=\cdots=h_{\pi(K)}$。由于信道条件完全对称，优化问题$\mathcal{P}_{4.1}$的最优解具有对称结构，即各节点的最优信源编码速率相等，记为$\tilde{R}_{c,k}=\tilde{R}_c$，$\forall k\in\mathcal{K}$。此时传输时延$T_d$由各节点共同的信源编码速率$\tilde{R}_c$决定，因此比较两种策略下的最优$\tilde{R}_c$即可确定时延的优劣。
 
-（1）对于$\mathcal{R}_{sw}$区域，将等速率$\tilde{R}_{c,k}=\tilde{R}_c$代入SW约束$\sum_{k\in\mathcal{T}}\tilde{R}_{c,k}>H(\{\tilde{g}_k^{(t)}\}_{k\in\mathcal{T}}|\{\tilde{g}_n^{(t)}\}_{n\notin\mathcal{T}})$，得到
+对于$\mathcal{R}_{sw}$区域，将等速率$\tilde{R}_{c,k}=\tilde{R}_c$代入SW约束\eqref{sw-constraint}，对于每个非空子集$\mathcal{T}\subseteq\mathcal{K}$，需满足
 \begin{align}
-	\tilde{R}_c>\frac{H(\{\tilde{g}_k^{(t)}\}_{k\in\mathcal{T}}|\{\tilde{g}_n^{(t)}\}_{n\notin\mathcal{T}})}{|\mathcal{T}|},\quad\forall \mathcal{T}\subseteq \mathcal{K}.
+	\tilde{R}_c> \frac{H(\{\tilde{g}_{k,\cdot}^{(t)}\}_{k\in\mathcal{T}}|\{\tilde{g}_{n,\cdot}^{(t)}\}_{n\in\mathcal{K}\backslash\mathcal{T}})}{|\mathcal{T}|}.\label{sw-equal-rate}
 \end{align}
-因此，最优等速率为上式右端对所有$\mathcal{T}$取最大值。取$\mathcal{T}=\mathcal{K}$时，右端为$H(\{\tilde{g}_k^{(t)}\}_{k\in\mathcal{K}})/K$。对于梯度编码产生的信源，由于编码矩阵$\mathbf{B}$引入的线性相关性，可以验证$\mathcal{T}=\mathcal{K}$对应的约束最紧，即
+$\mathcal{R}_{sw}$区域下的最优速率为上式右端对所有$\mathcal{T}$取最大值，即
 \begin{align}
-	\tilde{R}_c^{sw}=\frac{H(\{\tilde{g}_k^{(t)}\}_{k\in\mathcal{K}})}{K}.
+	\tilde{R}_c^{sw}=\max_{\mathcal{T}\subseteq\mathcal{K}}\frac{H(\{\tilde{g}_{k,\cdot}^{(t)}\}_{k\in\mathcal{T}}|\{\tilde{g}_{n,\cdot}^{(t)}\}_{n\in\mathcal{K}\backslash\mathcal{T}})}{|\mathcal{T}|}.
+\end{align}
+特别地，取$\mathcal{T}=\mathcal{K}$，此时$\mathcal{K}\backslash\mathcal{T}=\emptyset$，条件熵退化为联合熵，式\eqref{sw-equal-rate}给出
+\begin{align}
+	\tilde{R}_c>\frac{H(\{\tilde{g}_{k,\cdot}^{(t)}\}_{k\in\mathcal{K}})}{K}.
+\end{align}
+由于$\mathcal{T}=\mathcal{K}$是所有约束中的一个，$\tilde{R}_c^{sw}$作为所有约束右端的最大值，必然满足
+\begin{align}
+	\tilde{R}_c^{sw}\geq\frac{H(\{\tilde{g}_{k,\cdot}^{(t)}\}_{k\in\mathcal{K}})}{K}.\label{sw-lower-bound}
 \end{align}
 
-（2）对于$\mathcal{R}_{linear}$区域，每个节点的速率约束为$\tilde{R}_{c,k}>H(g^{(t)})$，因此最优等速率为
+对于$\mathcal{R}_{linear}$区域，每个节点的速率约束为$\tilde{R}_{c,k}>H(g^{(t)})$，因此最优速率为
 \begin{align}
 	\tilde{R}_c^{linear}=H(g^{(t)}).
 \end{align}
 
-当$\tilde{R}_c^{linear}<\tilde{R}_c^{sw}$时，即
+当推论~\ref{condition}中的条件$H(\{\tilde{g}_{k,\cdot}^{(t)}\}_{k\in\mathcal{K}})>K\cdot H(g^{(t)})$成立时，结合式\eqref{sw-lower-bound}可得
 \begin{align}
-	H(g^{(t)})<\frac{H(\{\tilde{g}_k^{(t)}\}_{k\in\mathcal{K}})}{K},
+	\tilde{R}_c^{sw}\geq\frac{H(\{\tilde{g}_{k,\cdot}^{(t)}\}_{k\in\mathcal{K}})}{K}>H(g^{(t)})=\tilde{R}_c^{linear}.
 \end{align}
-等价于$K\cdot H(g^{(t)})<H(\{\tilde{g}_k^{(t)}\}_{k\in\mathcal{K}})$，线性恢复策略的每节点信源编码速率更低。由于信道条件相同，更低的信源编码速率直接对应更低的传输时延。证毕。
+因此$\tilde{R}_c^{sw}>\tilde{R}_c^{linear}$，即线性恢复策略的每节点信源编码速率严格低于SW策略。由于信道条件相同，更低的信源编码速率直接对应更低的传输时延。证毕。
 

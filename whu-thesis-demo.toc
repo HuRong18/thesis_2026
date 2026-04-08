@@ -14,7 +14,7 @@
 \contentsline {subsection}{\numberline {2.2.1}完整恢复的DSC}{13}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}线性恢复的DSC}{15}{subsection.2.2.2}%
 \contentsline {section}{\numberline {2.3}非正交多址接入技术}{17}{section.2.3}%
-\contentsline {section}{\numberline {2.4}凹凸过程与差分凸规划理论}{19}{section.2.4}%
+\contentsline {section}{\numberline {2.4}凹凸过程与差分凸规划理论}{18}{section.2.4}%
 \contentsline {section}{\numberline {2.5}本章小结}{20}{section.2.5}%
 \contentsline {chapter}{\numberline {3\hspace {.3em}}面向完整恢复的DSC辅助编码计算结果传输方法研究}{21}{chapter.3}%
 \contentsline {section}{\numberline {3.1}引言}{21}{section.3.1}%
@@ -30,26 +30,26 @@
 \contentsline {section}{\numberline {3.3}面向完整恢复的DSC辅助编码计算结果下行传输算法}{31}{section.3.3}%
 \contentsline {section}{\numberline {3.4}仿真与性能分析}{33}{section.3.4}%
 \contentsline {section}{\numberline {3.5}本章小结}{39}{section.3.5}%
-\contentsline {chapter}{\numberline {4\hspace {.3em}}面向线性恢复的DSC辅助编码计算结果传输方法研究}{40}{chapter.4}%
-\contentsline {section}{\numberline {4.1}引言}{40}{section.4.1}%
-\contentsline {section}{\numberline {4.2}系统模型与问题建模}{41}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}梯度编码计算模型}{42}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}下行传输模型}{43}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}面向线性恢复的 DSC 辅助传输方案}{43}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}最小化下行传输时延优化问题}{44}{subsection.4.2.4}%
-\contentsline {section}{\numberline {4.3}面向线性恢复的DSC辅助编码计算结果下行传输算法}{45}{section.4.3}%
-\contentsline {section}{\numberline {4.4}仿真与性能分析}{47}{section.4.4}%
-\contentsline {section}{\numberline {4.5}本章小结}{52}{section.4.5}%
-\contentsline {chapter}{\numberline {5\hspace {.3em}}总结与展望}{53}{chapter.5}%
-\contentsline {section}{\numberline {5.1}全文总结}{53}{section.5.1}%
-\contentsline {section}{\numberline {5.2}未来展望}{53}{section.5.2}%
-\contentsline {chapter}{参考文献}{55}{section*.38}%
-\contentsline {chapter}{\numberline {附录 A\hspace {.3em}}面向完整恢复的DSC辅助编码计算结果传输方法研究}{64}{appendix.A}%
-\contentsline {section}{\numberline {A.1}定理\ref {proposition1}的证明}{64}{section.A.1}%
-\contentsline {section}{\numberline {A.2}BP译码算法}{64}{section.A.2}%
-\contentsline {chapter}{\numberline {附录 B\hspace {.3em}}面向线性恢复的DSC辅助编码计算结果传输方法研究}{66}{appendix.B}%
-\contentsline {section}{\numberline {B.1}嵌套线性码编码方案}{66}{section.B.1}%
-\contentsline {section}{\numberline {B.2}定理\ref {<linear>}的证明}{67}{section.B.2}%
-\contentsline {section}{\numberline {B.3}推论\ref {condition}的证明}{68}{section.B.3}%
-\contentsline {chapter}{攻读硕士学位期间取得的科研成果}{70}{section*.41}%
-\contentsline {chapter}{致谢}{71}{section*.43}%
+\contentsline {chapter}{\numberline {4\hspace {.3em}}面向线性恢复的DSC辅助编码计算结果传输方法研究}{41}{chapter.4}%
+\contentsline {section}{\numberline {4.1}引言}{41}{section.4.1}%
+\contentsline {section}{\numberline {4.2}系统模型与问题建模}{42}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}梯度编码计算模型}{43}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}下行传输模型}{44}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}面向线性恢复的 DSC 辅助传输方案}{44}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}最小化下行传输时延优化问题}{46}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}面向线性恢复的DSC辅助编码计算结果下行传输算法}{46}{section.4.3}%
+\contentsline {section}{\numberline {4.4}仿真与性能分析}{49}{section.4.4}%
+\contentsline {section}{\numberline {4.5}本章小结}{53}{section.4.5}%
+\contentsline {chapter}{\numberline {5\hspace {.3em}}总结与展望}{55}{chapter.5}%
+\contentsline {section}{\numberline {5.1}全文总结}{55}{section.5.1}%
+\contentsline {section}{\numberline {5.2}未来展望}{55}{section.5.2}%
+\contentsline {chapter}{参考文献}{57}{section*.38}%
+\contentsline {chapter}{\numberline {附录 A\hspace {.3em}}第三章相关证明与算法}{66}{appendix.A}%
+\contentsline {section}{\numberline {A.1}定理~\ref {proposition1}的证明}{66}{section.A.1}%
+\contentsline {section}{\numberline {A.2}BP译码算法}{66}{section.A.2}%
+\contentsline {chapter}{\numberline {附录 B\hspace {.3em}}第四章相关证明}{68}{appendix.B}%
+\contentsline {section}{\numberline {B.1}推论~\ref {bcst}的推导}{68}{section.B.1}%
+\contentsline {section}{\numberline {B.2}定理~\ref {<linear>}的证明}{69}{section.B.2}%
+\contentsline {section}{\numberline {B.3}推论~\ref {condition}的证明}{70}{section.B.3}%
+\contentsline {chapter}{攻读硕士学位期间取得的科研成果}{72}{section*.41}%
+\contentsline {chapter}{致谢}{73}{section*.43}%

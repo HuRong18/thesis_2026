@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.3)  3 APR 2026 21:44
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.3)  8 APR 2026 10:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2059,34 +2059,26 @@ File: figures/figs/SW.pdf Graphic file (type pdf)
 ] [10] [11]
 File: figures/figs/gradient coding.pdf Graphic file (type pdf)
 <use figures/figs/gradient coding.pdf>
- [12] [13]
+ [12]
 File: figures/figs/example.pdf Graphic file (type pdf)
 <use figures/figs/example.pdf>
+ [13]
 File: figures/figs/achievable.pdf Graphic file (type pdf)
 <use figures/figs/achievable.pdf>
- [14] [15]
+ [14]
 File: linearcoding.png Graphic file (type bmp)
 <linearcoding.png>
- [16]
+ [15] [16]
 File: nlc.png Graphic file (type bmp)
 <nlc.png>
- [17]
 File: NOMA.png Graphic file (type bmp)
 <NOMA.png>
- [18] [19]) [20]
+ [17] [18] [19]) [20]
 \openout2 = `pages/chapter3.aux'.
 
 
 (./pages/chapter3.tex
 3
-
-Overfull \hbox (1.01567pt too wide) in paragraph at lines 9--10
-[]\TU/TimesNewRoman(0)/m/n/12.045 DSC \TU/simsun.ttc(0)/m/n/12.045 的 理 论 研 究 始 
-于 \TU/TimesNewRoman(0)/m/n/12.045 Slepian \TU/simsun.ttc(0)/m/n/12.045 和 \TU/Ti
-mesNewRoman(0)/m/n/12.045 Wolf \TU/simsun.ttc(0)/m/n/12.045 的 开 创 性 工 作$[]$，|  
-随 后 在 多 信 源 扩 展$[]$、|
- []
-
 [21
 
 
@@ -2128,12 +2120,12 @@ File: figures/codededgecomputing.pdf Graphic file (type pdf)
 File: figures/figs/syn.pdf Graphic file (type pdf)
 <use figures/figs/syn.pdf>
 
-Overfull \hbox (13.65675pt too wide) in paragraph at lines 126--128
+Overfull \hbox (13.65675pt too wide) in paragraph at lines 125--126
  [][] 
  []
 
 [26]
-Overfull \hbox (2.36195pt too wide) in paragraph at lines 181--183
+Overfull \hbox (2.36195pt too wide) in paragraph at lines 179--181
 \TU/simsun.ttc(0)/m/n/12.045 当 所 有 伴 随 式 $[][][][][]$\TU/TimesNewRoman(0)/m/n/1
 2.045 ($[][] [] [][][]$) \TU/simsun.ttc(0)/m/n/12.045 均 被 恢 复 后，|  即 可 采 用 基 于 
 伴 随 式 的 \TU/TimesNewRoman(0)/m/n/12.045 BP \TU/simsun.ttc(0)/m/n/12.045 译 码 算 法
@@ -2168,160 +2160,83 @@ e eps)
 File: figures/figs/ldpc_implement_power_29696_3_Chinese.eps Graphic file (type 
 eps)
 <figures/figs/ldpc_implement_power_29696_3_Chinese.eps>
- [36]
-Overfull \hbox (7.05441pt too wide) in paragraph at lines 498--499
+ [36] [37]
+Overfull \hbox (7.05441pt too wide) in paragraph at lines 494--495
 []\TU/simsun.ttc(0)/m/n/12.045 不 同 平 均 信 道 增 益 $[]$ 和 最 大 发 射 功 率 $[][]$ 下 的 平 
 均 下 行 传 输 时 延 $[][]$ 分 别 如 图 []\TU/TimesNewRoman(0)/m/n/12.045 3.12[]\TU/simsun
 .ttc(0)/m/n/12.045 和
  []
 
-[37] [38]) [39]
+[38]) [39] [40]
 \openout2 = `pages/chapter4.aux'.
 
  (./pages/chapter4.tex
 4
 File: figures/figs/梯度编码示例图.png Graphic file (type bmp)
 <figures/figs/梯度编码示例图.png>
-[40
+[41
 
 
 
 
-]
-Overfull \hbox (10.02951pt too wide) in paragraph at lines 53--55
-[]\TU/simsun.ttc(0)/m/n/12.045 为 缓 解 分 布 式 同 步 训 练 中 由 迟 滞 节 点 引 发 的 时 延 问 题，| 
- 系 统 采 用 梯 度 编 码 技 术$[]$。|
- []
-
-[41] [42] [43] [44] [45]
-Overfull \hbox (8.95027pt too wide) in paragraph at lines 191--193
-\TU/simsun.ttc(0)/m/n/12.045 进 一 步，|  可 以 将 信 源 压 缩 区 域 拆 分 为 两 个 子 区 域 分 别 优 化
-。|  问 题 $[][]$ 等 价 于 $[][][][][] [][][]$，|
- []
-
-[46]
+] [42] [43] [44] [45] [46] [47]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[47]
+[48]
 File: figures/figs/real_channel_gain_Chinese.eps Graphic file (type eps)
 <figures/figs/real_channel_gain_Chinese.eps>
- [48]
+ [49]
 File: figures/figs/real_transmit_power_Chinese.eps Graphic file (type eps)
 <figures/figs/real_transmit_power_Chinese.eps>
 File: figures/figs/equal_channel_gain_Chinese.eps Graphic file (type eps)
 <figures/figs/equal_channel_gain_Chinese.eps>
- [49]
 File: figures/figs/equal_transmit_power_Chinese.eps Graphic file (type eps)
 <figures/figs/equal_transmit_power_Chinese.eps>
+ [50]
 File: figures/figs/n_increase_revision.eps Graphic file (type eps)
 <figures/figs/n_increase_revision.eps>
- [50]
+ [51] [52]
 File: figures/figs/k_increase_revision.eps Graphic file (type eps)
 <figures/figs/k_increase_revision.eps>
- [51]) [52]
+) [53] [54]
 \openout2 = `pages/chapter5.aux'.
 
  (./pages/chapter5.tex
 5
-[53
-
-
-
-
-]) [54] (./whu-thesis-demo.bbl
-! Misplaced alignment tab character &.
-l.54 \newblock IEEE Communications Surveys &
-                                             Tutorials, 2021, 23\allowbreak ...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.69 \newblock IEEE Communications Surveys &
-                                             Tutorials, 2023, 25\allowbreak ...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.76 \newblock IEEE Communications Surveys &
-                                             Tutorials, 2019, 21\allowbreak ...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.97 \newblock IEEE Communications Surveys &
-                                             Tutorials, 2025, 27\allowbreak ...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
 [55
 
 
 
 
-]
-! Misplaced alignment tab character &.
-l.141 \newblock IEEE Communications Surveys &
-                                              Tutorials, 2025, 27\allowbreak...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
+]) [56] (./whu-thesis-demo.bbl [57
 
-[56] [57] [58] [59] [60] [61]
-Underfull \hbox (badness 2302) in paragraph at lines 787--790
-[]\TU/TimesNewRoman(0)/m/n/12.045 Yang A, Yang B, Hui B, et al.  Qwen2 technica
-l report[J].  arXiv preprint
- []
 
-[62]) (./pages/appendix.tex [63]
+
+
+] [58] [59] [60] [61] [62] [63] [64])
+(./pages/appendix.tex [65]
 附录 A
 
-Overfull \hbox (7.62302pt too wide) in paragraph at lines 31--36
-[]\TU/simsun.ttc(0)/m/n/12.045 该 算 法 将 从 长 度 为 $[]$ 的 伴 随 式 序 列 $[][][][][]$ $[
-]$ 中 解 码 出 长 度 为 $[]$ 的 序 列 $[][][][][]$。|
+Overfull \hbox (5.61551pt too wide) in paragraph at lines 31--36
+[]\TU/simsun.ttc(0)/m/n/12.045 该 算 法 将 从 长 度 为 $[]$ 的 伴 随 式 序 列 $[][][][][]$$[]
+$ 中 解 码 出 长 度 为 $[]$ 的 序 列 $[][][][][]$。|
  []
 
-[64
-
-] [65]
-附录 B
 [66
 
 ] [67]
-Overfull \hbox (25.12675pt too wide) in paragraph at lines 143--144
-[]|\TU/simsun.ttc(0)/m/n/12.045 （\TU/TimesNewRoman(0)/m/n/12.045 1\TU/simsun.tt
-c(0)/m/n/12.045 ）|  对 于 $[][]$ 区 域，|  将 等 速 率 $[] [] []$ 代 入 \TU/TimesNewRoman(
-0)/m/n/12.045 SW \TU/simsun.ttc(0)/m/n/12.045 约 束 $[][] [] [] [][][][][][][][][
-][][][]$，|
- []
+附录 B
+[68
 
-[68]) [69] (./pages/achievements.tex) [70
+] [69] [70]) [71] (./pages/achievements.tex) [72
 
-] (./pages/thanks.tex) [71
+] (./pages/thanks.tex)
+[73
 
-] [72
+] [74
 
-]
-(./whu-thesis-demo.aux (./pages/chapter1.aux) (./pages/chapter2.aux)
+] (./whu-thesis-demo.aux (./pages/chapter1.aux) (./pages/chapter2.aux)
 (./pages/chapter3.aux) (./pages/chapter4.aux) (./pages/chapter5.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -2335,15 +2250,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `whu-thesis-demo.out' has not changed.
-(rerunfilecheck)             Checksum: 4588338682D407398FA113C9FD96F944;6451.
+(rerunfilecheck)             Checksum: 3BECA8CF8EBD511C47A2867D934BCCAC;6236.
  ) 
 Here is how much of TeX's memory you used:
- 52631 strings out of 474773
- 1265549 string characters out of 5757725
- 1979839 words of memory out of 5000000
- 73845 multiletter control sequences out of 15000+600000
- 576615 words of font info for 198 fonts, out of 8000000 for 9000
+ 52632 strings out of 474773
+ 1266388 string characters out of 5757725
+ 1981839 words of memory out of 5000000
+ 73848 multiletter control sequences out of 15000+600000
+ 576599 words of font info for 196 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 117i,13n,121p,2619b,2936s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,14n,121p,2619b,2936s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on whu-thesis-demo.pdf (84 pages).
+Output written on whu-thesis-demo.pdf (86 pages).
