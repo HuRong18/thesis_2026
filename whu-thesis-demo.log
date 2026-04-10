@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.3)  8 APR 2026 10:13
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.3)  10 APR 2026 14:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2042,8 +2042,8 @@ File: figures/边缘计算示例图.png Graphic file (type bmp)
 
 
 ] [2] [3] [4] [5] [6]
-File: 研究内容与结构.png Graphic file (type bmp)
-<研究内容与结构.png>
+File: 论文框架.png Graphic file (type bmp)
+<论文框架.png>
  [7]) [8]
 \openout2 = `pages/chapter2.aux'.
 
@@ -2183,10 +2183,9 @@ File: figures/figs/梯度编码示例图.png Graphic file (type bmp)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[48]
+[48] [49]
 File: figures/figs/real_channel_gain_Chinese.eps Graphic file (type eps)
 <figures/figs/real_channel_gain_Chinese.eps>
- [49]
 File: figures/figs/real_transmit_power_Chinese.eps Graphic file (type eps)
 <figures/figs/real_transmit_power_Chinese.eps>
 File: figures/figs/equal_channel_gain_Chinese.eps Graphic file (type eps)
@@ -2194,8 +2193,8 @@ File: figures/figs/equal_channel_gain_Chinese.eps Graphic file (type eps)
 File: figures/figs/equal_transmit_power_Chinese.eps Graphic file (type eps)
 <figures/figs/equal_transmit_power_Chinese.eps>
  [50]
-File: figures/figs/n_increase_revision.eps Graphic file (type eps)
-<figures/figs/n_increase_revision.eps>
+File: figures/figs/n_increase_revision_2.eps Graphic file (type eps)
+<figures/figs/n_increase_revision_2.eps>
  [51] [52]
 File: figures/figs/k_increase_revision.eps Graphic file (type eps)
 <figures/figs/k_increase_revision.eps>
@@ -2254,8 +2253,8 @@ Package rerunfilecheck Info: File `whu-thesis-demo.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  52632 strings out of 474773
- 1266388 string characters out of 5757725
- 1981839 words of memory out of 5000000
+ 1266377 string characters out of 5757725
+ 1982839 words of memory out of 5000000
  73848 multiletter control sequences out of 15000+600000
  576599 words of font info for 196 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191

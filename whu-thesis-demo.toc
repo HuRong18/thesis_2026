@@ -39,7 +39,7 @@
 \contentsline {subsection}{\numberline {4.2.4}最小化下行传输时延优化问题}{46}{subsection.4.2.4}%
 \contentsline {section}{\numberline {4.3}面向线性恢复的DSC辅助编码计算结果下行传输算法}{46}{section.4.3}%
 \contentsline {section}{\numberline {4.4}仿真与性能分析}{49}{section.4.4}%
-\contentsline {section}{\numberline {4.5}本章小结}{53}{section.4.5}%
+\contentsline {section}{\numberline {4.5}本章小结}{54}{section.4.5}%
 \contentsline {chapter}{\numberline {5\hspace {.3em}}总结与展望}{55}{chapter.5}%
 \contentsline {section}{\numberline {5.1}全文总结}{55}{section.5.1}%
 \contentsline {section}{\numberline {5.2}未来展望}{55}{section.5.2}%
